@@ -12,7 +12,7 @@ image side robin neutral = "robin_neutral.png"
 
 ##### Declare characters used by this game. #####
 
-define r = Character("{b}Robin{/b}", image="robin", color="#9a290e")
+define r = Character("{b}Robin{/b}", image="robin", color="#000000")
 # define o = Character("{b}Owen{/b}", image="owen", color="#0c35b6")
 
 
