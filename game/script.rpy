@@ -1,7 +1,7 @@
 ﻿
 ##### Declare images used by this game. #####
 
-# image side junia neutral = "junia_neutral.png"
+image side robin neutral = "robin_neutral.png"
 
 # image owen smile = "owen_smile.png"
 
@@ -12,7 +12,7 @@
 
 ##### Declare characters used by this game. #####
 
-# define j = Character("{b}Junia{/b}", image="junia", color="#9a290e")
+define r = Character("{b}Robin{/b}", image="robin", color="#9a290e")
 # define o = Character("{b}Owen{/b}", image="owen", color="#0c35b6")
 
 
@@ -39,7 +39,7 @@ label start:
     stop music fadeout 1.0
     pause(0.5)
 
-    # j frown "\"...\""
+    r neutral "\"...\""
     
     # play music "BGM_suspicious.mp3" fadein 1.0 fadeout 1.0 loop
 
