@@ -3,7 +3,8 @@
 
 image side robin neutral = "robin_neutral.png"
 
-# image owen smile = "owen_smile.png"
+image dylan neutral = "dylan_neutral.png"
+image side dylan neutral = "dylan_s_neutral.png"
 
 # image bg lakesideday = "BG_lakeside_day.png"
 
@@ -13,7 +14,7 @@ image side robin neutral = "robin_neutral.png"
 ##### Declare characters used by this game. #####
 
 define r = Character("{b}Robin{/b}", image="robin", color="#000000")
-# define o = Character("{b}Owen{/b}", image="owen", color="#0c35b6")
+define d = Character("{b}Dylan{/b}", image="dylan", color="#000000")
 
 
 ##### Initiate variables used in this game. #####
@@ -40,6 +41,16 @@ label start:
     pause(0.5)
 
     r neutral "\"...\""
+
+    # testing side image sprites showing up with full body ones
+    show dylan neutral at centerpos with dissolve
+
+    d neutral "\"testing lmao\""
+
+    r neutral "\"no u\""
+    r "\"is this showing up with my face\""
+
+    d neutral "\"it's my face now\""
     
     # play music "BGM_suspicious.mp3" fadein 1.0 fadeout 1.0 loop
 
