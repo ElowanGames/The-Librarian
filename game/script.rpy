@@ -1,12 +1,15 @@
 ﻿
 ##### Declare images used by this game. #####
 
-image side robin neutral = "robin_neutral.png"
+image side robin neutral = "robin_s_neutral.png"
 
 image dylan neutral = "dylan_neutral.png"
 image side dylan neutral = "dylan_s_neutral.png"
 
-# image bg lakesideday = "BG_lakeside_day.png"
+image anderson neutral = "anderson_neutral.png"
+image side anderson neutral = "anderson_s_neutral.png"
+
+image bg conferencehall = "BG_conferencehall.png"
 
 # image cg owenkiss = "CG_owen_kiss.png"
 
@@ -36,7 +39,7 @@ init:
 
 label start:
 
-    # scene bg black with fade
+    scene bg conferencehall with fade
     stop music fadeout 1.0
     pause(0.5)
 
@@ -56,8 +59,6 @@ label start:
 
     # show ogeneric frown at centerpos with dissolve
     pause(0.5)
-    
-    "A dark shadow loomed over me, blocking the moonlight from my window."
 
     # j surprise "\"AHHHH—\""
     
