@@ -1,15 +1,60 @@
 ﻿
 ##### Declare images used by this game. #####
 
-image side robin neutral = "robin_s_neutral.png"
+## Character Sprites ##
 
-image dylan neutral = "dylan_neutral.png"
-image side dylan neutral = "dylan_s_neutral.png"
+image side robin angry = "robin_angry.png"
+image side robin frown = "robin_frown.png"
+image side robin frownblush = "robin_frown_blush.png"
+image side robin grin = "robin_grin.png"
+image side robin smile = "robin_smile.png"
+image side robin smileblush = "robin_smile_blush.png"
+image side robin smirk = "robin_smirk.png"
+image side robin surprise = "robin_surprise.png"
+image side robin surpriseblush = "robin_surprise_blush.png"
+image side robin sus = "robin_suspicious.png"
 
-image anderson neutral = "anderson_neutral.png"
-image side anderson neutral = "anderson_s_neutral.png"
+image dylan angry = "dylan_angry.png"
+image side dylan angry = "dylan_s_angry.png"
+image dylan frown = "dylan_frown.png"
+image side dylan frown = "dylan_s_frown.png"
+image dylan frownblush = "dylan_frown_blush.png"
+image side dylan frownblush = "dylan_s_frown_blush.png"
+image dylan grin = "dylan_grin.png"
+image side dylan grin = "dylan_s_grin.png"
+image dylan smile = "dylan_smile.png"
+image side dylan smile = "dylan_s_smile.png"
+image dylan smirk = "dylan_smirk.png"
+image side dylan smirk = "dylan_s_smirk.png"
+image dylan surprise = "dylan_surprise.png"
+image side dylan surprise = "dylan_s_surprise.png"
+image dylan sus = "dylan_suspicious.png"
+image side dylan sus = "dylan_s_suspicious.png"
 
-image bg conferencehall = "BG_conferencehall.png"
+image anderson angry = "anderson_angry.png"
+image side anderson angry = "anderson_s_angry.png"
+image anderson frown = "anderson_frown.png"
+image side anderson frown = "anderson_s_frown.png"
+image anderson smile = "anderson_smile.png"
+image side anderson smile = "anderson_smile.png"
+image anderson smirk = "anderson_smirk.png"
+image side anderson smirk = "anderson_s_smirk.png"
+image anderson surprise = "anderson_surprise.png"
+image side anderson surprise = "anderson_s_surprise.png"
+image anderson sus = "anderson_suspicious.png"
+image side anderson sus = "anderson_s_suspicious.png"
+
+## Background Images ##
+
+image bg homelit = "bg_bedroom_lit.png"
+image bg homeunlit = "bg_bedroom_unlit.png"
+image bg conferencehall = "bg_conferencehall.png"
+image bg library = "bg_library.png"
+image bg streetday = "bg_street_day.png"
+image bg street = "bg_street_night.png"
+
+
+## Character Graphics ##
 
 # image cg owenkiss = "CG_owen_kiss.png"
 
@@ -18,6 +63,7 @@ image bg conferencehall = "BG_conferencehall.png"
 
 define r = Character("{b}Robin{/b}", image="robin", color="#000000")
 define d = Character("{b}Dylan{/b}", image="dylan", color="#000000")
+define a = Character("{b}Anderson{/b}", image="anderson", color="#000000")
 
 
 ##### Initiate variables used in this game. #####
@@ -43,17 +89,23 @@ label start:
     stop music fadeout 1.0
     pause(0.5)
 
-    r neutral "\"...\""
+    r frown "\"...\""
 
     # testing side image sprites showing up with full body ones
-    show dylan neutral at centerpos with dissolve
+    show dylan smirk at centerpos with dissolve
 
-    d neutral "\"testing lmao\""
+    d smirk "\"testing lmao\""
 
-    r neutral "\"no u\""
+    r frown "\"no u\""
     r "\"is this showing up with my face\""
 
-    d neutral "\"it's my face now\""
+    d smirk "\"it's my face now\""
+
+    hide dylan
+    show dylan smirk at rightpos with dissolve
+    show anderson suspicious at leftpos with dissolve
+
+    a sus "\"y'all are weird\""
     
     # play music "BGM_suspicious.mp3" fadein 1.0 fadeout 1.0 loop
 
