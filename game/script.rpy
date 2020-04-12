@@ -754,6 +754,353 @@ label post_cassidy:
     scene bg library with fade
     pause (0.5)
 
+    "Several days passed. Over the weekend, the library was busy as usual, with children and families pouring in to read and shelter from the rain."
+    "It cheered me up to see them. It was a reminder that my work helped people like them."
+
+    "Young Child" "\"Hey! You can't be loud in the library!\""
+    "Other Young Child" "\"You're even louder!!!\""
+    "Young Child" "\"No I'm not!\""
+
+    r sus "\"...\""
+
+    "Well, sometimes."
+    "Today was a slow day. I helped someone from acquisitions before returning back to my station."
+    "I liked talking to people from that department — even though I'd decided I didn't want to join them, it was nice to learn more about how the library worked as a whole."
+    "It was like a well-oiled machine. The librarians I'd admired as a child, the ones who helped me find books and seemed to know everything in the world, were just the surface of the iceberg."
+    "Behind them were teams negotiating to acquire books and movies. Teams deciding which scientific journals were worth subscribing to."
+    "Teams transporting materials between sister libraries to avoid stock shortages. Teams trying to get us more funding."
+    "All of them worked together in harmony."
+
+    d fr "\"Hello.\""
+
+    show dylan fr at centerpos with dissolve
+
+    "I looked up to find a tall blonde man holding a laptop."
+
+    r "(I feel like I've seen this guy before. Must be a regular.)"
+    r sm "\"Hello. Can I help you find anything?\""
+
+    d sus "\"No.\""
+    d "\"I remember you from last week. I didn't realize you were a student as well.\""
+
+    r surprise "\"Last week?\""
+
+    "Oh. He was the one who asked about that research journal."
+
+    r fr "\"Glad I could be of help.\""
+    r sm "\"I guess I do look young. I'm not a student, though — I work here.\""
+
+    d an  "\"Really? Why were you crouched behind Engineering IV, then?\""
+    d sus "\"You looked quite out of place.\""
+
+    r surprise "\"...!\""
+
+    "And in that second, it clicked. He was the man talking to Cassidy last Friday!"
+    "Shootshootshoot."
+    "I did {i}not{/i} need anyone linking Robin The Librarian to Robin The Vigilante."
+    "This guy needed to get out."
+
+    r an "\"I don't know what you mean, sir.\""
+    r sus "\"You have me mistaken for someone else.\""
+
+    "He gave me a disapproving look, like I was a student that had disappointed him. That expression thoroughly irritated me."
+
+    d sus "\"Your hair is very recognizable.\""
+
+    r surprise "\"Uh—\""
+
+    "Fuck. I needed to start wearing a hat."
+
+    r fr "\"In any case, I'm not a student at the local university.\""
+
+    d "\"...\""
+    d an "\"That just makes you more suspicious, squatting behind the door.\""
+    d "\"I don't know who you are—\""
+
+    "He glanced down at my name tag, which read ROBIN in large blocky letters."
+
+    d "\"—but if you're one of the 'clients' she mentioned, and you're stalking her, I won't hesitate to report you to the authorities.\""
+
+
+    if CASSIDY_ARRESTED == True:
+        d fr "\"Not that you could even reach her, but—\""
+    
+
+    r an "\"What the fuck! Do I {i}look{/i} like a crack addict to you?\""
+
+    "I demanded, raising my voice indignantly."
+    "The nerve of him! That was literally everything I worked against!"
+
+    d sus "\"...\""
+    d an "\"How did you know about the—\""
+
+    r an "\"I heard you guys talking loudly through the door, bird brain. I am not a crack addict — don't you dare insinuate I am.\""
+
+    d sus "\"Nobody said anything about crack.\""
+
+    "I wracked my memory of that afternoon, trying to remember if that was true. Had she mentioned crack cocaine? I remembered being surprised she was shooting up, which implied powder cocaine instead."
+
+    d fr "\"Are you her friend, then?\""
+
+    "I said nothing, not wanting to dig my hole deeper."
+
+    d sus "\"...\""
+    r fr "\"...\""
+
+    "Finally, the man shifted his laptop to the other arm and sighed."
+
+    r fr "\"Don't worry. I don't have any business with Cassidy.\""
+
+    "Anymore."
+
+    d fr "\"...\""
+    d sus "\"Who are you, then?\""
+
+    r fr "\"Robin. I work here.\""
+
+    "I held up my nametag sarcastically."
+
+    r an "\"You?\""
+
+    d "\"...\""
+    d fr "\"Dylan. Pleased to meet you.\""
+
+    "He didn't look all that pleased, really. He looked at me like I was a trinket his dog had found in the dirt: an expression that was curious, but wary."
+
+    d sus "\"We'll probably see each other around. Have a good day.\""
+
+    hide dylan
+
+    r surprise "\"See each other around?\""
+
+    "But he had already turned and walked away."
+
+    r sus "\"...\""
+    r "\"Don't come back.\""
+
+
+# ####################################################################################
+# TODO: Add more evening choices + variable measuring rest so choices change the scene
+# ####################################################################################
+
+
+# ################################################################
+# CONDITIONAL SCENE: Day job at the library based on fatigue level
+# ################################################################
+
+    scene bg library with fade
+    pause (0.5)
+
+    "I smiled at no one again, struggling to keep fatigue from showing in my expression."
+    "Hazy black spots filled my vision. I tried to blink them away, but they kept respawning in."
+
+    r fr "\"...\""
+
+    "What was I doing again? I was pretty sure I had to do… something… something for one of our journal subscriptions today."
+    "I pressed a hand to my forehead." 
+    "I hadn't been getting enough sleep again. It was really showing."
+    "I raised a hand to the computer monitor in front of me, trying to trace the words my eyes had wandered away from."
+    "My fingernails were long, too long — how long had it been since I'd trimed them?"
+    "Come to think of it, how long had it been since I'd taken care of myself in general?"
+
+    r fr "\"...\""
+
+    "It was no use. I struggled through my work all day, fighting fatigue every step of the way."
+
+
+
+# ##############################################
+# REGULAR SCENE: Wary of Dylan but he seems okay
+# ##############################################
+
+
+    scene bg library with fade
+    pause (0.5)
+
+
+    "Since that day the blonde man — Dylan? — talked to me, I'd seen him around the library several times."
+    "Whenever I saw him, I always ducked out of sight, moving between floors and busying myself helping others around the library."
+    "Several times, he saw me and nodded in my direction, but he never approached me when I looked like I was working. Instead, he was often working on his laptop, and occasionally scribbled notes on a pad of paper."
+    "Sometimes he was with others, who all worked silently together on their computers. Most of the time, he was alone."
+
+    show dylan fr at centerpos with dissolve
+
+    r fr "(He's here again today.)"
+
+    "I was on my lunch break when I spotted Dylan at his usual seat on the second floor. His back was to me."
+    "I resisted the urge to move closer and look at his screen."
+
+    r fr "(Come to think of it, what does he do here all the time?)"
+    r "(I guess he was Cassidy's teaching assistant. For engineering or something?)"
+    r "(I thought TAs had offices to themselves.)"
+    r sus "(He's not here just to stalk me, is he?)"
+
+    "I paused."
+    "But he'd been here with a student before, that first time I'd met him."
+    "And even though he'd seen me several times, he hadn't bothered me when I was busy with work."
+    "Most of the time, he didn't even sit close to my workplace on the second floor — he usually sat at the other end of the library, near the sunny windows."
+
+    r sus "(Okay.)"
+
+    "I thought begrudgingly to myself."
+
+    r sus "(He's probably not here to stalk me.)"
+
+    "Even though I worried so much about being outed by him, he probably didn't even remember our conversation."
+
+    r fr "(I wonder what he's so busy with.)"
+
+    "Walking closer to the windows, I glanced out over the city below, trying not to look conspicuous."
+    "When I was several steps behind Dylan, I looked down at his screen."
+    "To my surprise, it was filled with several applications, each with light text on a dark background."
+    "Each window was crammed full with tiny text, and he navigated between them without using a mouse or trackpad — only quick fingers over his keyboard."
+    "It reminded me of hacking scenes in movies."
+
+    r smirk "(If only his code was bright green. That would nail the aesthetic.)"
+
+    "I left the study area without him noticing, and went to eat my lunch."
+
+
+    scene bg library with fade
+    pause(0.5)
+
+    show dylan fr at centerpos with dissolve
+
+
+    d fr "\"Slow day?\""
+
+    "I whirled around to see that Dylan had walked up to the information desk, carrying his laptop as usual."
+    "I narrowed my eyes."
+
+    r sus "\"Can I help you find anything?\""
+
+    d fr "\"No, not really.\""
+
+
+#   IF ROBIN HAS NOT BEEN TAKING CARE OF HERSELF IN THE EVENINGS:
+
+    d sus "\"Wow, you look exhausted. Are they running you ragged here or something?\""
+    r sus "\"No. And that's none of your business.\""
+    "But I tried to discreetly rub my eyes and open them wider."
+    d "\"... Okay.\""
+
+
+    d fr "\"I figured you could use some conversation.\""
+
+    r an "\"In that case, I'm busy.\""
+
+    d smirk "\"Is that so?\""
+
+    "I looked back at my computer monitor, where I'd been browsing the quantity of Oathbringer copies at every library in our system."
+
+    r fr "\"No.\""
+
+    "I admitted begrudgingly."
+
+    d sm "\"Oh, good.\""
+
+    "Dylan followed my line of sight and spotted a large image of the book cover on my screen."
+
+    d surprise "\"Is that Oathbringer? I wasn't aware you guys had it in stock already.\""
+    d "\"Wasn't it just released last weekend?\""
+
+    "My eyes lit up. This stoic-looking man kept up with fantasy novels?"
+
+    r grin "\"Yeah! I'm second on the waitlist now — I've been keeping an eye on which of our libraries have it.\""
+    r surprise "\"I was so tempted to just buy a copy, but I'm {i}this{/i} close to being able to read it.\""
+    r "\"I gotta hold out.\""
+
+    "I leaned forward in my seat, thinking of the hundreds of pages of new lore and if maybe, maybe there would be more insight on Shallan's backstory—"
+
+    d fr "\"Just borrow the e-book. The wait times are a lot shorter.\""
+
+    "I'd actually considered it for once in my life. But…"
+
+    r surprise "\"Not anymore! It's like, ten weeks for the e-book now.\""
+    r sm "\"Besides, I really like holding the book in my hand when I read. A screen just can't compare to paper.\""
+
+    d smirk "\"Ah, you're one of {i}those{/i}.\""
+
+    "I crossed my arms and huffed, which felt weird as I was still sitting, and Dylan loomed over me across the desk."
+
+    r an "\"Staring at my laptop for hours on end gives me headaches!\""
+
+    d fr "\"You don't have an e-reader?\""
+    d "\"I'm surprised. I thought you would, working here and all.\""
+
+    r sus "\"No. You think I can afford one?\""
+
+    "Dylan paused, then shrugged."
+
+    d "\"I don't know.\""
+
+    "An awkward silence settled in between us."
+    "Dylan glanced away."
+    "I shifted in my seat, wondering if it would be okay to turn back to my computer and keep scrolling."
+    "If Heather saw me turn my back to a library visitor, though, I wouldn't hear the end of it…"
+
+    d sus "\"I still don't really know what you do.\""
+
+    r surprise "\"Huh?\""
+
+    d "\"If you were really a librarian here, that'd be full-time work.\""
+    d "\"But you were also on our university campus on a weekday afternoon, when you should be working.\""
+
+    "My hope that he'd forgotten our conversation had not been well-founded. I shouldn't have entertained talking to him."
+
+    d "\"Considering you were outside with your ear pressed to the wall, it was ostensibly to listen in on Cassidy, but she doesn't know anyone matching your description.\""
+
+    "I made a low growling noise in my throat."
+
+    r an "\"You asked her about me?\""
+
+    d fr "\"Of course I did.\""
+
+    "I pressed my fingers to my forehead and sighed."
+
+    r sus "\"I already told you I don't have any business with her. And I was not pressing my ear to the wall.\""
+    r "(I was a lot more covert than that! … I think.)"
+
+    "Dylan eyed me skeptically."
+
+    d sus "\"Then what were you doing?\""
+
+    r sus "\"I was waiting for someone to pick me up, and happened to be leaning against the wall.\""
+
+    d "\"By the back door? On campus, on a weekday?\""
+
+    r an "\"I get out of work early on Fridays, idiot. I was on campus to talk to a friend.\""
+
+    "Dylan eyed me, clearly not buying the story. I imagined he would've crossed his arms if he hadn't been holding a laptop under one arm."
+
+    r sus "\"Besides, I don't appreciate being asked personal questions while at work. This is the library information desk, not the Robin information desk.\""
+    r "\"I can see you clearly care about Cassidy, and I want to be sympathetic, but I am at {i}work{/i}.\""
+
+    "Dylan considered that, then tilted his head."
+
+    d sus  "\"Fine. Then tell me about library… information.\""
+
+    "I narrowed my eyes at him."
+    "He sighed, but gestured to my screen."
+
+    d fr "\"You're looking forward to Oathbringer, right? What books did you like that were similar to Sanderson's other works?\""
+
+    "What is this man up to? Making excuses to avoid ending the conversation?"
+
+    r "(At least this is something I can answer easily.)"
+    r fr "\"Well, the first recommendation I always give is to check out Wheel of Time, which Sanderson actually finished posthumously after the original author passed away…\""
+
+    hide dylan
+
+    "We talked for a while about books, trading recommendations and opinions on my favorite author's works, until another library visitor came up to the information desk."
+    "When Dylan saw her approach, he left me to go back to work."
+
+    r fr  "\"...\""
+    r sus "(I wonder what that was about.)"
+
+
+
+
 
 
 
