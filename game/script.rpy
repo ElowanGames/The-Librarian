@@ -78,7 +78,7 @@ init:
     $ leftpos = Position(xpos = 0.30, xanchor=0)
     $ rightpos = Position(xpos = 0.60, xanchor=0)
 
-    $ CASSIDY_ARRESTED = false
+    $ CASSIDY_ARRESTED = False
     
     # $ owenaffection = 0               # if below 4 (out of 6) by final scene, choice to go with Owen doesn't appear
 
@@ -424,6 +424,7 @@ label start:
 
 
     scene bg homelit with fade
+    pause (0.5)
 
 
     r fr "\"Whew.\""
@@ -468,13 +469,14 @@ label start:
 
 
     "Friday was here in a blink."
+    "Today, I'd be helping Anderson arrest the cocaine dealer, a student from the local university."
 
     scene bg conferencehall with fade
     pause (0.5)
 
 
     "I peeked into a large lecture hall at the local university."
-    "The room was empty, save for a dozen students at the front of the room. There were over two hundred chairs, but everyone was concentrated at the front of the room, listening to one man speak."
+    "The room was empty, save for a dozen students at the front of the room. There were over a hundred chairs, but everyone was concentrated at the front of the room, listening to one man speak."
     "I couldn't make out the words from here. The PowerPoint slides at the front of the room indicated it was some sort of computer programming course."
     "It was hard to tell if Cassidy was here, from the backs of the student's heads."
 
@@ -502,8 +504,6 @@ label start:
     "Two people were standing by the podium at the front of the room, talking quietly. Apparently they hadn't left after all."
     "I went around the outside of the building and nudged open the door to the lecture hall close to them."
 
-    show dylan sus at centerpos with dissolve
-
     m sus "\"—I'm concerned for your safety, Cassidy.\""
 
     "The man seemed to be struggling with his thoughts."
@@ -515,7 +515,8 @@ label start:
     c "\"Imagine your TA walkin' in on you shooting up coke. Nobody wants that.\""
     c "\"You probably wish you could just forget it, too. So just do that.\""
 
-    "I frowned. Shooting up coke? In my search, I'd only found that she had been dealing crack cocaine."
+    "I frowned."
+    "Shooting up coke? In my search, I'd only found that she had been dealing crack cocaine."
     "Perhaps my information had been off."
     "But it was her. I pulled out my phone to text Anderson our location."
     "Squatting down outside the building's back door, I inched closer, leaning against the wall and peeking through the door."
@@ -612,6 +613,7 @@ label start:
 
 
     scene bg black with fade
+    pause (0.5)
 
     r an "\"You're exploiting those addicts by selling to them…\""
     r fr "\"Please... please stop. There are so many other ways you can make money—\""
@@ -634,6 +636,7 @@ label start:
 
 
     scene bg conferencehall with fade
+    pause (0.5)
 
     r sus "..."
     r "(When had I stopped trying to convince them?)"
@@ -641,7 +644,8 @@ label start:
     "It seemed like so long ago that I hadn't been turning over these people to the police."
     "The sound of the door opening — not three feet away from me — broke me out of my thoughts."
 
-    show dylan fr at centerpos with fade
+    scene bg streetday with fade
+    show dylan fr at centerpos with dissolve
 
     d fr "\"I'll be heading to my office hours, then.\""
     d "\"The Engineering Honors Society should get back to you within a week or so.\""
@@ -687,7 +691,7 @@ label start:
 
 label cassidy_arrest:
 
-    $ CASSIDY_ARRESTED = true
+    $ CASSIDY_ARRESTED = True
 
     "I shook my head. I couldn't be going soft on her, especially because she hadn't actually given up drug dealing yet."
     "Too many things could go wrong — she could change her mind, fail to get the job, get fired. Maybe she was lying to her teacher's assistant to begin with."
@@ -710,7 +714,7 @@ label cassidy_arrest:
 
 label cassidy_free:
 
-    $ CASSIDY_ARRESTED = false
+    $ CASSIDY_ARRESTED = False
 
     "I wasn't sure what got to me."
     "Was it that she had promised to stop? That she seemed willing to pursue a better path?"
@@ -750,7 +754,7 @@ label post_cassidy:
     scene bg library with fade
     pause (0.5)
 
-    
+
 
 
 
