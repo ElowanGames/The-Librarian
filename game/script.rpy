@@ -2809,4 +2809,285 @@ label post_kid:
 
 
 
+# #############################
+# REGULAR SCENE: Watch Dylan TA
+# #############################
+
+    scene bg streetday with fade
+    pause(0.5)
+
+    "I felt silly with my beanie on my head and backpack on my shoulders — like I was imitating something I wasn't."
+    "I had never really paid attention to that feeling."
+    "It wasn't that I belonged here any less than the last time I'd been here. It was just that today, someone I knew would see me pretending to blend in."
+    "Dylan."
+
+    r sus "\"...\""
+
+    "Well. Maybe it was normal to be nervous when dressing up as a fake student just to visit your friend. It wasn't like I had a ton of experience doing that."
+    "Trying to ignore the small flips my stomach was doing, I triple-checked the sign on the door before entering the lecture hall."
+
+
+    scene bg conferencehall with fade
+    pause(0.5)
+
+    r fr "(Hmm. Guess I'm a little early.)"
+    "I glanced around the lecture hall. Several students were seated near the front of the room, but nowhere near the number that had been here last month."
+    "Dylan wasn't here yet, either."
+    "I picked a seat in the middle of the room — not too far back that I'd look out of place, but not in the front where I'd be expected to participate."
+    "Then I pulled out my copy of Oathbringer and opened it to my bookmarked page."
+
+    r "(I'm almost halfway through this thousand-page tome already.)"
+
+    "I glanced around the room. Was it weird to have a novel out while everyone else was on their laptops?"
+    "None of the other students seemed to care."
+    "I caught myself observing their faces, checking if any of them were Cassidy."
+
+    r sus "\"...\""
+
+    if CASSIDY_ARRESTED == True:
+        "I couldn't help but associate this place with her, and the time I'd helped get her arrested."
+        r fr "(I wonder what she's doing right now.)"
+        r surprise "\"...!\""
+        r sus "(I don't think I've ever thought that about a criminal…)"
+
+    if CASSIDY_ARRESTED == False:
+        "I couldn't help but associate this place with her, and the time I'd let her get away from Anderson."
+        r fr "(After all those nights I spent getting enough information to help Anderson arrest her… I ended up feeling sympathetic to her.)"
+        r "\"...\""
+        r sus "(I hope she's super successful as a tutor and gave up on dealing coke.)"
+        "I'd have to swallow my pride, but I'd at least know I'd been right to let her go."
+        r fr "(It would be nice if I could ask Dylan about it.)"
+
+
+    "I glanced around one more time, then turned back to my book."
+
+
+    scene bg conferencehall with fade
+    pause(0.5)
+
+    show dylan fr at centerpos with dissolve
+
+    "It wasn't much longer before Dylan and the rest of his students filed into the room."
+    "I glanced up from my book as he lectured. Even though I wasn't familiar with most of the topics he covered, it was clear that he spoke with confidence and gentle authority."
+
+    if CASSIDY_ARRESTED == False:
+        r fr "(Oh, there's Cassidy.)"
+        "I glanced around the room and spotted her cropped brown hair from behind."
+
+
+    "The lecture hall was filled with the sound of fingers tapping keyboards. From behind most of the students, I could see that their computers were open to notes."
+
+    r surprise "(Wow. If I were still in university, I'd definitely be browsing Discord during lecture.)"
+    r "(And so would everyone else in the class, unless the lecturer was really good.)"
+
+    "I ended up watching the class, closing my book and leaning back in my chair."
+
+    show dylan sm
+
+    "Occasionally, students would ask questions about the material. One man was clearly lost as to what Dylan was saying, but Dylan answered his questions patiently and thoroughly."
+    "Because of his basic questions, I actually ended up learning a little more about computer networking protocols."
+    "After half an hour, Dylan ended his lecture."
+
+    d fr "\"That's all for today's lecture. I'll be here for the rest of the discussion if you have any questions or want project help.\""
+
+    "To my surprise, almost no one left."
+    "Instead, some students went up to him with their laptops and started talking with him. Others got together in small groups, talking about the material in the lecture and their progress on the project."
+
+    r fr "(Hmm… it feels a little awkward to sit here now. I guess I'll wait for him outside.)"
+
+    "I gathered my things and stood up. Dylan glanced over at me and met my eyes."
+    "I smiled and gave him a little wave."
+    "Then I headed back outside."
+
+
+    scene bg streetday with fade
+    pause(0.5)
+
+    "I set my things down on a bench outside the front door of Engineering IV, then sat down and stretched."
+
+    r fr "(I guess this is the side of the building where students normally walk… there are a lot of people around campus right now.)"
+
+    "I resumed reading Oathbringer, glancing up every time I saw someone leave the building."
+    "People started trickling out of the lecture hall one by one."
+    "It wasn't much longer before Dylan came out of the building and spotted me."
+
+    show dylan sm at centerpos with dissolve
+
+    d sm "\"Hey.\""
+
+    r surprise "\"Hey.\""
+
+    "I closed Oathbringer and put it back into my bag as he approached."
+
+    d surprise "\"I didn't think you'd really show up.\""
+
+    r sm "\"I hope it didn't cause any trouble for you.\""
+
+    d fr "\"No, it's fine.\""
+
+    "He gestured to the empty space on the bench next to me."
+
+    d "\"Mind if I join you?\""
+
+    "I scooted over to make more space. He hesitated, then sat down next to me and set his bag on the floor."
+    "Wind gusted past us, and I reached up to prevent my beanie from flying off."
+    "Dylan noticed me reaching up and pulling my hat back down."
+
+    d surprise "\"You covered your hair today.\""
+
+    r fr "\"Well… you said it was really recognizable.\""
+
+    d sm "\"Ah. It is.\""
+
+    "We sat in comfortable silence for a while, watching students pass us by."
+
+    r surprise "\"I think it was that same day — or the next time you came to talk to me at the library.\""
+    r fr "\"You were insecure about your teaching and invited me to watch you TA, even though you were suspicious of me.\""
+
+    d an "\"I was not insecu—\""
+    d "\"...\""
+
+    "Dylan cleared his throat."
+
+    d sus "..."
+    d fr "Well… I guess."
+
+    "I cracked a smile at the grimace on his face."
+
+    r sm "\"I remember thinking back then that you probably weren't a bad teacher. And I was right.\""
+
+    d sus "\"...\""
+    d fr "\"Even if you're just being polite… it's nice to hear that.\""
+
+    r surprise "\"I'm not.\""
+    r "\"Not just being polite, I mean.\""
+    r sm "\"All of your students respect you. The way they pay attention in your class proves it.\""
+    r "\"Not a single person was browsing Discord, or Facebook, or the news. Everyone was referencing your lecture slides or taking notes.\""
+    r smirk "\"The way they asked you questions was pretty comfortable, too. Everyone sitting in your class treats you like you're their smarter older brother.\""
+
+    d surprise "\"Wow.\""
+    d smirk "\"That … might be the best compliment anyone has ever given me.\""
+    d grin "\"... Thank you.\""
+
+    show dylan smirk 
+
+    "Dylan bit his lip and shifted in his seat."
+
+    d "\"...\""
+    d "\"Their smarter older brother, huh?\""
+    d "\"Would you see me as a smart older brother if you were in my class?\""
+
+
+    
+    menu: 
+
+        "I'd rather not think of you like an older brother.":
+            jump bro_no
+
+        "Sure. You seem like you'd be a chill sibling.":
+            jump bro_sure
+
+
+
+# IF "I'd rather not think of you like an older brother."
+
+label bro_no:
+
+    r surprise "\"Er…\""
+    r sus "\"I'd rather not think of you like an older brother.\""
+
+    show dylan surprise 
+
+    "I was suddenly aware of how he was sitting just inches away from me on this bench, and thought of how warm his hand had been when he'd put it over mine a few days ago—"
+    "I clenched my fist and pulled it back against my chest, resisting the thought of reaching for his hand."
+
+    d surprisebl "\"... Ah.\""
+
+    "Was Dylan turning pink?"
+
+    r frbl "(Please tell me I'm not blushing just as much as he is right now.)"
+
+    "He cleared his throat."
+
+    d smirk "\"Right. That's a weird thing to ask, sorry.\""
+
+    hide dylan
+
+    "Slowly, we eased into more regular conversation."
+    "We talked about his class, what his students were like, how busy our schedules were."
+    "But through it all, it felt like that moment was still in the air — a slight tension that kept the blush in his face and the warmth in mine."
+    "When he shifted in his seat, or gestured with his hands, my eyes were drawn to his movement."
+
+    r frbl "\"...\""
+    r surprisebl "(Focus on what he's saying, dammit.)"
+
+    "\"When the sun started setting and we bid each other farewell, I gathered my things and headed back to my car.\""
+
+    r frbl "\"...\""
+
+    "I touched my cheek. It still felt warm."
+
+    jump bro_done
+
+
+
+#   ELSE IF "Sure. You seem like you'd be a chill sibling."
+
+label bro_sure:
+
+    r sm "\"Sure. You seem like you'd be a chill sibling.\""
+    r smirk "\"Plus, you'd probably do my homework for me if I pestered you enough.\""
+
+    d an "\"What? Hell no I wouldn't.\""
+    d smirk "\"A bratty little sister like you? I'd just give you a math textbook for your birthday. To help you figure it out on your own.\""
+
+    r surprisebl "\"...\""
+
+    "My heart did several little flips at his smile."
+    r "(Oh no. It's cute.)"
+
+    r frbl "\"Uh—\""
+
+    "I cleared my throat."
+
+    r surprisebl "\"I mean, we were just talking about your teaching skills. If you had a sibling, I'd— I think you'd teach them how to do their homework themselves.\""
+
+    "Grasping at straws to keep the conversation going, I rushed the words out."
+    "Dylan met my eyes."
+
+    d frbl "\"...\""
+
+    "He looked away, his cheeks tinged pink."
+
+    d "\"...\""
+    d fr "\"Well, I actually do have a brother. A younger brother. And you're right, I always taught him how to do the problems himself.\""
+    d smirk "\"When he was younger, he often tried to trick me into just doing his homework for him, but he eventually gave up.\""
+
+    "I laughed."
+
+    r grin "\"Of course he did. That sounds just like you.\""
+    r "\"Did you ever give him a math textbook for his birthday?\""
+
+    d grin "\"What? Of course not.\""
+    d smirk "\"That'd be reserved for people who like math, and people like you.\""
+
+    r surprise "\"Hey!\""
+
+    "Dylan chuckled."
+
+    hide dylan
+
+    "We ended up talking for a while longer, until the campus was washed in orange light from the sunset."
+    "When we gathered up our things and waved goodbye to each other, I turned away with a smile."
+
+    jump bro_done
+
+
+
+label bro_done:
+
+
+
+
+
     return
