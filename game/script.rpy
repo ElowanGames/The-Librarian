@@ -79,6 +79,7 @@ init:
     $ rightpos = Position(xpos = 0.60, xanchor=0)
 
     $ CASSIDY_ARRESTED = False
+    $ ADDICT_SAVED = True
     
     # $ owenaffection = 0               # if below 4 (out of 6) by final scene, choice to go with Owen doesn't appear
 
@@ -1436,6 +1437,478 @@ label post_cassidy:
     r fr "(Guess I'll make cup noodles again.)"
 
 
+
+# ##############################
+# REGULAR SCENE: Raid goes wrong
+# ##############################
+
+    scene bg streetday with fade
+    pause(0.5)
+
+    show anderson sus at centerpos with dissolve 
+
+    a sus "\"All right. Here we go.\""
+
+    "It was Friday afternoon, and I was in Anderson's backseat as we drove to the site where he'd capture two of this heroin ring's ringleaders."
+    "This was going to be a higher-profile capture than his usual runs. Though this group wasn't huge, it had connections with several larger groups, and needed to be stopped."
+    "Anderson looked incredibly nervous. It always showed on his face, to his anguish."
+
+    r sus "\"Good luck.\""
+    r surprise "\"You still want me to sit in the back? I'm pretty sure investigations don't look kindly on civilians getting caught up in this mess.\""
+
+    "I saw Anderson grimace in the rearview mirror."
+
+    a "\"I wouldn't want you here either, but the boss thinks you might be able to confirm their faces once we bring them in.\""
+
+    r fr "\"Wouldn't I just wait at the police station?\""
+
+    a an "\"That's what I said, but he couldn't find an aboveboard way of assigning you any security detail.\""
+
+    r "\"Oh.\""
+
+    "Right. Only Anderson and his boss knew about how I was the source of information behind most of Anderson's drug dealer arrests."
+    "His boss apparently thought I was a critical witness, someone too important to be left without security detail. But there wasn't any way for him to explain why I should have any."
+
+    r sus "\"I don't think I'm in danger. Nobody knows my face.\""
+
+    "Though, remembering Dylan's words from several weeks ago, I'd covered my head this time."
+
+    a "\"Yeah, I thought so too. But I guess I'll have to babysit you. Sorry 'bout that.\""
+
+    "Anderson's voice was bitter, too."
+    "He hated being treated like he wasn't important in these arrests. Even his boss often only used him for information from me, and from his other connections."
+    "Among his peers who'd entered the police force at the same time, he was often treated as backup."
+
+    r fr "\"... Don't worry about it.\""
+
+    "He had his own issues."
+    "Now wasn't the time to get upset about anything."
+    "I looked out the backseat window. We were cruising at a slow pace, slowing down behind a side alley in the city."
+
+    r "\"Are you going to leave the car here?\""
+
+    a fr "\"Yeah.\""
+
+    "We crawled to a stop."
+
+    a "\"Gonna lock the car. In the case of an emergency, backup keys are in the glove box.\""
+
+    "I nodded. We'd been through this before. His boss had cleared me to drive his car today only, in case he was unconscious."
+    "It seemed overkill to me. Anderson wasn't going to be unconscious. But then again, it was better for me to know."
+
+    r sus "(I'm not used to what happens in the field… I'm better off behind a computer.)"
+
+    "I remembered the last time I'd been in the field. I'd had to climb up, and then down from a roof. I shuddered."
+    "At least this time I'd be chilling in the car."
+
+    r sm "\"Good luck.\""
+
+    a sm "\"Thanks. Be back in thirty.\""
+
+
+    hide anderson 
+
+    "Anderson locked the car and left."
+    "I glanced around. This empty area didn't look ghetto, per se, but these back streets were definitely not somewhere I'd want to be at night."
+    "It wasn't dark yet, but I crawled down into the footrest, just in case."
+    "I felt a little silly ducking away from view of the darkly tinted windows, but I didn't want my face to suffer collateral damage if someone tried to smash the window in."
+
+    r surprise "(Guess I'll browse the internet.)"
+
+    "I checked my place in the library waitlist for Oathbringer. Still first. Had been for a week."
+
+    r sm "(Bless the souls of everyone who returns the book before their whole 21-day lending period is up.)"
+    r sus "(Please, let one more person do that! One is all I need!)"
+
+    "Fifteen minutes passed."
+    "Then thirty."
+    "I frowned and checked the time on my phone again. It was approaching thirty-five minutes with no response from Anderson."
+
+    r "(We didn't talk about what to do if he didn't come back.)"
+
+    "I was pretty sure I wasn't supposed to call him. What if his phone vibrated in the middle of him sneaking around?"
+
+    r fr "(How long should I wait, though?)"
+    r sus "(If no one knows I'm here, I can't just call the police to come and get this car.)"
+
+    "I wished I'd gotten the contact information of Anderson's boss."
+
+    r "\"...\""
+    r fr "(I wonder if it's safe to look outside.)"
+    r "(It's probably fine… I haven't heard anyone around this whole time.)"
+
+    "I edged forward in the footrest, then wrapped my hands around the passenger seat's headrest and hauled myself up."
+    "The area was still mostly empty. Just a side alley, barely wide enough for one car lane."
+    "To my right was a series of tall buildings. To my left, a tiny sidewalk, then a chain-link fence."
+    "A man in a button-down shirt was hurrying along the left side, shaking as he walked. His tousled hair looked like it had been neatly gelled back in the morning, but now flopped into his face."
+    "I flinched. I was pretty sure there hadn't been anyone here earlier."
+    "The man ignored the police car as if it were empty. Instead, he quickly unbuttoned his shirt and reached into it with one hand."
+    "I watched, confused, as he took off one sleeve."
+
+    r sus "(Is that… a syringe?)"
+
+    r surprise "\"No!\""
+
+    "He'd just come from the direction of the building Anderson had gone into!"
+
+    r sus "(Our data said they spiked their heroin with lethal doses of fentanyl.)"
+    r "(What are the chances—)"
+
+    "I fumbled for my phone and punched in the number for an ambulance."
+    "As I brought the phone to my ear, I glanced back towards that building frantically."
+
+    r an "(Please, let Anderson be coming back soon…)"
+
+    "Instead, I saw a middle-aged man enter the alley from the direction Anderson had gone."
+    "He looked at my police car and broke into a run in the other direction."
+
+    r surprise "(Wait, is that…)" 
+
+    "Startled, I watched as his thin ponytail flapped in the wind."
+    "His unzipped jacket flew behind him, up until he slipped into the driver's seat of a silver car and raced out of the alley."
+
+    r "(No way.)"
+
+    "That man looked just like Theodore, one of the two major ringleaders Anderson had set out to arrest today."
+    "Down to the hair and jacket."
+
+    r an "(I thought that car blocking the alley was undercover for the police!)"
+
+    "Hatred bubbled up inside me. That man needed to be behind bars."
+    "I pulled my phone away from my ear, ready to call Anderson. But I glanced back at the man in the alley, who had collapsed on the sidewalk."
+    "His hand was still in his sleeve — as if he'd fallen before he could even pull the needle out."
+
+    r "(There's no time...!)"
+
+    
+    menu: 
+
+        "Try to capture the ringleader.":
+            jump raid_capture
+
+        "Try to get the man emergency treatment.":
+            jump raid_protect
+
+
+
+# IF: Chose to pursue criminal during raid
+
+label raid_capture:
+
+    $ ADDICT_SAVED = False
+
+    "I glanced one more time back at the building. Anderson was still nowhere in sight."
+    "Someone in a police uniform finally stepped out on a balcony, but it would take them entire minutes to get downstairs and in a car."
+    "I had to stop Theodore."
+    "I threw my phone to the front and flung myself into the driver's seat."
+    "Fumbling with the glove box on the passenger side, I found the keys Anderson had left for me and started the ignition."
+
+    r sus "(Sorry, stranger.)"
+    r an "(I need to help you, but… if Theodore goes free, more people are going to suffer like you did.)"
+    r "(I have to at least try to prevent those deaths!)"
+
+    "I raced down the alley and turned the same way Theodore's car had gone."
+    "I glanced down at my phone as I swerved between cars."
+    "Canceling my call for an ambulance, I punched in Anderson's number. He picked up almost immediately."
+
+    r an "\"I have your car and I'm tailing Theodore!\""
+
+    "I paused. Chaotic background noise filtered through the phone."
+    "For a moment, I panicked. What if that man hadn't been Theodore and I'd just stolen Anderson's police vehicle?"
+    "But his voice came on a second later."
+
+    a sus "\"We need to talk about you taking the car later—\""
+
+    r "\"Later!\""
+
+    "The silver car swerved abruptly into a right turn lane just before an intersection."
+    "With one hand, I jerked the wheel right. I barely managed to follow without crashing into the streetlight."
+
+    r sus "\"I need help! Theodore did escape, right? Where are the other police vehicles?\""
+
+    a surprise "\"He wasn't in the building.\""
+    a an "\"I'm getting into my coworker's car right now. Don't move.\""
+
+    r an "\"If I don't move, I'm going to lose his car! Is anyone else on his tail?\""
+
+    "There were some yelling noises on Anderson's end. I heard him pleading with a female voice, and then slamming some car doors."
+
+    a "\"We're on our way.\""
+    a "\"Press the yellow square button on the dashboard. It'll give us your location.\""
+
+    "I punched it with the hand holding my phone. The button lit up."
+
+    r an "\"Done! What next?\""
+
+    "More arguing noises. I heard the words 'civilian' and 'authorized.'"
+
+    a "\"Press the big black button on the top. It—\""
+
+    "I punched it. Loud siren noises immediately shook the car, and I nearly jumped out of my seat."
+
+    a "\"—will turn on the siren.\""
+    a sus "\"You can ignore traffic lights while it's on. Don't hit anyone! Just follow Theodore's car.\""
+    a "\"We'll find you and set up a police barricade!\""
+
+    r sus "\"But how long am I going to have to—\""
+
+    "I looked down at my phone. Anderson had hung up."
+    "I cursed, then threw my phone into the passenger seat and put both hands on the wheel."
+    "Fear raced through my body. My heart pounded as I stepped on the gas."
+
+    r an "(I'm not authorized to drive this thing!)"
+    r "(What if he has allies and someone starts shooting at my car?)"
+
+    "I sucked in a short breath."
+
+    r sus "(Don't think. Just follow.)"
+    r "(He needs to be behind bars. He needs to be behind bars…)"
+    r an "(All I have to do is follow long enough until reinforcements come.)"
+
+    "I narrowed my vision to only the silver car in front of me and vehicles in my way."
+    "Conveniently, most cars pulled to the side of the road as I approached."
+    "However, others inexplicably slowed down when they heard my siren."
+
+    r "\"I'm not here to give you speed tickets, idiots!\""
+
+    "Radio" "\"BZZT.\""
+
+    "A static noise came from the car's radio."
+
+    a surprise "\"Hello? Can you hear me?\""
+    a an "\"Press the green button if you can hear me.\""
+
+    "The silver car was making a turn again. I tightened my hands on the wheel and followed it."
+    "Then I reached over and hit the green button on the dashboard."
+
+    r sus "\"Still on his tail. What next?\""
+
+    a sus "\"Great. What's the license plate?\""
+
+    "I rattled off the letters as I stared forward at the car."
+
+    a "\"Okay. Silver car?\""
+
+    r surprise "\"Yes! Ford logo.\""
+
+    a an "\"Great. I see your location. We've barricaded the roads ahead.\""
+    a smirk "\"Keep following him. You're doing incredible!\""
+
+    "I gritted my teeth."
+    "It had to have been ten minutes already. I kept my eyes on the road, and on Theodore's car."
+    "One foot was perpetually hovering the gas pedal."
+
+    r surprise "\"Oh wait! Can you hear me?\""
+
+    a surprise "\"Yeah, what's up?\""
+
+    r sus "\"There was some guy in the alley who shot up and collapsed. Near where you parked this car.\""
+    r "\"Probably one of Theodore's victims, overdosed on the fentanyl.\""
+    r "\"Call an ambulance for him.\""
+
+    a an "\"Got it. Calling one right now.\""
+
+    "The radio was quiet from then on."
+    "The silver car eventually slowed. I spotted a barricade in front of us, with police cars lined up horizontally against the road."
+    "I squinted. There were tire spikes on the ground."
+    "Theodore must've seen them too. He swerved into a side lane, and I followed by jerking the wheel."
+    "But that one was blocked off, too."
+    "His car turned 180 degrees, as if he were going to ram his car into mine."
+
+    r surprise "(What the...)"
+
+    "Ice shot through my veins."
+
+    r an "(I'm going to die here, aren't I—)"
+
+    "Instead, he moved around me, trying to get back out."
+    "I was a second too slow to react. His car got around me."
+    "I screamed."
+
+    "But another police car was already there, blocking his exit."
+
+    r surprise "\"What…\""
+
+    "I slowed to a stop."
+    "Police vehicles surrounded his car in no time. In fifteen seconds, I blended in as just one of a mass of police cars."
+    "I sat, numb, as policemen and policewomen approached and arrested Theodore."
+    "There had only been one person in the car. Just him."
+    "I breathed a sigh of relief."
+
+    r sm "\"Guess I'm not dying today…\""
+
+    a smirk "\"Good.\""
+
+    "I jumped. Anderson was still on the radio."
+
+    r surprise "\"What the— where are you?\""
+
+    a an "\"In another police car.\""
+    a "\"They're securing Theodore and bringing him to the station. I'll come back to my car once his car leaves.\""
+
+    "Right. This was the vehicle Anderson had been assigned to, and I'd stolen it for this chase."
+    "They wouldn't have caught Theodore without me, but…"
+    "I was probably in for a world of trouble."
+    "Oddly, I didn't feel scared. I breathed out deeply."
+
+    r sus "(The guy in the alley… Did the ambulance reach him in time?)"
+
+    "Theodore was caught. But one of his victims might not have made it."
+
+    r "(I should've told Anderson to call the ambulance first thing.)"
+
+
+    scene bg black with fade
+    pause(0.5)
+
+    "I squeezed my eyes shut. Still no word from the ambulance Anderson had called."
+    "I knew I did the right thing. Theodore needed to be stopped."
+    "But… if the stranger died, it would be my fault."
+    "I left him to die to chase my own idea of justice."
+
+    r an "(If I had stayed to help him, Theodore might not have been caught…)"
+    r sus "(...)"
+
+    "I could tell myself that I was preventing future deaths instead of saving one person now."
+    "I could tell myself that I couldn't do anything for that stranger, anyway."
+    "I could tell myself that an ambulance would come in time to help him."
+    "But at the end of the day, it was me who hung up on emergency medical services."
+    "It was me who left that stranger to die alone in an alley."
+    "On a cold tile floor... just like her."
+
+    r an "\"No…\""
+
+    jump post_raid
+
+
+# IF: Chose to save addict during the raid
+
+label raid_protect:
+
+    $ ADDICT_SAVED = True
+
+    "I remembered the day my mother overdosed. The way she'd been collapsed on our kitchen floor, dead in minutes."
+    "This man was not going to survive without emergency care. And someone had to tell the ambulance what he'd collapsed from."
+    "I hauled myself into the car's passenger seat and rifled through the front drawers until I found an emergency medical pouch."
+
+    "Emergency Services" "\"Hello?\""
+
+    r an "\"Hi! Yes!\""
+    r sus "\"I just saw a man collapse on the street. I saw him holding a syringe. I think he overdosed on heroin with fentanyl.\""
+    r "\"Also, I'm with the police. Please get this man emergency care.\""
+
+    "I tacked on that bit at the end, hoping they would take me more seriously."
+
+    "Emergency Services" "\"Can you tell me your location and any identifying markers nearby?\""
+
+    "I rattled off the information after finding my location on Maps."
+    "My other hand was digging through the medical pouch. In it, I found a small can of Narcan nasal spray."
+
+    r sus "(I don't know why the hell this is in a police car, but bless you, whoever put it here.)"
+
+    "Emergency Services" "\"We'll be right there in four to six minutes.\""
+
+    "I glanced at the man outside. He was still collapsed on the ground, arm under his unbuttoned shirt."
+    "I could've sworn his lips were turning blue. Another sign of fentanyl overdose."
+
+    r an "(He's only going to get worse in that four to six minutes…!)"
+
+    r sus "\"Hey, I'm 99% certain what he overdosed on was heroin spiked with fentanyl. His lips are turning blue, too.\""
+    r "\"This police car carries Narcan. Should I administer it?\""
+
+    "Emergency Services" "\"Yes, but only if you can approach the patient safely.\""
+    "Emergency Services" "\"Administer one dose at most, no more.\""
+
+    r an "\"Got it. Thanks. Please hurry!\""
+
+    "The call ended."
+    "I glanced down the alley again. The silver car had long since left."
+
+    r sus "\"...\""
+
+    "No. It wasn't within my power to chase him down. The police would catch him."
+    "And I couldn't leave this man to die… just to chase my idea of justice."
+
+    r "(Right. Time to get out of the car.)"
+
+    "I watched the collapsed stranger warily, but he hadn't moved since I'd seen him fall."
+    "I opened the car door and cautiously creeped forward."
+
+    r fr "(He's still not moving… Guess it's okay.)"
+
+    "Crouching down, I hoisted the Narcan under his nose and sprayed."
+    "The man didn't even flinch; a true sign of unconsciousness. The wet nasal spray couldn't have felt good."
+    "Instead, he kept breathing steadily."
+    "I moved back to stand by the police car, just in case, but nothing happened."
+    "Out of the corner of my eye, I saw people in police uniforms emerge from the building."
+
+    r "\"Hey!\""
+
+    show anderson fr at centerpos with dissolve
+
+    "Anderson jogged back to me. He looked down at the standard issue medical pouch in my hand and opened his mouth."
+
+    r sus "\"Overdose. Ambulance told me to administer Narcan.\""
+    r "\"I saw a silver car leave the alley down there. Have the police caught him yet?\""
+
+    a an "\"No! He got out before we noticed.\""
+
+    "Guilt crashed over me."
+
+    r surprise "\"You didn't know…?\""
+
+    a sus "\"We found out, but too late. Another division is trying to catch him now.\""
+    a "\"It's not looking good.\""
+
+    "I should've called Anderson first thing…!"
+    "Or should I have? I wavered."
+    "If I'd cancelled my call to the ambulance, this guy might not have survived long enough."
+
+    r sus "(There would be no point in letting this guy die {i}and{/i} not going after Theodore.)"
+    r "(At the very least, I have to see this through to the end. Make sure this man is okay.)"
+
+    hide anderson
+
+    "Anderson waited to take me back to the station. They'd caught the other guy, at least. He still needed me to witness his face."
+    "The ambulance came shortly. I felt numb as I gave them the details of what I'd administered, and how long it had been since the man had fallen."
+    "The emergency personnel were quick, professional, and thorough. In two minutes, they were gone with the man."
+
+    "Emergency Services" "Don't worry, Ma'am. He has a very high chance of recovery. Thank you for administering the Narcan — that helped his body hang in there."
+
+    "I nodded."
+    "They left."
+
+
+    scene bg black with fade
+    pause(0.5)
+
+    "Only after Anderson drove me to the station did the reality of today sink in."
+
+    r sus "(I chose to help one man instead of trying to save countless more.)"
+    r "(There has to have been something I could've done… something to get Theodore behind bars and away from the people he was harming.)"
+
+    "I could tell myself I hadn't chased Theodore because I didn't know how to drive a police car."
+    "That I wasn't authorized to drive a police car, and would've gotten myself in trouble with the police department."
+    "That it wasn't my job to chase down active criminals when the police were on the job."
+    "That I thought the police already knew how to corner him."
+    "But all of those things were lies."
+    "At the end of the day, I'd valued this stranger's life over preventing future deaths."
+
+    r "(...)"
+    r an "(Why…? Why did I try to save this one person?)"
+    r sus "(What I've done today…)"
+    r "(... goes against everything I've worked for in years.)"
+
+    r "\"No…\""
+
+    jump post_raid
+
+
+# ######################################
+# REGULAR SCENE: Depressed library hours
+# ######################################
+
+label post_raid:
 
 
 
