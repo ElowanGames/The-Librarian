@@ -2149,6 +2149,7 @@ label post_raid:
 # #############################
 
     scene bg homeunlit with fade
+    pause(0.5)
 
     r fr "(Oh… looks like I can pick up my copy of Oathbringer now.)"
 
@@ -2163,6 +2164,162 @@ label post_raid:
     r sus "(I checked my waitlist position while in the backseat of a police car.)"
     r fr "\"...\""
     r "(Come back, my excitement for Oathbringer.)"
+
+
+
+# #################################
+# REGULAR SCENE: Dylan's conference
+# #################################
+
+    scene bg homeunlit with fade
+    pause(0.5)
+
+    "I rolled over in my bed, pulling the blankets over my head to block out the sunlight streaming in my window."
+
+    r sus "\"Mnrngngngn…\""
+
+    "Sunlight streaming in? That meant it was still morning."
+    "I curled deeper into the blankets. It was kind of cozy, being a blanket burrito."
+    "But… I couldn't go back to sleep."
+
+    r fr "\"Ugh…\""
+
+    "Eventually, I gave up and raised one hand in the direction of my phone, curling my fingers around empty air."
+    "Instead, I smacked my fingers into the edge of my glass nightstand and nearly broke a fingernail."
+
+    r an "\"Gah!\""
+
+    "Take two. I grabbed my phone successfully."
+
+    r sus "(Only 10:42 AM…)"
+    r "\"...\""
+    r fr "(I guess I'll go to his conference after all.)"
+    r "(Better than staying here with nothing to do but think…)"
+
+    "I stumbled out of bed and rifled through my dresser."
+    "Anything would do, as long as it was clean."
+
+
+
+    scene bg conferencehall with fade
+    pause(0.5)
+
+#    <fade in sfx people talking>
+
+    "Whoa… it's absolutely packed in here."
+    "I checked my phone. This room was supposed to be the one with the keynote speakers."
+    "Nobody was on the stage — instead, the room was packed with makeshift poster stands and people eagerly talking in small groups."
+    "The massive banner on the far side of the wall said APPLIED MACHINE LEARNING CONFERENCE, LOS ANGELES SUMMIT."
+
+    r sus "(Maybe I should've read up on computer science terminology before coming here.)"
+    r fr "(I wonder how beginner-friendly these people are.)"
+
+    "Oddly, despite how massive the crowd was, I didn't feel anxious. The atmosphere of the room reminded me of TED Talks I'd attended when I was a student."
+    "The place buzzed with quiet excitement."
+    "I glanced around the room, listening to people chatter. Listening to ideas being shared and connections being made."
+
+    r surprise "(How do I put it…?)"
+    r "(It's like everyone here is talking about contributing to human progress.)"
+    r fr "(... Maybe that's dramatic.)"
+
+    "I waded through the crowd and spotted a small group of people gathering around a poster."
+    "Craning my neck, I read the words in blocky letters at the top: RETROACTIVE REVIEW OF PREDICTIVE DATA ANALYTICS MODELS OF COVID-19 PANDEMIC."
+    r surprise "(Wow…)"
+
+    "Two young adults were standing by the poster, each talking to a different group. One gestured excitedly to a graph on their poster."
+
+    r "(I wonder if models like that affected the international response to the pandemic.)"
+
+    "I left that group and continued walking around, stopping at posters I found interesting."
+    "Some groups had a better understanding of presentation than others. Researchers with attractive posters tended to have bigger groups surrounding them."
+    "Some unfortunate researchers stood awkwardly next to their posters as visitors ignored them."
+    "I walked around, listening to some of the researchers speak. Most groups clearly intended to speak to professionals in computer science — some of the poster titles were completely unintelligible to me."
+
+    r sus "(A MODIFIED MAXIMUM RELEVANCE MINIMUM REDUNDANCY FEATURE SELECTION METHOD BASED ON TABU SEARCH FOR HUNTINGTON'S DISEASE MINING.)"
+    r "(Um… yeah. Those are definitely words.)"
+    r fr "\"...\""
+    r sus "(I'm pretty sure feature selection doesn't mean what I think it means here.)"
+
+    "Other groups, though, actually had readable titles."
+
+    r surprise "(MACHINE LEARNING APPLICATIONS IN SKIN CANCER PROGNOSIS AND PREDICTION. Nice.)"
+
+    "I shuffled around some people to get a closer look at that poster."
+    "Among the posters here, it wasn't particularly well-designed. Too many dark colors, hard to read."
+    "The poster next to it, though, had a large group of people surrounding it. That was why I'd had to squeeze past people."
+    "Curious, I tip-toed and tried to see what was so popular."
+
+    r "(DIAGNOSING CUTANEOUS DISORDERS AND SKIN CANCER WITH CONVOLUTIONAL NEURAL NETWORKS.)"
+
+    "That was when I noticed the mop of blonde hair next to it."
+
+    
+    show dylan sm at centerpos with dissolve
+
+    r surprise "(Oh! This must be Dylan's thesis.)"
+
+    "He was talking to a small group of older men and occasionally gesturing at the poster stand."
+    "He was so well-presented, his hair neatly styled, his outfit clearly pressed. I almost felt bad for not dressing up more."
+
+    r sus "(No, that doesn't make sense, Robin… he's presenting here. Of course he has to look professional.)"
+
+    "Presenting. I glanced at him."
+
+    d grin "\"—the importance of classifying cancer patients into high or low risk groups. Machine learning methods, though, are able to—\""
+
+    "I tried to inch closer, squinting at the words on his poster."
+
+    r surprise "(It's a nice poster, but why does the text on all of these have to be so small?)"
+    r fr "(I guess they didn't expect a crowd around them. If I was standing closer, it'd be fine.)"
+
+    "After a moment, I gave up and just started listening to what Dylan was saying."
+
+    r surprise "(Unexpectedly, he's a good speaker.)"
+
+    "Dylan was a bit stiff and shifted from foot to foot, but his words came out smoothly, as if he'd practiced them a thousand times."
+    "Whenever one of the men had a question, his answer was succinct and confident."
+
+    d fr "\"Of course, for models like these to be used in everyday clinical practice, they need to be accompanied by review from trained medical professionals. Outside of the legal—\""
+
+    show dylan surprise
+
+    "Dylan's eyes met mine, and he faltered."
+    "He immediately straightened up and looked back to the men he was talking to."
+
+    d surprise "\"—er— outside of the legal ramifications that would happen if we claimed to replace trained medical professionals…\""
+
+    "He continued speaking with them, but glanced in my direction now and then."
+    "He shifted from foot to foot again."
+
+    r fr "(Is he nervous? He's doing fine.)"
+    r sm "(Go Dylan!)"
+
+    show dylan sm
+
+    "I listened to him talk to the small group that had gathered around him. Luckily, it seemed like many of them were also unfamiliar with the industry jargon, so Dylan explained much of it to them."
+    "People left his presentation nodding, or smiling, or discussing his paper. But more people came than left, so in the end, I wasn't able to speak with him."
+
+    r fr "(Well, it's nice to see him succeeding at what he's doing.)"
+    r surprise "(I didn't realize he was so proficient at his work.)"
+    r fr "(It makes me feel like I should try harder to be a good librarian.)"
+    r sus "\"...\""
+    r fr "(I'll think about it.)"
+
+    "After a while, I waved to Dylan and left the conference."
+
+    r surprise "(I feel like I don't really know a lot about Dylan, but every time I see him, I learn a little more.)"
+
+    scene bg black with fade
+    pause(0.5)
+
+    r surprise "(That was nice.)"
+    r sm "(I… should go to these events more often.)"
+
+
+
+# ########################
+# EVENING: Post-conference
+# ########################
 
 
 
