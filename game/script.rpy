@@ -2463,11 +2463,349 @@ label post_raid:
 
 
 
+# ###################################
+# REGULAR SCENE: Kids and the library
+# ###################################
+
+    scene bg library with fade
+    pause(0.5)
+
+    "Teenager" "Thank you so much!"
+
+    r sm "\"No problem. Let me know if you need any more help.\""
+
+    "I walked back to the information desk with a smile on my face. Today was a good weekend day — plenty of people were coming in to relax with a book or two."
+    "I passed a table of teenagers working on math homework and talking in hushed voices."
+
+    r fr "(I wonder if Heather ever did restock on our disinfectants. Maybe I should go check while no one needs help around here?)"
+
+    show dylan fr at centerpos with dissolve
+
+    "As I approached my desk, I saw Dylan sitting at a table nearby, his back to me."
+
+    r sm "\"Heh.\""
+
+    "I slowed my pace, rolling my steps along the outsides of my soles so they were quiet against the carpet."
+    "Then I clapped my hands down on Dylan's shoulders."
+
+    d surprise "\"Gah!\""
+
+    r grin "\"Ahaha!\""
+    r sm "\"Good morning. What're you up to?\""
+
+    "Dylan rubbed his shoulders, glaring at me halfheartedly."
+
+    d fr "\"Just grading some exams.\""
+
+    r surprise "\"Oh, I think that's the first time I've seen you do…\""
+
+    "I trailed off, then looked away. I didn't want to remind him of the last time I'd seen him doing TA work — the Cassidy situation."
+    "Dylan must've known what I meant, but he chose to ignore it."
+
+    d "\"I don't spend a lot of time grading — there's just one midterm in this class. I'm almost done, anyway.\""
+
+    r fr "\"Oh, I see.\""
+
+    "I idly watched Dylan flip through the pages of an exam packet."
+    "Recently, it had become a normal thing for him to greet me at the library. We'd taken to talking several times a week."
+
+    "Kid" "Umm… miss?"
+
+    "I looked around to see no one."
+    "Then I looked down. A tiny girl at my side was clutching a piece of paper to her chest and staring up at me."
+
+    "Kid" "\"You have a nametag… do you work here?\""
+
+    r fr "\"Yes, I do. What can I help you with?\""
+
+    "I stared at the girl curiously. She started shaking."
+    "Dylan glanced over at us."
+
+    "Kid" "\"U-um… never mind.\""
+
+    d sm "\"Were you looking for a book?\""
+    d smirk "\"Don't mind how scary her face looks — the librarians here are actually very helpful.\""
+
+    show dylan sm 
+
+    "I opened my mouth to protest, but Dylan smiled at the girl, and she relaxed a little."
+
+    "Kid" "\"O-oh… okay.\""
+
+    r sus "(What the—)"
+
+    "The girl unfolded the piece of paper she was holding and started reading off it. Her voice was shaky."
+
+    "Kid" "\"I want to find… a book I read here… last week. It had a red cover. There was a dog…\""
+
+    "I glanced at Dylan, then tried for a smile. My face felt stiff, but I hoped it worked."
+
+    r grin "\"Do you remember where you found it?\""
+
+    "She shook her head and looked down like she was ashamed."
+
+    r sm "\"That's okay. Hmm, let's see. A red cover and a dog… Was it Clifford the Big Red Dog? Magic Treehouse?\""
+
+    "Kid" "\"Yes! Um! The first one!\""
+
+    r "\"Great. Let's go get the books now, then.\""
+
+    hide dylan
+
+    "I led her to the children's section and showed her the large shelf dedicated to the Clifford series."
+    "Despite her cautious expression, as soon as she saw them, she bounded towards the shelves and started pulling books out."
+
+    r "(Cute. Reminds me of me as a kid.)"
+    r fr "\"...\""
+    r sus "(Hopefully not too much like that.)"
+    r fr "(I wonder where her parents are.)"
+
+    show dylan fr at centerpos with dissolve
+
+    "I returned to my information desk, where Dylan had gone back to grading exams."
+    "Glancing around, I saw that my floor of the library was mostly empty, despite the activity downstairs and in the children's section."
+    "Since no one was around, I pulled out a chair and sat down across from Dylan."
+
+    r sus "\"... Do I have a scary face, Dylan?\""
+
+    show dylan grin
+
+    "Dylan looked over at me and started laughing."
+
+    r "\"I'm serious!\""
+
+    d grin "\"You…\""
+    d "\"Well, you do look intimidating with that stare of yours.\""
+
+    r "\"...\""
+
+    "I groaned and put my face in my hands."
+
+    r "\"My coworkers always tell me to smile more... I always thought it was just because I looked tired.\""
+
+    r "\"But I've actually been taking care of myself and sleeping more recently.\""
+    d sm "\"Well, that's a good thing, even if you still scare little kids.\""
+    r "\"Dylan!\""
+    "He chuckled again and set down his pen."
+
+    d fr "\"It will help if you smile more at the library visitors. Especially kids.\""
+
+    r fr "\"I know, but... in the past, I think I used to scare people with my smile.\""
+
+    d surprise "\"...\""
+
+    "The look of disbelief on his face was almost funny — one eyebrow furrowed, the other raised, his mouth slightly open in confusion."
+
+    d fr "\"Are you sure you weren't grimacing at them?\""
+
+    r an "\"Of course not!\""
+    r fr "\"...\""
+    r "\"I think.\""
+
+    d smirk "\"You think.\""
+    d "\"Well, I've seen you smile, and you look nice. Smile at visitors like that.\""
+
+    r frbl "\"O-Okay.\""
+
+    "I mumbled under my breath."
+    "Inexplicably, I felt my face warming up. I ducked my head down, hiding my face from Dylan."
+
+    show dylan frbl
+
+    "Dylan seemed to realize what he'd said just then, and looked away."
+    "We sat together in comfortable silence for a while. I laced my fingers together, tapping them on the desk."
+
+    r fr "\"...\""
+    r "\"I wonder where that girl's parents were.\""
+
+    show dylan fr
+
+    "Dylan glanced up at me, his expression concerned."
+
+    d fr "\"Is that something we should worry about?\""
+
+    r "\"Not necessarily. Sometimes, the parents are just browsing a different section of the library.\""
+    r "\"That kid wasn't too young. It wouldn't be weird for the parents to let her look for books herself.\""
+    r sus "\"Still… I worry sometimes.\""
+
+    r "(She looked so anxious. I know that's not always a sign of a bad home situation, but for a kid that young…)"
+
+    d sus "\"...\""
+    d fr "\"Is there any particular reason you're worried? Or is it more of a general concern?\""
 
 
 
+    menu: 
+    
+        "The library is a safe escape for some people.":
+            jump kid_escape
+    
+        "Just general concern.":
+            jump kid_general
 
 
+
+# IF: The library is a safe escape for some people.
+
+label kid_escape:
+
+    r sus "\"Some of the anxious kids come to the library to escape their home situation.\""
+    r "\"Anxiety and nervousness in kids that young is one sign. Behavioral issues are another. Like the kids who run around throwing books.\""
+    r fr "\"I know it's not always a sign of a bad home life, but… it makes me nervous.\""
+    r sus "\"I want to help them, if I can. But I can't really do that if they're scared of me.\""
+
+    "Dylan was looking at me with an unreadable expression."
+
+    r fr "\"What?\""
+
+    "Slowly, deliberately, trying not to scare me — he put one hand over mine."
+    "His fingers were long, long enough to wrap around my hands."
+
+    r surprisebl "(It feels warm…)"
+
+    d "\"You're a good person.\""
+
+    show dylan frbl
+
+    "Then he pulled his hand back and folded it gently into his lap."
+    "That jarred me back to my senses."
+
+    r fr "\"No, I'm not.\""
+
+    "I spread my fingers on the table, trying not to think about how much I wanted that warmth back."
+
+    r sus "\"I was just one of those kids myself. And the library saved me.\""
+
+    d surprise "\"From your home situation?\""
+
+    r fr "\"Yeah.\""
+    r "\"My mom was a junkie. I got out of the house as much as I could.\""
+    r sus "\"The local librarians became my second family. I guess they sort of knew what was happening... there were probably a lot of kids like me around.\""
+
+    show dylan fr
+
+    "I looked down at the table, afraid to see Dylan's expression. Was that too much information?"
+
+    r "\"Anyways, I used to be like that girl — terrified of adults, shaking in my shoes.\""
+    r fr "\"A lot of kids come to the library. After a while, you learn how to tell which ones have healthy families and which ones don't.\""
+    r sus "\"There isn't a whole lot we can do about it.\""
+    r "\"Once my coworker called CPS for a kid who opened up to her, but most never do. All we can do is be supportive and kind. Show them that not all adults are bad.\""
+
+    "Dylan nodded."
+    "I looked up, and my eyes met his."
+    "He was… listening. Not trying to give me his opinion. Not trying to tell me what to do. Just listening."
+    "For some reason, that made my insides feel incredibly warm."
+
+    d "\"Is—\""
+
+    r surprise "\"That's—\""
+
+    "We spoke at the same time."
+
+    d "\"...\""
+    r fr "\"...\""
+    r "\"You first.\""
+
+    d "\"...\""
+    d "\"Is that why you're a librarian now? To give back to the community?\""
+
+    r "\"Yeah.\""
+    r sus "\"... That sounds too nice, though. I mean, it's also a stable career. I'm not altruistic.\""
+    r "\"Also, I'm pretty sure I'm not helping kids like me. I scare away the ones that are anxious.\""
+
+    d sm "\"But you're patient and strict with the troublemakers, and you said that was also a symptom of a bad home.\""
+    d fr "\"I think you're doing well.\""
+
+    "I took a shaky breath."
+
+    r surprise "\"Thank you.\""
+
+    "I cleared my throat and met Dylan's eyes properly."
+
+    r sm "\"Thank you for validating my efforts. It's… nice to hear.\""
+
+    "He nodded."
+
+    d "\"What were you going to say?\""
+
+    r surprise "\"Uh…\""
+    r fr "(Oh, right.)
+
+    "I had almost forgotten—"
+
+    r "(I was thinking back to the time he seemed insecure about his own job. When I insinuated he might've been a bad teacher.)"
+    r "(I was going to say, that's why I don't think you could ever be a bad teacher. Because you're the kind that reaches out to your students when you're concerned about them.)"
+    r sus "(But I don't think I should bring up Cassidy.)"
+
+    "Especially because I just mentioned my mother had been a junkie."
+    "Someone like Dylan could easily put two and two together."
+
+    r fr "\"Hmm…\""
+    r "\"I forgot what I was going to say.\""
+    r "\"Probably wasn't important.\""
+
+    d sus "\"Oh. A shame.\""
+
+    show dylan fr
+
+    "I glanced around the library a bit. There was still no one on this section of the floor."
+
+    r "\"By the way, you've been coming by to my work a lot, but I never took you up on your offer to see you at work.\""
+
+    d sus "\"Hey, I come to the library all the time anyway.\""
+    d "\"...\""
+    d fr "\"Well… you've already seen me presenting at a conference. You're welcome to come to my discussion if you want, but I don't see how it would be much different for you.\""
+
+    r sm "\"I'll think about it. Friday afternoon, right?\""
+
+    d surprise "\"Yeah.\""
+
+    "I nodded. Then I got up from my seat."
+
+    r fr "\"See you there, then. I'm going to go check if that girl's parents came back for her.\""
+
+    d sm "\"Good luck.\""
+
+    jump post_kid
+
+
+
+# IF: Just general concern.
+
+label kid_general:
+
+    r fr "\"Just general concern.\""
+    r sus "\"... I'm going to go check on her in a bit, just in case.\""
+
+    d sm "\"That sounds good.\""
+
+    "We sat in comfortable silence for a while. I watched Dylan grade exams for a bit longer."
+
+    r surprise "(I wonder if Dylan was reading Oathbringer and I was standing behind him, would it still look like I'm reading a book on the job?)"
+    r fr "\"...\""
+    r "(No… I shouldn't think about reading Oathbringer at work…)"
+
+    r surprise "\"By the way, you've been coming by to my work a lot, but I never took you up on your offer to see you at work.\""
+
+    d sus "\"Hey, I come to the library all the time anyway.\""
+    d fr "\"...\""
+    d "\"Well… you've already seen me presenting at a conference. You're welcome to come to my discussion if you want, but I don't see how it would be much different for you.\""
+
+    r sm "\"I'll think about it. Friday afternoon, right?\""
+
+    d "\"Yeah.\""
+
+    "I nodded. Then I got up from my seat."
+
+    r fr "\"See you there, then. I'm going to go check if that girl's parents came back for her.\""
+
+    d sm "\"Good luck.\""
+
+    jump post_kid
+
+
+
+label post_kid:
 
 
 
