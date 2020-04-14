@@ -58,14 +58,14 @@ image bg black = "bg_black.png"
 
 ##### Declare characters used by this game. #####
 
-define r = Character("{b}Robin{/b}", image="robin", color="#000000")
-define d = Character("{b}Dylan{/b}", image="dylan", color="#000000")
-define a = Character("{b}Anderson{/b}", image="anderson", color="#000000")
+define r = Character("{b}Robin{/b}", image="robin", color="#FFFFFF")
+define d = Character("{b}Dylan{/b}", image="dylan", color="#FFFFFF")
+define a = Character("{b}Anderson{/b}", image="anderson", color="#FFFFFF")
 
-define m = Character("{b}A Man{/b}", image="dylan", color="#000000")
-define c = Character("{b}Cassidy{/b}", color="#000000")
-define u = Character("{b}Unknown Man{/b}", color="#000000")
-define h = Character("{b}Heather{/b}", color="#000000")
+define m = Character("{b}A Man{/b}", image="dylan", color="#FFFFFF")
+define c = Character("{b}Cassidy{/b}", color="#FFFFFF")
+define u = Character("{b}Unknown Man{/b}", color="#FFFFFF")
+define h = Character("{b}Heather{/b}", color="#FFFFFF")
 
 
 
@@ -2729,7 +2729,7 @@ label kid_escape:
     d "\"What were you going to say?\""
 
     r surprise "\"Uh…\""
-    r fr "(Oh, right.)
+    r fr "(Oh, right.)"
 
     "I had almost forgotten—"
 
