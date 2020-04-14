@@ -1408,6 +1408,32 @@ label post_cassidy:
 
 
 
+# #################
+# EVENING: Pre-raid
+# #################
+
+    scene bg homeunlit with fade
+    pause(0.5)
+
+    "The evenings after that, I spent working on preparations for Anderson's heroin ring hunt."
+    "It was back to serious mode. There was no time to spare."
+
+    scene bg homelit with dissolve
+
+    "I spent my evenings digging up information any way that I could — research, interviews, and social engineering."
+    "This heroin ring was, unbeknownst to their clients, spiking their heroin with the lethal fentanyl."
+    "Figures. The stronger they could claim their product was, the more fame they could gain in their early years."
+    "I sipped my tea with two hands, warming my fingers around the mug."
+    "While pretending to be a well-liked client, I'd found out that the heroin ring was also implicated with another major Silk Road group."
+    "A former member of that group had recently made the news for getting caught hiring assassinations on the dark web."
+
+    r sus "\"...\""
+    r "(I almost wish I hadn't found out about this.)"
+    r "(Why do all these shady groups have to be so buddy-buddy with each other? Making more work for me.)"
+
+    "I tried to blink the fatigue out of my eyes, then glanced at the clock. The hour hand was rapidly approaching midnight."
+
+    r fr "(Guess I'll make cup noodles again.)"
 
 
 
