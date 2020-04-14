@@ -223,8 +223,9 @@ style choice_button_text is button_text
 
 style choice_vbox:
     xalign 0.5
-    ypos 405
-    yanchor 0.5
+    yalign 0.55
+    #ypos 270
+    #yanchor 0.5
 
     spacing gui.choice_spacing
 
@@ -361,22 +362,25 @@ screen main_menu():
 
     add gui.main_menu_background
 
-    ## This empty frame darkens the main menu.
     frame:
-        pass
+        has hbox xalign 0.97 yalign 0.71
+        textbutton _("{b}    Start    {/b}  ") action Start() text_size 40 text_color "#FFE7BF" text_hover_color "#000000"
+        textbutton _("{b}      Load    {/b}  ") action ShowMenu("load") text_size 40 text_color "#FFE7BF" text_hover_color "000000"
+        textbutton _("      Settings    ") action ShowMenu("preferences") text_color "#FFE7BF" text_hover_color "#000000" text_size 40
+        textbutton _("      Credits      ") action ShowMenu("about") text_color "#FFE7BF" text_hover_color "#000000" text_size 40
 
     ## The use statement includes another screen inside this one. The actual
     ## contents of the main menu are in the navigation screen.
-    use navigation
+#    use navigation
 
-    if gui.show_name:
+#    if gui.show_name:
 
-        vbox:
-            text "[config.name!t]":
-                style "main_menu_title"
-
-            text "[config.version]":
-                style "main_menu_version"
+#        vbox:
+#            text "[config.name!t]":
+#                style "main_menu_title"
+#
+#            text "[config.version]":
+#                style "main_menu_version"
 
 
 style main_menu_frame is empty
@@ -386,26 +390,26 @@ style main_menu_title is main_menu_text
 style main_menu_version is main_menu_text
 
 style main_menu_frame:
-    xsize 420
+    xfill True
     yfill True
 
-    background "gui/overlay/main_menu.png"
+    background "gui/main_menu.png"
 
-style main_menu_vbox:
-    xalign 1.0
-    xoffset -30
-    xmaximum 1200
-    yalign 1.0
-    yoffset -30
+#style main_menu_vbox:
+#    xalign 1.0
+#    xoffset -30
+#    xmaximum 1200
+#    yalign 1.0
+#    yoffset -30
 
 style main_menu_text:
     properties gui.text_properties("main_menu", accent=True)
 
-style main_menu_title:
-    properties gui.text_properties("title")
+#style main_menu_title:
+#    properties gui.text_properties("title")
 
-style main_menu_version:
-    properties gui.text_properties("version")
+#style main_menu_version:
+#    properties gui.text_properties("version")
 
 
 ## Game Menu screen ############################################################
