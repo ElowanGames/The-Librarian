@@ -2336,10 +2336,139 @@ label post_raid:
 
 
 
+# ######################################
+# REGULAR SCENE: Library post-conference
+# ######################################
+
+    scene bg library with fade
+    pause(0.5)
+
+    r surprise "(Oh! I can pick up Oathbringer today.)"
+
+    "As soon as I got into work on Monday, I immediately went to get the book."
+    r an "(Oh god, I can't read it until lunch break. No!)"
+    "I fidgeted, wondering if I could get away with reading on the job."
+
+    r sus "(I mean… I work at a library… and no one comes here on Monday mornings…)"
+    r "(Ugh, but if Heather catches me…)"
+
+    "In the end, I decided not to read on the job. It took most of my willpower, though."
+    "Since there was still no one around, I helped acquisitions run some errands and restocked the shelves, then sat back at my desk."
+
+    r fr "\"...\""
+
+    "Glancing around at the library, I noticed there were only one or two people on my floor."
+    "I wanted to keep my mind busy. I turned to my monitor and thought about what I'd seen yesterday at Dylan's conference."
+
+    r "(There were a lot of words I didn't recognize. Some of them were in nearly every presentation.)"
+    r sus "(Neural networks, machine learning, deep learning… Are these all the same thing?)"
+    r fr "(Guess I'll read up on it.)"
+
+
+    scene bg library with fade
+    pause(0.5)
+
+    r sus "(Thirty minutes is not long enough to read Oathbringer.)"
+
+    "I tossed my empty sandwich wrapper in the trash and hefted the thousand-page book in my arms."
+    "It was brilliant. A masterpiece. And I could not wait until I could get home and read more."
+    "On my way back, I saw Dylan working at a desk by the sunny windows."
+
+    r surprise "\"Dylan!\""
+
+    show dylan surprise at centerpos with dissolve
+
+    "He turned, his expression perplexed. When he saw me, he smiled."
+
+    d surprise "\"Wow.\""
+    d smirk "\"This is the first time you've ever looked happy to see me. Are you starting to want me around?\""
+
+    r fr "\"Of course I do. What do you mean?\""
+
+    "I gave him a blank look. Did he really think I'd have put up with him for so long if I hadn't?"
+
+    d surprisebl "\"...\""
+    d "\"Er…\""
+    d frbl "\"I see.\""
+
+    "He looked down."
+    "Then he noticed the book I was clutching."
+
+    d surprise "\"Is that your copy of Oathbringer?\""
+
+    "I nodded, smiling widely."
+
+    r sm "\"Just got it this morning. I can't wait to go home and read it.\""
+
+    d "\"Wow, that took a while. Almost a month.\"" 
+    d smirk "\"You should consider reserving e-books through this library. I'm halfway through the book already.\""
+
+    r an "\"No spoilers!\""
+
+    "I shrieked quietly, clutching the book to my chest."
+    "Dylan laughed."
+
+    d "\"Fine, fine. Let me know when you get to the part where Kala—\""
+
+    r "\"No!\""
+
+    "Dylan broke into a smile so wide that I wanted to smile, too."
+    "Instead, I grabbed a chair and sat next to him."
+    r fr "(Still got five minutes on my lunch break.)"
+
+    r surprise "\"I saw you at the conference yesterday. You looked like you were in your element.\""
+    r sm "\"Pretty much everyone left your presentation talking about your research. It was amazing.\""
+    r "\"Is that what conferences are always like?\""
+
+    d frbl "\"...\""
+
+    "Dylan scratched the back of his neck bashfully."
+
+    d fr "\"Now, yeah.\""
+    d "\"I used to be really awkward. It took a long time for me to learn how to do those presentations.\""
+
+    r sm "\"Heh.\""
+    r smirk "\"I can picture that so easily.\""
+
+    d frbl "\"Hey!\""
+
+    r sm "\"You did a good job, though. I wouldn't have noticed.\""
+    r surprise "\"I mean, I noticed you were nervous, but it wasn't too bad.\""
+
+    d "\"...\""
+
+    r fr "\"A lot of the presentations there were hard to understand without industry knowledge. Yours was pretty easy to listen to, though.\""
+
+    d fr "\"Oh, right. Research conferences are always like that.\""
+    d "\"Don't worry too much about it. I'd be surprised if you understood much of anything without a computer science background.\""
+
+    "I nodded."
+
+    r surprise "\"I looked some of it up afterwards. I probably should've done that before going, but it hadn't occurred to me.\""
+
+    show dylan surprise
+
+    r fr "\"Anyways, it was a pretty big rabbit hole. I spent an hour reading up on the current research in machine learning, but I still feel like I don't know much.\""
+
+    "Dylan's eyes lit up."
+
+    d surprise "\"You read up on it on your own?\""
+    d gr "\"Don't worry about not getting it at first — it's hard to understand a lot of the research output without knowing some computer science theory and some linear algebra.\""
+
+    r surprise "\"How so?\""
+
+    d sm "\"Papers always assume a base level of familiarity with the field. How much do you know about computer programming?\""
+
+    r fr "\"Not much. I studied a bit back in the Tumblr era, when…\""
 
 
 
 
-    
+
+
+
+
+
+
 
     return
