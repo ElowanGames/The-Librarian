@@ -1100,6 +1100,312 @@ label post_cassidy:
 
 
 
+# #######
+# EVENING
+# #######
+
+    scene bg homelit with fade
+    pause(0.5)
+
+    r sus "(Today was a long day…)"
+
+    "I sighed. I hoped Dylan would let go of his questions."
+    "I wanted to put Cassidy's situation behind me… especially because my next raid with Anderson wasn't far off."
+    "For now, though, I had to continue working."
+
+
+# ############################################
+# REGULAR SCENE: Dylan visits the library more
+# ############################################
+
+    scene bg library with fade
+    pause(0.5)
+
+    "Another day of work, another day of children coughing on each other."
+
+    r sus "(Flu season is hitting pretty hard this month. I wonder if we should step up the disinfectants?)"
+    r "(I'll ask Heather about it later.)"
+
+    "I busied myself helping others find what they needed and running errands for the acquisitions team."
+    "I caught myself glancing around the second floor as I hurried back to my station."
+    "Since that day, Dylan had occasionally approached me at work. He only talked to me when I wasn't busy, and he never stayed long."
+    "He hadn't brought up Cassidy again. But I was always waiting for the question ⁠— I still felt that initial wariness as we talked about things like books, authors, and library work."
+
+    r sus "(Come to think of it, he always asks me questions. But I haven't really asked him any myself.)"
+    r fr "(I feel like I don't know anything about him. The other library regulars I talk to are much less of a mystery.)"
+    r sus "\"...\""
+    r fr "(Oh well. It's not like I need to get to know him.)"
+
+    "Like clockwork, that day Dylan found me manning the station with little to do again."
+
+    show dylan fr at centerpos with dissolve
+
+    d fr "\"Slow day again, huh?\""
+
+    r sus "\"Hello, Dylan.\""
+    r fr "\"Only because I've taken care of all the work I need to do. Can you say the same for yourself?\""
+
+    "He grimaced."
+
+    d sus "\"No.\""
+
+    r surprise "\"Oh.\""
+
+    "That was surprisingly straightforward of him."
+
+    r fr "\"Anything I can help you find?\""
+
+    "He stared at me, tilting his head just a little."
+    "It would've been a cute look on anyone else. On him, it looked like he was deciding if I was worth dissecting or not."
+
+    d "\"How much do you know about the current literature in deep learning?\""
+
+    "I remembered he'd been Cassidy's teaching assistant. Perhaps he was trying to be a better teacher?"
+
+    r surprise "\"Like guides for teachers? Research on active learning and stuff? We have several⁠—\""
+
+    d fr "\"Not that kind of learning. Deep learning in computer science.\""
+
+    "He saw my blank expression and continued."
+
+    d "\"Artificial intelligence. Neural networks. Things like that.\""
+
+    r surprise "\"Oh.\""
+    r fr "\"We have subscriptions to a bunch of research journals on artificial intelligence. A dozen or so — we can pull up more with neural networks and deep learning as keywords. I can run you a comprehensive search if you want.\""
+    r "\"We also have a couple of textbooks with neural networks in the title, but they're from several years ago, and research moves fast.\""
+    r "\"I can't say I'm familiar with deep learning myself, but I can find you anything you need.\""
+
+    d sus "\"...\""
+    d fr "\"Hmm… no, that's all right.\""
+
+    "I paused halfway through turning back to my monitor."
+
+    r sus "\"Pardon?\""
+
+    d "\"I don't need to find anything. I'm just hoping for a fresh perspective.\""
+
+    r fr "\"On what?\""
+
+    "The words left my mouth before I'd thought them through."
+
+    d sus "\"My thesis.\""
+
+    "Well, that was something I could help with."
+    "As a librarian, I was trained for this. I felt my competitive spirit rise."
+    "Dylan saw my curious expression and continued talking."
+
+    d "\"Part of my research involves building an artificial intelligence model that can use pictures to diagnose cutaneous disorders. Skin diseases, basically.\""
+    d fr "\"After a couple years, we've gotten down a model that works — we just need to fine-tune it to make sure it works with images of different quality.\""
+    d sus "\"But my ultimate goal was to create a system that can help doctors diagnose any physical issue. Skin issues, lung issues, heart disease, leg fractures, blood clots.\""
+    d fr "\"Obviously, a system like that is too ambitious for a PhD thesis.\""
+    d sus "\"I set it aside for a long time and figured I'd be able to use my thesis model to create models for other disorders, but… after working on finding just skin disorders, it turns out the framework we built can't be reused for much else.\""
+    d "\"Especially because most things can't be diagnosed with images.\""
+
+    "I nodded."
+
+    r fr "\"Or the pictures are useless.\""
+    r "\"Like for a broken bone. The AI would diagnose it as broken from the x-ray, but anyone who bothered to get an x-ray in the first place could see that with their own eyes.\""
+
+    d sm "\"Right.\""
+
+    "A faint smile appeared on Dylan's lips. It was the first time I'd seen him smile."
+    "The expression looked nice on him — he should smile more to lighten up that dour face."
+
+    d fr "\"Anyway, I've been thinking recently about how to make a system to help diagnose all illnesses.\"" 
+    d "\"There are other models out there for other illnesses. For example, there is a lot of very successful research in cancer detection. Models that are significantly better than mine.\""
+    d sus "\"But they all need different inputs. Like…\""
+
+    "He faltered, thinking about how to phrase his sentences."
+
+    d fr "\"A doctor might need to submit surface images for one model, CT scans for another model, and compression ultrasounds for a third. It'd be a huge hassle to run more than one at a time.\""
+    d sus "\"Also, obviously, I can't steal other people's work.\""
+    d "\"I can't even find some of it — some people inexplicably don't release their models with their research.\""
+
+    d "\"Is this too complicated for you?\""
+
+    "I bristled."
+    "His expression wasn't condescending, though. It was like the well-meaning concern of a teacher."
+
+    r sus "\"No.\""
+    r surprise "\"I don't think there's any way to get around those limitations, though. I'm sure some disorders have to be diagnosed through blood tests, and others through ultrasounds.\""
+
+    d "\"Yeah…\""
+
+    "Inexplicably, I found myself smiling."
+    "Dylan's ambitions were clear. Straightforward. Aimed at doing something good in the world."
+    "It shone through from behind his grim expressions."
+
+    r sm "\"If I were you, I would reorient my goal towards making something that patients can use on their own.\""
+    r surprise "\"If a doctor has the ability to run CT scans and ultrasounds on you, they probably already know what type of issue you have. Plus, running each scan is expensive.\""
+
+    "I'd gotten one for my lungs as a kid, when my mother was terrified that I had pneumonia. It cost five thousand dollars."
+
+    r fr "\"In terms of usefulness, it'd be much better to make something that patients can use themselves.\""
+    r sus "\"Something for people to use when they can't afford a doctor, or all the doctors don't open until the next morning.\""
+
+    "I thought about my mother, who would often think she was dying during withdrawal."
+    "She'd often scream that she could hear her heartbeats, that her head hurt, that she wanted to throw up."
+    "Always in agony. Never knowing which of them indicated she really needed to be hospitalized immediately."
+
+    r fr "\"For example, a model where you can check the symptoms you have. Then it tells you what you're probably suffering from.\""
+
+    d sus "\"How is that different from Googling your symptoms?\""
+    d smirk "\"Headache and cough — could be the flu, could be cancer.\""
+
+    "I snorted."
+
+    show dylan fr 
+
+    r surprise "\"You could enter your family's medical history and your past medical issues. Make the model take that into account.\""
+    r "\"You could make the symptoms much more detailed.\""
+    r "\"Let people upload pictures, or say the pain is happening where they fractured their wrist last year.\""
+    r fr "\"Whatever.\""
+    r "\"It doesn't have to be a symptoms checklist. But I think something that patients can use themselves without requiring expensive scans from doctors—\""
+    r sm "\"That would help a lot more people than an all-encompassing system that requires doctors to upload CT scans, blood tests, and ultrasounds just to use all the systems.\""
+
+    "Dylan considered it. He tapped his finger to his chin."
+
+    d "\"Well, it'd be a lot easier to make. And it probably would help patients…\""
+    d sus "\"It just seems so mundane. A simple tree model would be enough to build a symptoms checklist.\""
+    d fr "\"I also wonder if there are legal issues with telling people your model can diagnose their issues without a certified doctor.\""
+
+    r fr "\"Probably.\""
+    r surprise "\"Don't take what I said seriously. I'm not gonna be held responsible if your model kills someone.\""
+    r sm "\"Just giving you that fresh perspective you asked for.\""
+
+    d smirk "\"Thanks. I won't take your advice.\""
+
+    "I raised an eyebrow at him."
+
+    d sm "\"But you're right that the goal is more important than how to get there.\""
+    d "\"No point in building a model that requires ten different types of scans to diagnose anything.\""
+
+    r surprise "\"Well… glad to be of help?\""
+
+    "It felt wrong to be thanked by this guy. I felt my face growing warm."
+    "Shifting in my seat, I glanced around the room."
+
+    r "\"Is that what brings you to the library so often?\""
+    r fr "\" Your thesis, I mean.\""
+
+    "Dylan raised an eyebrow at me."
+
+    d surprise "\"'So often'? I only come a few times a week.\""
+
+    r surprise "\"That's more often than most people!\""
+
+    show dylan fr 
+
+    r fr "\"We don't get a lot of regulars from the university, either. I think most people prefer to use their on-campus libraries.\""
+
+    "Dylan shrugged, shifting from one foot to the other."
+
+    d sus "\"It can be distracting to run into my students when I'm trying to work.\""
+
+    r "\"Oh.\""
+    r surprise "\"Your students. You're a TA?\""
+
+    d "\"Yes, I am. I thought you overheard my conversation with Cassidy — that should've made it clear.\""
+
+    "I flushed. There it was, the elephant in the room."
+
+    r sus "\"Just let me be the normal library employee pretending to get to know one of our valued library regulars, okay?\""
+
+    "I raised my voice into a fake, extra-polite pitch."
+
+    r grin "\"Hi, I'm Robin. It's nice to meet you. What subject do you teach, Dylan?\""
+
+    "Dylan grimaced."
+
+    d "\"Don't do that.\""
+
+    r sm "\"Heh.\""
+
+    "He ignored my smile."
+
+    d fr "\"This quarter, I'm teaching Advanced Computer Networks.\""
+
+    r surprise "\"Uh…\""
+    r "\"Well, I can't say I know much about computer science, but that doesn't sound anything like your research.\""
+
+    d sus "\"It's really not. The school just assigns us to a course they need TAs for.\""
+    d "\"One of my friends had to teach a course in the chemistry department — she's a materials engineer.\""
+
+    r "\"Wow. I thought this was a top university?\""
+
+    d smirk "\"It is. That doesn't mean the quality of lecture is good.\""
+
+    "I chuckled."
+
+    r smirk "\"Are you talking about yourself?\""
+
+    d an "\"No!\""
+
+    "He paused, then took a deep breath."
+    "A second passed, then another."
+
+    d "\"No, I'm not. I'd like to think I'm… helpful.\""
+
+    "I wanted to jab back the way I usually did, but something in his voice stopped me."
+    "I opened my mouth, then closed it."
+
+    r surprise "(Is he… insecure?)"
+
+    "Dylan eyed me warily. Then he said something I'd never have expected to hear from him."
+
+    d sus "\"What, you want to find out?\""
+
+    r "\"Uh…\""
+
+    r fr "(No, not really?)"
+
+
+    if CASSIDY_ARRESTED == True:
+        "But there had to be something to him asking about it. Did he want to get me in a room with Cassidy's classmates?"
+        r sus "(Come to think of it, if he thinks I've been listening to Cassidy's conversations, he might think his other students are implicated, too.)"
+
+
+    if CASSIDY_ARRESTED == False:
+        "But there had to be something to him asking about it. Did he want to get me in a room with Cassidy?"
+        "That seemed strange."
+        r sus "(I really don't have any more business with her, but if I were him, I'd be a lot more suspicious of myself.)"
+        r "(Doesn't he think I'm stalking her or something?)"
+
+
+    r "(Though, given how much he seemed to care for his student, I'd expect him to be a lot more hostile to me if so…)"
+    r "(What is he thinking?)"
+
+    r surprise "\"What, are you inviting me to watch you teach?\""
+
+    d an "\"No!\""
+    d surprise "\"But you know when my discussions are. If you showed up, I … wouldn't kick you out.\""
+
+    r surprise "\"...\""
+    r sus "(Is this guy a tsundere?)"
+
+    "Maybe he just wanted someone to reassure him that he was a good teacher."
+    "In that case, I wasn't going to be the one to quell his insecurities for him."
+
+    r "\"I'm busy this Friday.\""
+
+    "Which was not a lie — Anderson was busting a major heroin ring that afternoon."
+
+    d sus "\"Suit yourself.\""
+
+    hide dylan
+
+    "The conversation didn't last much longer than that. Dylan bid me farewell and left."
+    "I swiveled back to my computer monitor, thinking back on our conversation."
+    "Did he really ask me to watch him lecture because of his own insecurities?"
+
+    r sus "(What a silly concern for him to have.)"
+
+    "I'd seen him reach out to his student when he was concerned about her. That alone made him a better teacher than most."
+
+    r "(If all teachers genuinely cared, how many more people would have grown up not to ruin their lives with addiction?)"
+
+    "There was no way he was a bad teacher. It was dumb to even entertain the thought."
+
 
 
 
