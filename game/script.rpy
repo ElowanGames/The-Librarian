@@ -2144,7 +2144,25 @@ label post_raid:
 
 
 
+# #############################
+# EVENING: Post-raid depression
+# #############################
 
+    scene bg homeunlit with fade
+
+    r fr "(Oh… looks like I can pick up my copy of Oathbringer now.)"
+
+    r sus "\"...\""
+
+    r fr "(Too much work…)"
+
+    "I tossed my phone onto my bed and flopped on top of it."
+    "As I stared up at my ceiling, I felt as blank as the white paint looked."
+
+    r "(I was so excited to read just yesterday.)"
+    r sus "(I checked my waitlist position while in the backseat of a police car.)"
+    r fr "\"...\""
+    r "(Come back, my excitement for Oathbringer.)"
 
 
 
