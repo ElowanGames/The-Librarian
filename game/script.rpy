@@ -65,6 +65,7 @@ define a = Character("{b}Anderson{/b}", image="anderson", color="#000000")
 define m = Character("{b}A Man{/b}", image="dylan", color="#000000")
 define c = Character("{b}Cassidy{/b}", color="#000000")
 define u = Character("{b}Unknown Man{/b}", color="#000000")
+define h = Character("{b}Heather{/b}", color="#000000")
 
 
 
@@ -1904,11 +1905,243 @@ label raid_protect:
     jump post_raid
 
 
+
 # ######################################
 # REGULAR SCENE: Depressed library hours
 # ######################################
 
 label post_raid:
+
+    scene bg library with fade
+    pause(0.5)
+
+    "It's Saturday."
+    "Why was it Saturday?"
+    "Why did I have to get out of bed on a Saturday?"
+    "I wanted to fall asleep and never wake up."
+
+    h "\"Robin?\""
+
+    "Like I deserved to."
+
+    h "\"ROBIN!\""
+
+    r sus "\"What?\""
+
+    h "\"I've been calling you forever!\""
+
+    "My boss narrowed her eyes at me."
+
+    h "\"Acquisitions got back to me on the missing children's series you asked for last week.\""
+    h "\"We'll be getting one copy of each that you requested, plus a few more that you should review. I want you to get back to me on whether we have space on our shelves for all of them, and which ones to cut if not.\""
+
+    r fr "\"Oh.\""
+    r "\"Okay.\""
+    r "\"No cutting. I'll make space for them elsewhere.\""
+
+    h "\"How?\""
+
+    "I shrugged."
+
+    r "I'll figure it out."
+
+    "Heather studied me. She looked concerned, but I knew her concern was primarily for the library, not for me."
+
+    h "\"Take your lunch break soon, will you? You look like you've been run ragged.\""
+
+    "For once, she was wrong."
+
+    r "\"Okay.\""
+
+    "As if lunch mattered."
+    "Still, if she ordered it, then I'd eat."
+
+
+    scene bg library with fade
+    pause(0.5)
+
+    "Anderson texted me after lunch. I glanced down at my phone, a spark of interest compelling me to pick it up."
+
+
+    if ADDICT_SAVED == False:
+        a sm "<both the culprits are being interrogated now. you did a really good job yesterday.>"
+        a "<i hate to say it, but without you we probably wouldn't have gotten T. good work>"
+        a fr "<by the way, the ambulance i called for the guy in the alley just got back to us. they were too late to help him, but the police department is helping his family with the funeral costs.>"
+        a surprise "<pretty rare of em lol>"
+        a sm "<don't beat yourself up about it, you stopped tons of people from suffering like him>"
+        a "<again, good work. let me know when you're up for the next target>"
+
+        "I stared at my phone for several minutes before dropping it back into my purse."
+
+        r sus "\"...\""
+        r "('Let me know when you're up for the next target'?)"
+        r an "(He {i}died{/i}.)"
+        r sus "(I didn't know he had a family.)"
+
+
+    if ADDICT_SAVED == True:
+        a sm "<the ambulance that picked that guy up just got back to us about him, they say he's gonna make it>"
+        a smirk "<he was really mad that his high got interrupted with narcan though lol>"
+        a sm "<anyway, just wanted to let you know that you did good helping him out>"
+        a an "<also, the one that got away is still being chased down. don't think we're gonna get him tbh>"
+        a "<really hope we do…>"
+
+        "I stared at my phone for several minutes before dropping it back into my purse."
+
+        r sus "\"...\""
+        r an "(Theodore got away.)"
+        r sus "(And for what? All so I could administer Narcan to some stranger who'd hate me for it?)"
+
+        "I knew that wasn't a fair way to look at it. He hadn't even been conscious. There was no high to interrupt, and it'd be worth saving a life any time."
+        "But I could've done something. I made the choice to let Theodore drive away."
+        "Against all of my principles."
+
+        r "\"...\""
+
+
+
+    "Several hours later, Dylan spotted me across the floor."
+
+    show dylan fr at centerpos with dissolve
+
+    r sus "(Here we go.)"
+
+    "As I expected, he approached the desk I was sitting at."
+
+    d fr "\"You look dour today.\""
+
+    r an "\"Shut it.\""
+    r sus "\"I'm not in the mood for small talk, Dylan.\""
+
+    d surprise "\"Uh ⁠— what happened to you? You look worse for wear than usual, and that's saying something.\""
+    d sus "\"Did something happen?\""
+
+    r fr "\"It's none of your business.\""
+
+    d "\"Are you sure? You don't look well… If there's anything you need⁠—\""
+
+    r an "\"I said. I was not. In the mood. For small talk.\""
+
+    "I snapped at him, my voice filled with hatred."
+    "It wasn't hatred at Dylan. Not really. Not like I would've expected weeks ago."
+    "It was hatred at myself. The weight of yesterday on my shoulders."
+
+    r sus "\"...\""
+    d sus "\"...\""
+
+    r fr "(... That's not an excuse to lash out at this random guy.)"
+
+    r "\"Sorry.\""
+    r "\"I'm going through a rough time.\""
+    r "\"Not a fair reason to yell at you.\""
+
+    d fr "\"It's okay.\""
+    d "\"I appreciate the apology.\""
+
+    r "(...)"
+    r "(And I appreciate that you don't claim to understand.)"
+
+    "I couldn't muster up the effort to say it out loud."
+
+    d "\"Should I leave, then?\""
+
+    r surprise "\"No.\""
+
+    "The answer came without thinking."
+    "I didn't want him to leave."
+    "His presence was… grounding."
+    "It made me feel like there was more to think about than yesterday."
+
+    d "\"...\""
+    d sus "\"Are you the kind of person who likes distractions?\""
+
+    r fr "\"Um… maybe?\""
+    r "\"I'm not sure.\""
+
+    "Dylan left, then came back pulling a chair over to my table."
+    "Just that simple act — someone actually wanting to sit with me — made me want to cry."
+    "Dylan started talking, unaware of my thoughts."
+
+    d surprise "\"I tried out the symptoms checklist model you suggested last time. It was annoying finding all the medical data I needed in the right format.\""
+    d fr "\"I found out psychologists and therapists use a similar program.\""
+    d sm "\"Which makes sense, in retrospect. I always wondered what they did with those pre-appointment surveys, where I checked off all my feelings and answered questions on those 1-5 scales.\""
+
+    "He said that so casually, with a smile on his lips."
+
+    r sus "(I wonder what kind of people he surrounds himself with, that seeing a therapist is such a normal thing.)"
+    r "(I think my mother would have screamed.)"
+
+    d fr "\"I don't know if the model works. It's hard to test it on my own.\""
+    d "\"I also haven't added anything interesting to it, like the family history idea. I'm guessing I'd just weigh certain responses as more likely, but I haven't tried it yet.\""
+
+    r fr "\"I'm surprised you put so much effort into it. It was just a passing thought.\""
+
+    "Dylan shrugged."
+
+    d "\"It sounded interesting, and I had some free time.\""
+
+    r "\"I see.\""
+
+    "Silence."
+    "I felt like I should say something, since he was going to the effort of conversing with me."
+
+    r "\"Been up to anything else interesting recently?\""
+
+    d sm "\"Hmm… Yeah.\""
+    d "\"I'm presenting my thesis at a research conference tomorrow.\""
+
+    r surprise "\"...\""
+    r "\"Wait, that's pretty important.\""
+    r "\"Is it a speech?\""
+
+    d fr "\"No.\""
+    d sm "\"It's at a banquet hall where everyone can set up their research posters and people walk around.\""
+    d "\"There are keynote speakers, but those are usually famous researchers.\""
+
+    r sm "\"Still, that's pretty amazing.\""
+
+    d "\"Want to come?\""
+
+    r fr "\"Um…\""
+
+    "To be honest, no. I didn't want to muster the energy to go anywhere. But the word research ignited a tiny flame in me — a small curiosity."
+    "Maybe it would be good to take my mind off things."
+
+    r surprise "\"Maybe.\""
+    r fr "\"Where is it?\""
+
+    d fr "\"It's in one of the halls of the city conference center. I'll forward you the information if you want it.\""
+
+    r surprise "\"Sure.\""
+
+    "Dylan handed me his phone, and I typed in my phone number before handing it back."
+    "A second later, my phone vibrated."
+
+    d sm "\"There. Just sent the text.\""
+
+    r fr "\"If I go, how will I find you?\""
+
+    "Dylan thought about it for a moment, then shrugged."
+
+    d smirk "\"I don't know. Take some time to browse everyone's work, I guess.\""
+
+    "I eyed him suspiciously and crossed my arms."
+
+    r sus "\"Well, if you don't see me tomorrow, you'll know why.\""
+
+    "Dylan chuckled."
+
+    d sm "\"Hey, your loss.\""
+
+    hide dylan
+
+    "He didn't stay much longer before bidding me farewell, wanting to rest for his conference tomorrow."
+
+    r "(Hmm… Maybe I'll go check it out tomorrow afternoon.)"
+
+    "Having something to look forward to was a strange feeling."
+    "It didn't take the weight off my shoulders, but I didn't dislike it."
+
 
 
 
