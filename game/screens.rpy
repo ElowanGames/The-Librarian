@@ -366,8 +366,10 @@ screen main_menu():
         has hbox xalign 0.97 yalign 0.71
         textbutton _("{b}    Start    {/b}  ") action Start() text_size 40 text_color "#FFE7BF" text_hover_color "#000000"
         textbutton _("{b}      Load    {/b}  ") action ShowMenu("load") text_size 40 text_color "#FFE7BF" text_hover_color "000000"
-        textbutton _("      Settings    ") action ShowMenu("preferences") text_color "#FFE7BF" text_hover_color "#000000" text_size 40
-        textbutton _("      Credits      ") action ShowMenu("about") text_color "#FFE7BF" text_hover_color "#000000" text_size 40
+        textbutton _("      Settings     ") action ShowMenu("preferences") text_color "#FFE7BF" text_hover_color "#000000" text_size 40
+#        textbutton _("      Credits      ") action ShowMenu("about") text_color "#FFE7BF" text_hover_color "#000000" text_size 40
+        textbutton _("       Quit        ") action Quit(confirm=False) text_color "#FFFFFF" text_hover_color "#000000" text_size 40
+
 
     ## The use statement includes another screen inside this one. The actual
     ## contents of the main menu are in the navigation screen.
