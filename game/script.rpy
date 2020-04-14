@@ -24,10 +24,14 @@ image dylan grin = "dylan_grin.png"
 image side dylan grin = "dylan_s_grin.png"
 image dylan sm = "dylan_smile.png"
 image side dylan sm = "dylan_s_smile.png"
+image dylan smbl = "dylan_smile_blush.png"
+image side dylan smbl = "dylan_s_smile_blush.png"
 image dylan smirk = "dylan_smirk.png"
 image side dylan smirk = "dylan_s_smirk.png"
 image dylan surprise = "dylan_surprise.png"
 image side dylan surprise = "dylan_s_surprise.png"
+image dylan surprisebl = "dylan_surprise_blush.png"
+image side dylan surprisebl = "dylan_s_surprise_blush.png"
 image dylan sus = "dylan_suspicious.png"
 image side dylan sus = "dylan_s_suspicious.png"
 
@@ -361,7 +365,7 @@ label start:
 
     m sm "\"Sure, it couldn't hurt.\""
 
-    hide m
+    hide dylan
 
     "I wrestled with my fatigue, hiding it behind my polite smile."
     "And so another day at the library passed peacefully."
@@ -2453,7 +2457,7 @@ label post_raid:
     "Dylan's eyes lit up."
 
     d surprise "\"You read up on it on your own?\""
-    d gr "\"Don't worry about not getting it at first — it's hard to understand a lot of the research output without knowing some computer science theory and some linear algebra.\""
+    d grin "\"Don't worry about not getting it at first — it's hard to understand a lot of the research output without knowing some computer science theory and some linear algebra.\""
 
     r surprise "\"How so?\""
 
@@ -3726,7 +3730,12 @@ label dylan_no_visit:
 label done_dylan_visit:
 
 
+    scene bg black with fade
+    pause(1.0)
 
-
+    "Thank you so much for playing Version 0.9 of Criminally Overdue."
+    "We are adding multiple endings into the game in our Version 1.0 patch, which will be out on April 16th, 2020."
+    "We apologize for the abrupt end to Robin and Dylan's story in this version, and we hope you'll be here for our Version 1.0 release!"
+    "<3"
 
     return

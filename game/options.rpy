@@ -12,18 +12,18 @@
 ##
 ## The _() surrounding the string marks it as eligible for translation.
 
-define config.name = _("The Librarian")
+define config.name = _("Criminally Overdue")
 
 
 ## Determines if the title given above is shown on the main menu screen. Set
 ## this to False to hide the title.
 
-define gui.show_name = True
+define gui.show_name = False
 
 
 ## The version of the game.
 
-define config.version = "0.1"
+define config.version = "0.9"
 
 
 ## Text that is placed on the game's about screen. Place the text between the
@@ -34,9 +34,12 @@ define gui.about = _p("""
                       
                       {b}Elowan{/b}: Writer, programmer
                       
+                      {b}Atkinson{/b}: Editor
+
                       {b}SteamedTurnips{/b}: Artist, GUI designer
 
-                      {b}Atkinson{/b}: Editor
+                      {b}Larry Jones{/b}: Sound designer
+
 """)
 
 
@@ -44,7 +47,7 @@ define gui.about = _p("""
 ## distribution. This must be ASCII-only, and must not contain spaces, colons,
 ## or semicolons.
 
-define build.name = "TheLibrarian"
+define build.name = "CriminallyOverdue"
 
 
 ## Sounds and music ############################################################
