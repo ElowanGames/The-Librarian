@@ -81,8 +81,8 @@ init:
 
     $ CASSIDY_ARRESTED = False
     $ ADDICT_SAVED = True
+    $ DYLAN_KISS = True
     
-    # $ owenaffection = 0               # if below 4 (out of 6) by final scene, choice to go with Owen doesn't appear
 
 
 
@@ -3085,6 +3085,645 @@ label bro_sure:
 
 
 label bro_done:
+
+
+
+# ##############################################################
+# REGULAR SCENE: Dylan brings Robin food during menstrual cramps
+# ##############################################################
+
+    scene bg homeunlit with fade
+    pause(0.5)
+
+    "My Sunday began when I woke up to my abdomen screaming in pain."
+    "I groaned and rolled over in bed, trying to ignore it. But a second later, I swung my legs over the side of the bed and climbed out."
+
+    r sus "(Don't want to get the sheets bloody…)"
+
+    "My period always heralded its arrival with cramps so bad I was certain my uterus was making an attempt to tie itself into knots."
+    "I stumbled across my studio to clean up."
+    "On the way, I grabbed medicine for the pain and a glass of water."
+
+    r "\"Ugh.\""
+
+    r "(Pretty sure I'm not supposed to take this without food.)"
+
+    "I thought about it for a second, then took the medicine anyway, chasing it down with several large gulps of water."
+    "It always took time to kick in. In the meantime, sporadic spasms would render me mostly immobile."
+    "Crawling back into my bed, I checked my phone."
+
+    r fr "(Only 9 AM…)"
+
+    "A few new messages at the top of my phone caught my eye."
+    "Some were from Dylan, sent this morning. The others were from Anderson, sent last night."
+
+    d sm "<How are you enjoying Oathbringer? I saw you reading it when you were on campus, but I forgot to ask how far you'd gotten.>"
+    d "<I finished it last week. It'd be nice to discuss it with you if you're done.>"
+
+    "I squinted at the message timestamp. Why was he awake at 8 AM on a Sunday?"
+    "I glanced up at where the book was sitting on my nightstand."
+    "I'd spent some time reading it last night. It felt nice to go back to reading in my free time, instead of pushing myself to hunt down dealers."
+    "Moving carefully to avoid the cramps flaring up, I typed a response back to him, my hands shaking."
+
+    r surprise "<i'm like 3/4ths through the book, i think king t is gonna end up betraying the new alliance.>"
+    r sus "<wish i could finish it today but prob can't. im bedridden today, gonna try and sleep until it's over>"
+
+    "I glanced at the notifications labeled ANDERSON, set my phone down on my nightstand, then curled back into my blankets."
+
+    r fr "(I don't want to deal with those ones right now…)"
+
+    "My phone vibrated less than a minute later, though."
+    "I groaned as I reached a hand out of my blanket burrito to grab it."
+
+    d surprise "<Bedridden? Did something happen?>"
+
+    r sus "<yeah it's just period cramps fucking me up really bad>"
+
+    "I paused with my finger over the send button. Was that too much information?"
+
+    r "(I'm too tired to second-guess myself right now…)"
+
+    "I hit the send button and wrapped my blankets back around me, this time with my phone in my hands."
+
+    r "<it's hard to get out of bed and move when they're bad, but it's nothing unexpected>"
+
+    d fr "<That sounds rough… Will you be able to eat and drink water if you can't move from your bed today?>"
+
+    r "<i wasn't really planning on eating>"
+
+    d surprise "<For the whole day?>"
+
+    r "<yeah, no food left>"
+
+    d sus "<That seems like it would make you feel even weaker. It's really important to eat, especially if you're already bedridden.>"
+
+    r fr "\"Well, not like I can do much about it now.\""
+    "I mumbled aloud."
+    "My phone vibrated with a new message before I could respond."
+
+    d fr "<Do you want me to bring you food?>"
+
+    "I hesitated."
+
+    d fr "<I was just about to make breakfast. If you want eggs and potatoes, I can bring some over.>"
+
+
+    menu: 
+    
+        "That's really kind of you. Are you sure?":
+            jump dylan_visit
+    
+        "Is that your ploy to find out where I live?":
+            jump dylan_no_visit
+
+
+
+# IF: "That's really kind of you. Are you sure?"
+
+label dylan_visit:
+
+    $ DYLAN_KISS = True
+
+    r surprise "<that's really kind of you>"
+    r fr "<are you sure?>"
+
+    "I waited a little longer before I received his message this time. The vibration was a little reassuring."
+
+    d fr "<Yeah. It's really important that you eat when you're already weak. It'll take me 20 minutes to cook, then more to drive over. Where is your place?>"
+
+    "I texted him my address."
+
+    d "<Maps says it's ten minutes from my place. Be there in 30-35 min.>"
+
+    r sm "<thank you, i appreciate you>"
+
+    "I hesitated, then hit the send button without thinking too much about it."
+    "There was a pause."
+
+    r frbl "(Oh god, was that weird?)"
+
+    "I stuffed my face into my pillow. I was too tired to overthink something this mundane."
+    "A minute later, my phone vibrated."
+
+    d sm "<No problem.>"
+
+    "I sighed with relief."
+    "With that conversation over, I glanced at my phone's other notifications."
+    "I didn't really want to deal with Anderson right now, but I was already wide awake. I reluctantly clicked on the messages."
+
+    a surprise "<hey, you haven't really been that involved with arrests recently so i want to fill you in on what's happening this week>"
+    a sus "<i'm gonna be part of a pretty big arrest on wednesday. it's for a guy with a couple of homicide charges against him. not really your usual forte, but i figured you should know because the arrest is happening close to your workplace>"
+
+
+    "I tensed up, which was a mistake, because my cramps immediately flared up again."
+
+    r sus "\"Ow…!\""
+
+    "I took several shallow breaths, gasping through the pain."
+    "Black spots danced in my vision. I dropped my phone and tried to relax. Breathe. Breathe…"
+    "After what felt like minutes later, the pain finally subsided to a low rumble."
+
+    r sus "\"Ugh…\""
+
+    "Sweat had beaded up on my forehead and trickled down into my pillow."
+    "I picked up my phone again, trying to ignore the dampness of my pillow and pain in my abdomen."
+
+    a fr "<it's the old building right next to your library>"
+    a sus "<we're gonna smoke him out, figuratively>"
+    a "<the bosses think it'll go fine but i'm sus because arson is in his list of charges. don't want him to endanger any civilians before he gets arrested…>"
+    a an "<anyway, this isn't public knowledge so you can't tell your coworkers to be on alert, but you should know at least>"
+    a "<took us a while to find out enough info to smoke him out, he put some effort into hiding>"
+    a fr "<i still think you'd be able to do good if you joined our force and helped with the info team, you find stuff faster than any two of em combined>"
+
+    "I glanced over his messages one more time before responding."
+
+    r fr "<thanks for telling me>"
+    r sus "<i don't think i could do anything about that arrest anyway, but i'll stay on alert>"
+
+    "I ignored his implicit question about joining the police and set my phone back on my nightstand."
+
+    r "(Ugh…)"
+
+    "I rolled over and tried to fall back asleep."
+
+
+    
+    scene bg homeunlit with fade
+    pause(0.5)
+
+    "I was woken up by two things this time: my phone ringing, and my abdomen screaming."
+
+    r an "(Oh god. Ow. Ow.)"
+
+    "When I got cramps this bad, it was always better to lay down straight and stretch, rather than curl myself into a ball. But it was always tempting to curl up."
+    "I took a minute to try to relax my body."
+    "My phone's ringtone slowly faded into silence as my face beaded with sweat."
+    "Eventually, the cramping did calm down."
+
+    r surprise "(Phew…)"
+    r sus "(It's not as bad now that the meds have kicked in, but it still sucks.)"
+
+    "I checked my phone, then bolted upright in bed."
+    "<1 missed call from: DYLAN>"
+
+    r surprise "(Oh fuck, I overslept!)"
+
+    "I punched in a new call back to him as I scrambled to my door, nearly tripping over my blanket as my feet dragged it to the floor." 
+    "He answered the call just as I opened my front door."
+
+    
+    show dylan fr at centerpos with dissolve
+
+    d fr "\"Hello.\""
+
+    r "\"Sorry I missed your call, I fell back asleep—\""
+
+    "Dylan was standing outside my apartment with a large lunch box in his hands."
+    "Seeing him standing there, his hair tousled, wearing a nice sweater and jeans, I realized I was still in my pajama shirt and old shorts."
+    "I froze."
+
+    d sm "\"Don't worry about it. I'm glad I caught you before I left.\""
+
+    "He held out the lunch box to me."
+    "Through the glass lid, I could see he'd brought me an assortment of scrambled eggs, fried potatoes laden with spices, sausages."
+
+    r surprise "(Wow. I can't remember the last time I ate a home-cooked meal like this…)"
+
+    "I took the lunch box with both hands, carefully holding it as if it were a treasure."
+
+    r sm "\"Thank you. I… really appreciate it.\""
+    r grin "\"Also, you're a good cook.\""
+
+    "Dylan chuckled."
+
+    d smirk "Say that after you've eaten it."
+
+    "I nodded."
+
+    r surprise "\"Do you want to come in?\""
+
+    d surprisebl "\"Er…\""
+    d fr "\"Are you sure? I don't want to impose on you if you're sick.\""
+
+    r sm "\"Yeah, it's fine. You came all this way and made me lunch — it'd be weird not to at least make tea for you.\""
+    r surprise "\"If you want to, I mean.\""
+
+    d sm "\"In that case, sure. Thanks.\""
+
+    r sm "\"Mhmm. Sorry about the mess.\""
+
+    
+    scene bg homeunlit with fade
+    pause(0.5)
+
+    show dylan fr at centerpos with dissolve
+
+    "I closed the door behind Dylan and went to the kitchen to make tea."
+    "He glanced around the room — it was really just one room, a studio apartment — and ended up sitting at my computer desk, the only chair in the place."
+
+    r fr "\"Do you like milk and honey in your tea? It's earl grey.\""
+
+    d fr "\"I can't say I've ever tried either way.\""
+
+    r sm "\"I'll add it, then.\""
+
+    d sm "\"Thanks.\""
+
+    "I carefully measured out tea leaves, poured hot water over them, filtered them out, and added honey and milk."
+    "A few moments later, I brought the two cups over to my desk. Dylan watched as I set it down."
+
+    d smirk "\"That looked really complicated.\""
+    d surprise "\"I'm surprised you have everything you need to make tea, but don't have food to eat.\""
+
+    r smirk "\"Tea is important.\""
+
+    d smirk "\"... Food isn't?\""
+
+    "I laughed and sat down on my bed, opening his lunchbox."
+
+    r sm "\"Food doesn't keep as long, that's all. I have to keep buying it, and, well, I was supposed to make my grocery run today…\""
+
+    d fr "\"Ah, that makes sense.\""
+
+    
+    hide dylan
+
+    "He sipped his tea as we chatted."
+    "As we eased into conversation, it became easier for me to stop thinking about the pain in my abdomen."
+    "Dylan hadn't liked the interactions between two of the characters in Oathbringer, and found the tension between them contrived."
+
+    show dylan an at centerpos with dissolve
+
+    d an "\"I mean, if he had a problem with her accepting knighthood, why not say something to her about it?\""
+    d "\"I understand if he was shocked at the time, but seven chapters later, he's still stewing in silence.\""
+    d "\"At that point, he should have decided if he either wants to give up the relationship or work through his feelings with her.\""
+    d smirk "\"Instead, he's just moping around and taking it out on her passive-aggressively.\""
+
+    show dylan fr
+
+    r fr "\"Well, it's obviously not healthy, but I can see why he's doing it.\""
+    r "\"It's not unrealistic for Sanderson to portray him like that.\""
+    r "\"If you look at his past interactions, he's never handled conflict well. He's never learned how to communicate when he's upset.\""
+    r an "\"I don't think this is contrived at all — It's perfectly in line with how he thinks.\""
+    r grin "\"This might be an opportunity for him to learn, if he can overcome that.\""
+
+    d fr "\"Hmm…\""
+    d sus "\"I don't want to say anything more on that. It'd be a spoiler.\""
+
+    r surprise "\"No spoilers!\""
+
+    show dylan grin
+
+    "Dylan chuckled."
+    "We got into heated debates about the story in Oathbringer, the character interactions, our theories about which side characters would end up being crucial to the in-universe alliance."
+    "As we talked, I continued eating the food Dylan had brought me."
+    "It was delicious."
+
+    r grin "(Is it because he's a good cook, or is it because I know he made this for me?)"
+
+    "Several times, I had to cover my mouth while talking, because I was still eating. I didn't want to stop. In a good way, for once."
+    "The conversation eventually shifted to work."
+
+    r surprise "\"Do you think, if I used your illness-diagnosing AI, it would tell me I was sick because of my period?\""
+    r "\"Or would it tell me I have a kidney stone?\""
+
+    "Dylan laughed."
+
+    show dylan fr 
+
+    "But then a thoughtful expression crossed his face, and he tapped his finger to his chin."
+
+    d sm "\"Good question, actually. Do you want to try it out?\""
+
+    r sm "\"Sure.\""
+
+    "Dylan brought his laptop out from his bag and set it on the table."
+    "I leaned forward and put his empty lunch box on my desk, but it was hard to see his screen from where I was sitting on the bed."
+
+    r surprise "\"Come sit here — I can't see.\""
+
+    "I patted the bed next to me."
+
+    d frbl "\"...\""
+    d "\"Um. Sure.\""
+
+    "I smiled as he fumbled with his laptop."
+
+    r grin "\"Thank you for the food, by the way. It was delicious. And I appreciate you bringing it all the way here for me.\""
+
+    d sm "\"No problem.\""
+
+    show dylan surprisebl
+
+    "He sat down next to me, and I leaned over to see what was on his screen."
+    "Only then did I realize how close we were — in my apartment, on my bed."
+
+    r surprisebl "\"...\""
+
+    show dylan frbl
+
+    "I cleared my throat, trying to ignore the warmth in my face."
+
+    r frbl "\"So what do I have to do?\""
+
+    d fr "\"It's pretty simple. You mentioned a symptoms checklist last time, so I modeled it after that.\""
+    d "\"See these dropdowns? Just open the ones that you think you have symptoms for, and check the boxes.\""
+    d "\"Then hit the Next button at the bottom.\""
+
+    r surprise "\"Wait, that's it?\""
+    r fr "\"Is this actually artificial intelligence, or just a program with a bunch of 'if symptom, then illness' code?\""
+
+    d sus "\"The latter, with a weighting system added for nuance.\""
+    d fr "\"It's not artificial intelligence in the true sense of the word. There's no training or modeling involved.\""
+    d "\"I did say it would be a simple model when you suggested it.\""
+
+    "Dylan paused."
+
+    d surprise "\"Wait a minute. I thought you didn't know anything about computer programming?\""
+    d sus "\"How did you know that?\""
+
+    "I looked away."
+
+    r fr "\"Recently, I've spent some time reading up on artificial intelligence and machine learning.\""
+    r sus "\"I still don't know much about it. There's more math involved than I thought, and it's not easy to grasp from the beginning.\"" 
+    r fr "\"But, well, now I know the difference between machine learning and regular software, I guess.\""
+
+    d surprise "\"...\""
+    d "\"You looked it up on your own? And spent your free time reading about machine learning?\""
+
+
+    r fr "\"Yeah.\""
+
+    d grin "\"Wow.\""
+    d "\"Color me impressed.\""
+
+    r frbl "\"Th… thanks.\""
+
+    "My stomach was doing the little flips again."
+    "But it was kind of nice. Like a fluttery feeling. I tried to pay attention to that instead of the rumble of pain from my cramps."
+    "Reaching over Dylan's lap to click the symptoms on his laptop, I opened every dropdown to see what options he'd added to the program."
+    "Then I clicked the Suggestions button."
+
+    d surprisebl "\"...\""
+
+    r surprise "\"Whoa. \'Have you consumed 8 or more cups of water each day this week?\' \'On average, how many minutes a day have you walked this week?\'\""
+    r fr "\"Did you add these questions yourself?\""
+
+    d frbl "\"...\""
+
+    r "\"Dylan?\""
+
+    "I turned to look at him."
+
+    d "\"Um. Yeah, I did. That's the weighting system.\""
+
+    "Then I realized how close he was, how stiff his posture was, and how he was biting his lip—"
+
+    r fr "(Oh.)"
+    r frbl "(Oh!)"
+    r "(I've been typing on his keyboard… in his lap…)"
+
+    "I yanked my hands back and set them between us."
+    "My fingers curled up anxiously, grabbing small fistfuls of the sheets as they moved."
+
+    r frbl "\"S-Sorry.\""
+
+    "I met his eyes."
+    "Dylan's cheeks were flushed pink. Some part in the back of my brain noted that he blushed a lot."
+
+    r frbl "\"Does that... bother you?\""
+
+    "He took a short breath and looked away."
+
+    d smirk "\"In a different way than you think.\""
+
+    show dylan frbl
+
+    r "(No, I was thinking that.)"
+
+    "I hesitated. His hand was right next to mine, on the blankets."
+    "Before I could think too much about it, I reached out and put a hand over his."
+    "It was just as warm as I'd remembered."
+
+    d smirk "\"Robin.\""
+
+    show dylan frbl
+    "His voice was cautious. But his voice caught in his throat."
+    "I looked up at him, my expression pleading."
+    "When our eyes met, he shifted in his seat."
+
+    r surprisebl "\"Is this bad?\""
+
+    d "\"...\""
+
+    "Discouraged by his reaction, I tried to move my hand off his. But he turned his palm up and laced his fingers with mine before I pulled away."
+
+    d sus "\"It's not that.\""
+    d frbl "\"I don't want to take advantage of you when you're feeling weak.\""
+
+    r surprise "(Wait, what?)"
+
+    "I furrowed my brows."
+
+    r an "\"Er… wait. I have period cramps, not a hangover.\""
+    r surprisebl "\"You're not taking advantage of me.\""
+
+    d "\"...\""
+    d smirk "\"Fair enough.\""
+
+    "He brushed the hair out of my forehead and tucked it behind my ear."
+
+    show dylan frbl 
+
+    r frbl "\"...\""
+
+    
+    scene bg black with fade
+    pause(0.5)
+
+    "I closed my eyes."
+    "I felt his breath close to mine."
+    "His momentary hesitation felt like such a tender gesture, at odds with the way my heart was pounding."
+    "The warmth of his lips followed soon after."
+
+    
+    scene bg homeunlit with fade
+    pause(0.5)
+
+    show dylan frbl at centerpos with dissolve
+
+    "I studied Dylan's face. He was flushed completely pink."
+    "But he bit his lip. He looked conflicted."
+    "I scooted closer to him and cautiously wrapped my arms around him."
+
+    r frbl "\"It's all right. You don't have to push yourself.\""
+
+    "He breathed out a sigh of relief and put an arm around me, pulling me closer to him."
+
+    d "\"... Thanks.\""
+
+    "My ear was pressed to his chest. I could hear his heartbeat fluttering."
+
+    r surprisebl "(It's going faster than mine…)"
+
+    "We stayed there like that for a while. I closed my eyes, enjoying his warmth. It felt surreal."
+    "It was hard to believe I'd been curled up in bed staving off the pain of cramps just an hour earlier."
+
+    d fr "\"I don't want to sound like I'm turning you down.\""
+
+    r surprise "Hm?"
+
+    d frbl "\"I…\""
+
+    "Dylan cleared his throat nervously."
+
+    d "\"I do want you. Just… I'd rather take it slowly. Get to know you a little more, spend more time with you.\""
+    d smirk "\"Also, I still feel bad that you're in pain right now.\""
+
+    r surprise "\"It's not so painful when we're like this. Personally, I think my brain short-circuited.\""
+
+    show dylan grin
+
+    "Dylan chuckled."
+    "We stayed like that for a while longer, enjoying each other's company."
+
+    show dylan surprisebl 
+
+    "Eventually, I wriggled out of his hug and reached for his laptop again. Dylan's sudden blush was cute — I grinned, which only made him blush more."
+    "But I didn't want to make him uncomfortable, so I pulled his computer into my lap instead."
+
+    show dylan fr 
+
+    r sm "\"Make a guess. You think it'll show menstrual cramps as the answer?\""
+
+    "Dylan peered at the screen as I hovered the Submit button."
+
+    d sm "\"Yeah. I'm going to bet on my own program being right.\""
+
+    r smirk "\"Let's find out.\""
+
+    "I clicked the Submit button. It took several seconds for the screen to refresh."
+
+    r fr "\"\'1) Menstrual cramps. 2) Food poisoning. 3) Kidney stone.\'\""
+    r surprise "Wow. It was right."
+
+    d grin "\"Nice!\""
+    d smirk "\"I don't know how I feel about kidney stones being up there. Maybe I need to tweak the weights again.\""
+
+    "I laughed."
+
+    hide dylan
+
+    "Eventually, Dylan needed to leave to finish grading exams."
+
+    r surprisebl "(That's probably for the best — I haven't done anything productive all day.)"
+
+    "I washed his lunchbox and handed it to him as he was putting on his shoes at the door."
+
+    r grin "\"Thanks again for bringing me lunch.\""
+
+    show dylan sm at centerpos with dissolve
+
+    d sm "\"Don't worry about it. I'm glad you liked it.\""
+
+    "A moment of silence passed between us. Dylan was biting his lip again."
+
+    d frbl "\"Uhm… Could you come here for a second?\""
+
+    r smirk "(Oh, he decided to say it after all.)"
+    r smbl "(I feel like I'm learning how to read his expressions, little by little.)"
+
+    "I took a step towards him. Dylan ducked down and kissed my forehead."
+
+    show dylan smbl
+
+    r surprise "(His face is bright red.)"
+    r smbl "(Cute.)"
+
+    d surprisebl "\"OkayI'mgoingnow—\""
+
+    "He nearly ran into the door in his hurry to turn around. This time, I laughed."
+
+    r smbl "\"Have a safe trip home.\""
+
+    jump done_dylan_visit
+
+
+
+
+# ELSE IF "Is that your ploy to find out where I live?"
+
+label dylan_no_visit:
+
+    $ DYLAN_KISS = False
+
+    r fr "<is that your ploy to find out where i live?>"
+
+    d surprise "<Ah.>"
+    d "<I didn't realize that would make you uncomfortable.>"
+    d fr "<That makes sense. Sorry about that.>"
+    d "<You should ask another friend, or order delivery. Just make sure you eat something today.>"
+
+    "I hesitated."
+
+    r sus "(I'd actually just been meaning to tease him…)"
+
+    "But thinking about it now, it did make me feel more comfortable not to share my address with anyone, even him."
+
+    r "(Maybe I'm paranoid. I don't want anyone to know where I live, though.)"
+
+    "I moved to text him back."
+
+    r sm "<thanks>"
+    r "<and thank you for asking anyway, it was very considerate of you to offer>"
+
+    "His response was almost immediate."
+
+    d sm "<No problem. I hope you feel better soon.>"
+
+    "I glanced at my phone's other notifications."
+    "I didn't really want to deal with Anderson right now, but I was already wide awake. I reluctantly clicked on the messages."
+
+    a surprise "<hey, you haven't really been that involved with arrests recently so i want to fill you in on what's happening this week>"
+    a an "<i'm gonna be part of a pretty big arrest on wednesday. it's for a guy with a couple of homicide charges against him. not really your usual forte, but i figured you should know because the arrest is happening close to your workplace>"
+
+    "I tensed up, which was a mistake, because my cramps immediately flared up again."
+
+    r an "\"Ow…!\""
+
+
+    "I took several shallow breaths, gasping through the pain."
+    "Black spots danced in my vision. I dropped my phone and tried to relax. Breathe. Breathe…"
+    "After what felt like minutes later, the pain finally subsided to a low rumble."
+
+    r sus "\"Ugh…\""
+
+    "Sweat had beaded up on my forehead and trickled down into my pillow."
+    "I picked up my phone again, trying to ignore the dampness of my pillow and pain in my abdomen."
+
+    a fr "<it's the old building right next to your library>"
+    a sus "<we're gonna smoke him out, figuratively>"
+    a "<the bosses think it'll go fine but i'm sus because arson is in his list of charges. don't want him to endanger any civilians before he gets arrested…>"
+    a an "<anyway, this isn't public knowledge so you can't tell your coworkers to be on alert, but you should know at least>"
+    a "<took us a while to find out enough info to smoke him out, he put some effort into hiding>"
+    a fr "<i still think you'd be able to do good if you joined our force and helped with the info team, you find stuff faster than any two of em combined>"
+
+    "I glanced over his messages one more time before responding."
+
+    r fr "<thanks for telling me>"
+    r sus "<i don't think i could do anything about that arrest anyway, but i'll stay on alert>"
+
+    "I ignored his implicit question about joining the police and set my phone back on my nightstand."
+
+    r "(Ugh…)"
+
+    "I rolled over and tried to fall back asleep."
+
+    jump done_dylan_visit
+
+
+
+label done_dylan_visit:
 
 
 
