@@ -2321,7 +2321,25 @@ label post_raid:
 # EVENING: Post-conference
 # ########################
 
+    scene bg homeunlit with fade
+    pause(0.5)
+
+    r fr "(Oh. I have free time again.)"
+    r "\"...\""
+    r "(What an unpleasant feeling.)"
+
+    "I looked down at my phone, and the single text I'd gotten from Dylan about the location of the conference."
+
+    r surprise "(I suppose… it… wouldn't be weird to text him about today, right?)"
+    r fr "(Just something saying he did a good job, or I felt like I learned a lot.)"
+    r "(... Yeah, I'll do that.)"
 
 
+
+
+
+
+
+    
 
     return
