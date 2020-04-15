@@ -110,9 +110,9 @@ label start:
     "That's all I need to know."
 
     scene bg streetnight with fade
+    pause(0.5)
     
-    # play music "BGM_suspicious.mp3" fadein 1.0 fadeout 1.0 loop
-
+    play music "BGM_danger.ogg" fadein 1.0 fadeout 1.0 loop
 
     "The night wind whipped my hair around my face."
     "Perching on the roof with my knees to my chest, I felt the chill of the clay tiles sapping warmth from my body."
@@ -197,10 +197,13 @@ label start:
 
 
     scene bg black with fade
+    pause(0.5)
 
     "I climbed into the passenger seat."
 
     scene bg streetnight with fade
+    pause(0.5)
+    play music "BGM_sad_hopeful.ogg" fadein 1.0 fadeout 1.0 loop
 
     r surprise "\"The other three left?\""
     a fr "\"Yup.\""
@@ -264,6 +267,7 @@ label start:
 
     scene bg library with fade
     pause(0.5)
+    play music "BGM_relaxed.ogg" fadein 1.0 fadeout 1.0 loop
 
 
     r sus "\"Haaa…\""
@@ -295,6 +299,7 @@ label start:
 
 
     scene bg library with fade
+    pause(0.5)
 
 
     m fr "\"Excuse me, d-\""
@@ -379,6 +384,7 @@ label start:
 
     scene bg homeunlit with fade    
     pause(0.5)
+    play music "BGM_sad_hopeful.ogg" fadein 1.0 fadeout 1.0 loop
 
     "As soon as I flicked on my apartment's light switch, I dumped my bag on the floor and beelined for my desk."
     "The apartment was tiny — just a studio. My bed was just steps away from my kitchen."
@@ -451,15 +457,15 @@ label start:
     "A feeling of emptiness settled over me."
     "I tried to shake it off. I was sure there was something I could do. Something…"
 
-    "Right. More work. I had been meaning to take some time and follow up with Anderson after the most recent bust."
-    "But during that bust, I had also been made well aware of how out-of-shape I was. It would probably do me some good to get back to exercising regularly."
-    "Or I could take a nice, warm bath. It's been so long since I've taken care of my body and been able to just relax. I missed it."
+#    "Right. More work. I had been meaning to take some time and follow up with Anderson after the most recent bust."
+#    "But during that bust, I had also been made well aware of how out-of-shape I was. It would probably do me some good to get back to exercising regularly."
+    "I could take a nice, warm bath. It's been so long since I've taken care of my body and been able to just relax. I missed it."
 
 # #########################
 # TODO: ADD EVENING CHOICES
 # #########################
 
-    r "(I should do something nice tonight.)"
+    r "(Guess I'll do that tonight.)"
 
 
 
@@ -472,6 +478,7 @@ label start:
 
     scene bg black with fade
     pause (0.5)
+    stop music fadeout 1.0
 
 
     "Friday was here in a blink."
@@ -479,7 +486,7 @@ label start:
 
     scene bg conferencehall with fade
     pause (0.5)
-
+    play music "BGM_relaxed.ogg" fadein 1.0 fadeout 1.0 loop
 
     "I peeked into a large lecture hall at the local university."
     "The room was empty, save for a dozen students at the front of the room. There were over a hundred chairs, but everyone was concentrated at the front of the room, listening to one man speak."
@@ -620,6 +627,7 @@ label start:
 
     scene bg black with fade
     pause (0.5)
+    stop music fadeout 1.0
 
     r an "\"You're exploiting those addicts by selling to them…\""
     r fr "\"Please... please stop. There are so many other ways you can make money—\""
@@ -643,6 +651,7 @@ label start:
 
     scene bg conferencehall with fade
     pause (0.5)
+    play music "BGM_relaxed.ogg" fadein 1.0 fadeout 1.0 loop
 
     r sus "..."
     r "(When had I stopped trying to convince them?)"
@@ -896,6 +905,8 @@ label post_cassidy:
 
     scene bg library with fade
     pause (0.5)
+    play music "BGM_sad_hopeful.ogg" fadein 1.0 fadeout 1.0 loop
+
 
     "I smiled at no one again, struggling to keep fatigue from showing in my expression."
     "Hazy black spots filled my vision. I tried to blink them away, but they kept respawning in."
@@ -922,6 +933,7 @@ label post_cassidy:
 
     scene bg library with fade
     pause (0.5)
+    play music "BGM_relaxed.ogg" fadein 1.0 fadeout 1.0 loop
 
 
     "Since that day the blonde man — Dylan? — talked to me, I'd seen him around the library several times."
@@ -1112,6 +1124,8 @@ label post_cassidy:
 
     scene bg homelit with fade
     pause(0.5)
+    play music "BGM_sad_hopeful.ogg" fadein 1.0 fadeout 1.0 loop
+
 
     r sus "(Today was a long day…)"
 
@@ -1126,6 +1140,8 @@ label post_cassidy:
 
     scene bg library with fade
     pause(0.5)
+    play music "BGM_warm.ogg" fadein 1.0 fadeout 1.0 loop
+
 
     "Another day of work, another day of children coughing on each other."
 
@@ -1420,6 +1436,8 @@ label post_cassidy:
 
     scene bg homeunlit with fade
     pause(0.5)
+    play music "BGM_mournful.ogg" fadein 1.0 fadeout 1.0 loop
+
 
     "The evenings after that, I spent working on preparations for Anderson's heroin ring hunt."
     "It was back to serious mode. There was no time to spare."
@@ -1449,6 +1467,8 @@ label post_cassidy:
 
     scene bg streetday with fade
     pause(0.5)
+    play music "BGM_relaxed.ogg" fadein 1.0 fadeout 1.0 loop
+
 
     show anderson sus at centerpos with dissolve 
 
@@ -1525,6 +1545,8 @@ label post_cassidy:
     r sm "(Bless the souls of everyone who returns the book before their whole 21-day lending period is up.)"
     r sus "(Please, let one more person do that! One is all I need!)"
 
+    stop music fadeout 1.0
+
     "Fifteen minutes passed."
     "Then thirty."
     "I frowned and checked the time on my phone again. It was approaching thirty-five minutes with no response from Anderson."
@@ -1541,6 +1563,8 @@ label post_cassidy:
     r "\"...\""
     r fr "(I wonder if it's safe to look outside.)"
     r "(It's probably fine… I haven't heard anyone around this whole time.)"
+
+    play music "BGM_danger.ogg" fadein 1.0 fadeout 1.0 loop
 
     "I edged forward in the footrest, then wrapped my hands around the passenger seat's headrest and hauled myself up."
     "The area was still mostly empty. Just a side alley, barely wide enough for one car lane."
@@ -1736,6 +1760,9 @@ label raid_capture:
 
     "I slowed to a stop."
     "Police vehicles surrounded his car in no time. In fifteen seconds, I blended in as just one of a mass of police cars."
+
+    play music "BGM_sad_hopeful.ogg" fadein 1.0 fadeout 1.0 loop
+
     "I sat, numb, as policemen and policewomen approached and arrested Theodore."
     "There had only been one person in the car. Just him."
     "I breathed a sigh of relief."
@@ -1765,6 +1792,8 @@ label raid_capture:
 
     scene bg black with fade
     pause(0.5)
+    play music "BGM_mournful.ogg" fadein 1.0 fadeout 1.0 loop
+
 
     "I squeezed my eyes shut. Still no word from the ambulance Anderson had called."
     "I knew I did the right thing. Theodore needed to be stopped."
@@ -1886,6 +1915,8 @@ label raid_protect:
 
     scene bg black with fade
     pause(0.5)
+    play music "BGM_mournful.ogg" fadein 1.0 fadeout 1.0 loop
+
 
     "Only after Anderson drove me to the station did the reality of today sink in."
 
@@ -2060,6 +2091,9 @@ label post_raid:
     d sus "\"Are you the kind of person who likes distractions?\""
 
     r fr "\"Um… maybe?\""
+
+    play music "BGM_sad_hopeful.ogg" fadein 1.0 fadeout 1.0 loop
+
     r "\"I'm not sure.\""
 
     "Dylan left, then came back pulling a chair over to my table."
@@ -2154,6 +2188,8 @@ label post_raid:
 
     scene bg homeunlit with fade
     pause(0.5)
+    play music "BGM_mournful.ogg" fadein 1.0 fadeout 1.0 loop
+
 
     r fr "(Oh… looks like I can pick up my copy of Oathbringer now.)"
 
@@ -2177,6 +2213,8 @@ label post_raid:
 
     scene bg homeunlit with fade
     pause(0.5)
+    play music "BGM_sad_hopeful.ogg" fadein 1.0 fadeout 1.0 loop
+
 
     "I rolled over in my bed, pulling the blankets over my head to block out the sunlight streaming in my window."
 
@@ -2207,6 +2245,8 @@ label post_raid:
 
     scene bg conferencehall with fade
     pause(0.5)
+    play music "BGM_relaxed.ogg" fadein 1.0 fadeout 1.0 loop
+
 
 #    <fade in sfx people talking>
 
@@ -2327,6 +2367,8 @@ label post_raid:
 
     scene bg homeunlit with fade
     pause(0.5)
+    play music "BGM_sad_hopeful.ogg" fadein 1.0 fadeout 1.0 loop
+
 
     r fr "(Oh. I have free time again.)"
     r "\"...\""
@@ -2346,6 +2388,8 @@ label post_raid:
 
     scene bg library with fade
     pause(0.5)
+    play music "BGM_relaxed.ogg" fadein 1.0 fadeout 1.0 loop
+
 
     r surprise "(Oh! I can pick up Oathbringer today.)"
 
@@ -2473,6 +2517,8 @@ label post_raid:
 
     scene bg library with fade
     pause(0.5)
+    play music "BGM_warm.ogg" fadein 1.0 fadeout 1.0 loop
+
 
     "Teenager" "Thank you so much!"
 
@@ -2819,6 +2865,8 @@ label post_kid:
 
     scene bg streetday with fade
     pause(0.5)
+    play music "BGM_relaxed.ogg" fadein 1.0 fadeout 1.0 loop
+
 
     "I felt silly with my beanie on my head and backpack on my shoulders — like I was imitating something I wasn't."
     "I had never really paid attention to that feeling."
@@ -2906,6 +2954,8 @@ label post_kid:
 
     scene bg streetday with fade
     pause(0.5)
+    play music "BGM_warm.ogg" fadein 1.0 fadeout 1.0 loop
+
 
     "I set my things down on a bench outside the front door of Engineering IV, then sat down and stretched."
 
@@ -3098,6 +3148,8 @@ label bro_done:
 
     scene bg homeunlit with fade
     pause(0.5)
+    play music "BGM_relaxed.ogg" fadein 1.0 fadeout 1.0 loop
+
 
     "My Sunday began when I woke up to my abdomen screaming in pain."
     "I groaned and rolled over in bed, trying to ignore it. But a second later, I swung my legs over the side of the bed and climbed out."
@@ -3278,6 +3330,8 @@ label dylan_visit:
     
     scene bg streetday with fade
     pause(0.5)
+    play music "BGM_warm.ogg" fadein 1.0 fadeout 1.0 loop
+
 
     show dylan fr at centerpos with dissolve
 
@@ -3740,6 +3794,8 @@ label done_dylan_visit:
 
     scene bg library with fade
     pause(0.5)
+    play music "BGM_relaxed.ogg" fadein 1.0 fadeout 1.0 loop
+
 
     
     if DYLAN_KISS == True:
@@ -3979,6 +4035,8 @@ label done_dylan_visit:
 
 
 #    <sfx fire alarm siren>
+    play music "BGM_danger.ogg" fadein 1.0 fadeout 1.0 loop
+
 
     show dylan surprise
 
@@ -4174,6 +4232,8 @@ label done_dylan_visit:
 
     scene bg homeunlit with fade
     pause(0.5)
+    play music "BGM_sad_hopeful.ogg" fadein 1.0 fadeout 1.0 loop
+
 
 
     "That day, everyone in the library was able to get out safely."
@@ -4446,6 +4506,8 @@ label done_dylan_visit:
 
     "I stopped on the sidewalk. Dylan turned to look at me."
 
+    stop music fadeout 1.0
+
     show dylan surprise 
 
     "I let go of his hand and flung my arms around him."
@@ -4457,6 +4519,9 @@ label done_dylan_visit:
     d frbl "\"Robin…\""
 
     "I buried my face in his sweater."
+
+    play music "BGM_warm.ogg" fadein 1.0 fadeout 1.0 loop
+
 
     r frbl "\"Thank you. Thank you for understanding.\""
 
