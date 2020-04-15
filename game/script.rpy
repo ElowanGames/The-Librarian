@@ -183,7 +183,7 @@ label start:
 
     r fr "\"I trust you can do it.\""
 
-    a fr "\"What a slave driver.\""
+    a sus "\"What a slave driver.\""
 
     r sus "\"What was that?\""
 
@@ -198,12 +198,12 @@ label start:
 
     scene bg black with fade
     pause(0.5)
+    play music "BGM_sad_hopeful.ogg" fadein 1.0 fadeout 1.0 loop
 
     "I climbed into the passenger seat."
 
     scene bg streetnight with fade
     pause(0.5)
-    play music "BGM_sad_hopeful.ogg" fadein 1.0 fadeout 1.0 loop
 
     r surprise "\"The other three left?\""
     a fr "\"Yup.\""
@@ -219,7 +219,7 @@ label start:
     "My coworkers often told me to smile more, but they'd never seen someone as tense as Anderson."
 
     r fr "\"...\""
-    r fr "\"Their loss.\""
+    r sus "\"Their loss.\""
     r fr "\"Without you, they wouldn't be able to flex their power over anyone.\""
 
     a sus "\"It's not the same.\""
@@ -230,10 +230,10 @@ label start:
 
     "His tone was conversational, but underneath his words was a question."
 
-    r fr "\"Yes.\"" 
-    r "\"The small-time dealers are careless and easy to track down.\""
+    r sus "\"Yes.\"" 
+    r fr "\"The small-time dealers are careless and easy to track down.\""
 
-    a "\"You should start going for bigger targets.\""
+    a sus "\"You should start going for bigger targets.\""
 
     r sus "\"No.\""
     r "\"I'm going after easy prey because they're all garbage — the more of them behind bars, the better. This is more value for my time.\""
@@ -265,9 +265,9 @@ label start:
 # ################################################
 
 
+    play music "BGM_relaxed.ogg" fadein 1.0 fadeout 1.0 loop
     scene bg library with fade
     pause(0.5)
-    play music "BGM_relaxed.ogg" fadein 1.0 fadeout 1.0 loop
 
 
     r sus "\"Haaa…\""
@@ -308,10 +308,10 @@ label start:
     "A loud voice behind me made me jump."
     "I fumbled the book I was placing on a high shelf, barely catching it by the front cover as it fell out of my hands."
 
-    r "\"Oh no-\""
+    r "\"Oh no—\""
 
     "I quickly flipped through the pages."
-    "Thank goodness - I hadn't damaged the pages or the spine."
+    "Thank goodness — I hadn't damaged the pages or the spine."
 
     m surprise "\"Oh!\""
 
@@ -591,7 +591,7 @@ label start:
 
     c "\"Nothing. I just don't like working for other people.\""
 
-    d fr "\"You could try being a freelance tutor. But it's harder to get pupils that way."
+    d fr "\"You could try being a freelance tutor. But it's harder to get pupils that way.\""
 
     c "\"Mmm…\""
     c "\"I guess I'll take you up on your offer, then.\""
@@ -669,7 +669,7 @@ label start:
     "The man glanced at me."
     "I probably looked anything but inconspicuous."
 
-    r "(Oh god. I definitely just looked like I was listening in on them.)"
+    r sus "(Oh god. I definitely just looked like I was listening in on them.)"
 
     d sus "\"...\""
     c "\"Thanks, Dylan. I… really appreciate your help. And for reaching out to me.\""
@@ -768,6 +768,7 @@ label post_cassidy:
 
     scene bg library with fade
     pause (0.5)
+    play music "BGM_relaxed.ogg" fadein 1.0 fadeout 1.0 loop
 
     "Several days passed. Over the weekend, the library was busy as usual, with children and families pouring in to read and shelter from the rain."
     "It cheered me up to see them. It was a reminder that my work helped people like them."
@@ -903,9 +904,9 @@ label post_cassidy:
 # CONDITIONAL SCENE: Day job at the library based on fatigue level
 # ################################################################
 
+    play music "BGM_sad_hopeful.ogg" fadein 1.0 fadeout 1.0 loop
     scene bg library with fade
     pause (0.5)
-    play music "BGM_sad_hopeful.ogg" fadein 1.0 fadeout 1.0 loop
 
 
     "I smiled at no one again, struggling to keep fatigue from showing in my expression."
@@ -931,9 +932,9 @@ label post_cassidy:
 # ##############################################
 
 
+    play music "BGM_relaxed.ogg" fadein 1.0 fadeout 1.0 loop
     scene bg library with fade
     pause (0.5)
-    play music "BGM_relaxed.ogg" fadein 1.0 fadeout 1.0 loop
 
 
     "Since that day the blonde man — Dylan? — talked to me, I'd seen him around the library several times."
@@ -1122,9 +1123,9 @@ label post_cassidy:
 # EVENING
 # #######
 
+    play music "BGM_sad_hopeful.ogg" fadein 1.0 fadeout 1.0 loop
     scene bg homelit with fade
     pause(0.5)
-    play music "BGM_sad_hopeful.ogg" fadein 1.0 fadeout 1.0 loop
 
 
     r sus "(Today was a long day…)"
@@ -1138,9 +1139,9 @@ label post_cassidy:
 # REGULAR SCENE: Dylan visits the library more
 # ############################################
 
+    play music "BGM_warm.ogg" fadein 1.0 fadeout 1.0 loop
     scene bg library with fade
     pause(0.5)
-    play music "BGM_warm.ogg" fadein 1.0 fadeout 1.0 loop
 
 
     "Another day of work, another day of children coughing on each other."
@@ -1279,7 +1280,7 @@ label post_cassidy:
     show dylan fr 
 
     r surprise "\"You could enter your family's medical history and your past medical issues. Make the model take that into account.\""
-    r "\"You could make the symptoms much more detailed.\""
+    r sm "\"You could make the symptoms much more detailed.\""
     r "\"Let people upload pictures, or say the pain is happening where they fractured their wrist last year.\""
     r fr "\"Whatever.\""
     r "\"It doesn't have to be a symptoms checklist. But I think something that patients can use themselves without requiring expensive scans from doctors—\""
@@ -1308,7 +1309,7 @@ label post_cassidy:
     "Shifting in my seat, I glanced around the room."
 
     r "\"Is that what brings you to the library so often?\""
-    r fr "\" Your thesis, I mean.\""
+    r fr "\"Your thesis, I mean.\""
 
     "Dylan raised an eyebrow at me."
 
@@ -1412,7 +1413,7 @@ label post_cassidy:
 
     "Which was not a lie — Anderson was busting a major heroin ring that afternoon."
 
-    d sus "\"Suit yourself.\""
+    d fr "\"Suit yourself.\""
 
     hide dylan
 
@@ -1434,9 +1435,9 @@ label post_cassidy:
 # EVENING: Pre-raid
 # #################
 
+    play music "BGM_mournful.ogg" fadein 1.0 fadeout 1.0 loop
     scene bg homeunlit with fade
     pause(0.5)
-    play music "BGM_mournful.ogg" fadein 1.0 fadeout 1.0 loop
 
 
     "The evenings after that, I spent working on preparations for Anderson's heroin ring hunt."
@@ -1465,9 +1466,9 @@ label post_cassidy:
 # REGULAR SCENE: Raid goes wrong
 # ##############################
 
+    play music "BGM_relaxed.ogg" fadein 1.0 fadeout 1.0 loop
     scene bg streetday with fade
     pause(0.5)
-    play music "BGM_relaxed.ogg" fadein 1.0 fadeout 1.0 loop
 
 
     show anderson sus at centerpos with dissolve 
@@ -1653,7 +1654,7 @@ label raid_capture:
     "The silver car swerved abruptly into a right turn lane just before an intersection."
     "With one hand, I jerked the wheel right. I barely managed to follow without crashing into the streetlight."
 
-    r sus "\"I need help! Theodore did escape, right? Where are the other police vehicles?\""
+    r an "\"I need help! Theodore did escape, right? Where are the other police vehicles?\""
 
     a surprise "\"He wasn't in the building.\""
     a an "\"I'm getting into my coworker's car right now. Don't move.\""
@@ -1907,7 +1908,7 @@ label raid_protect:
     "The ambulance came shortly. I felt numb as I gave them the details of what I'd administered, and how long it had been since the man had fallen."
     "The emergency personnel were quick, professional, and thorough. In two minutes, they were gone with the man."
 
-    "Emergency Services" "Don't worry, Ma'am. He has a very high chance of recovery. Thank you for administering the Narcan — that helped his body hang in there."
+    "Emergency Services" "\"Don't worry, Ma'am. He has a very high chance of recovery. Thank you for administering the Narcan — that helped his body hang in there.\""
 
     "I nodded."
     "They left."
@@ -1978,7 +1979,7 @@ label post_raid:
 
     "I shrugged."
 
-    r "I'll figure it out."
+    r "\"I'll figure it out.\""
 
     "Heather studied me. She looked concerned, but I knew her concern was primarily for the library, not for me."
 
@@ -2066,9 +2067,9 @@ label post_raid:
 
     r fr "(... That's not an excuse to lash out at this random guy.)"
 
-    r "\"Sorry.\""
+    r sus "\"Sorry.\""
     r "\"I'm going through a rough time.\""
-    r "\"Not a fair reason to yell at you.\""
+    r fr "\"Not a fair reason to yell at you.\""
 
     d fr "\"It's okay.\""
     d "\"I appreciate the apology.\""
@@ -2100,7 +2101,7 @@ label post_raid:
     "Just that simple act — someone actually wanting to sit with me — made me want to cry."
     "Dylan started talking, unaware of my thoughts."
 
-    d surprise "\"I tried out the symptoms checklist model you suggested last time. It was annoying finding all the medical data I needed in the right format.\""
+    d smirk "\"I tried out the symptoms checklist model you suggested last time. It was annoying finding all the medical data I needed in the right format.\""
     d fr "\"I found out psychologists and therapists use a similar program.\""
     d sm "\"Which makes sense, in retrospect. I always wondered what they did with those pre-appointment surveys, where I checked off all my feelings and answered questions on those 1-5 scales.\""
 
@@ -2186,9 +2187,9 @@ label post_raid:
 # EVENING: Post-raid depression
 # #############################
 
+    play music "BGM_mournful.ogg" fadein 1.0 fadeout 1.0 loop
     scene bg homeunlit with fade
     pause(0.5)
-    play music "BGM_mournful.ogg" fadein 1.0 fadeout 1.0 loop
 
 
     r fr "(Oh… looks like I can pick up my copy of Oathbringer now.)"
@@ -2211,9 +2212,9 @@ label post_raid:
 # REGULAR SCENE: Dylan's conference
 # #################################
 
+    play music "BGM_sad_hopeful.ogg" fadein 1.0 fadeout 1.0 loop
     scene bg homeunlit with fade
     pause(0.5)
-    play music "BGM_sad_hopeful.ogg" fadein 1.0 fadeout 1.0 loop
 
 
     "I rolled over in my bed, pulling the blankets over my head to block out the sunlight streaming in my window."
@@ -2243,9 +2244,9 @@ label post_raid:
 
 
 
+    play music "BGM_relaxed.ogg" fadein 1.0 fadeout 1.0 loop
     scene bg conferencehall with fade
     pause(0.5)
-    play music "BGM_relaxed.ogg" fadein 1.0 fadeout 1.0 loop
 
 
 #    <fade in sfx people talking>
@@ -2332,13 +2333,15 @@ label post_raid:
 
     d surprise "\"—er— outside of the legal ramifications that would happen if we claimed to replace trained medical professionals…\""
 
+    show dylan sm
+
     "He continued speaking with them, but glanced in my direction now and then."
     "He shifted from foot to foot again."
 
     r fr "(Is he nervous? He's doing fine.)"
     r sm "(Go Dylan!)"
 
-    show dylan sm
+    show dylan grin
 
     "I listened to him talk to the small group that had gathered around him. Luckily, it seemed like many of them were also unfamiliar with the industry jargon, so Dylan explained much of it to them."
     "People left his presentation nodding, or smiling, or discussing his paper. But more people came than left, so in the end, I wasn't able to speak with him."
@@ -2444,11 +2447,13 @@ label post_raid:
 
     d surprise "\"Is that your copy of Oathbringer?\""
 
+    show dylan sm
+
     "I nodded, smiling widely."
 
     r sm "\"Just got it this morning. I can't wait to go home and read it.\""
 
-    d "\"Wow, that took a while. Almost a month.\"" 
+    d surprise "\"Wow, that took a while. Almost a month.\"" 
     d smirk "\"You should consider reserving e-books through this library. I'm halfway through the book already.\""
 
     r an "\"No spoilers!\""
@@ -2488,15 +2493,14 @@ label post_raid:
     r fr "\"A lot of the presentations there were hard to understand without industry knowledge. Yours was pretty easy to listen to, though.\""
 
     d fr "\"Oh, right. Research conferences are always like that.\""
-    d "\"Don't worry too much about it. I'd be surprised if you understood much of anything without a computer science background.\""
+    d "\"Don't worry too much about it. I'd be surprised if you understood anything without a computer science background.\""
 
     "I nodded."
 
     r surprise "\"I looked some of it up afterwards. I probably should've done that before going, but it hadn't occurred to me.\""
-
-    show dylan surprise
-
     r fr "\"Anyways, it was a pretty big rabbit hole. I spent an hour reading up on the current research in machine learning, but I still feel like I don't know much.\""
+
+    show dylan surprise 
 
     "Dylan's eyes lit up."
 
@@ -2515,9 +2519,9 @@ label post_raid:
 # REGULAR SCENE: Kids and the library
 # ###################################
 
+    play music "BGM_warm.ogg" fadein 1.0 fadeout 1.0 loop
     scene bg library with fade
     pause(0.5)
-    play music "BGM_warm.ogg" fadein 1.0 fadeout 1.0 loop
 
 
     "Teenager" "Thank you so much!"
@@ -2559,7 +2563,7 @@ label post_raid:
     "I idly watched Dylan flip through the pages of an exam packet."
     "Recently, it had become a normal thing for him to greet me at the library. We'd taken to talking several times a week."
 
-    "Kid" "Umm… miss?"
+    "Kid" "\"Umm… miss?\""
 
     "I looked around to see no one."
     "Then I looked down. A tiny girl at my side was clutching a piece of paper to her chest and staring up at me."
@@ -2613,7 +2617,7 @@ label post_raid:
     show dylan fr at centerpos with dissolve
 
     "I returned to my information desk, where Dylan had gone back to grading exams."
-    "Glancing around, I saw that my floor of the library was mostly empty, despite the activity downstairs and in the children's section."
+    "Glancing around, I saw that my floor of the library was mostly empty, despite the activity upstairs in the children's section."
     "Since no one was around, I pulled out a chair and sat down across from Dylan."
 
     r sus "\"... Do I have a scary face, Dylan?\""
@@ -2700,8 +2704,14 @@ label post_raid:
 label kid_escape:
 
     r sus "\"Some of the anxious kids come to the library to escape their home situation.\""
+
+    show dylan sus
+
     r "\"Anxiety and nervousness in kids that young is one sign. Behavioral issues are another. Like the kids who run around throwing books.\""
     r fr "\"I know it's not always a sign of a bad home life, but… it makes me nervous.\""
+
+    show dylan fr 
+
     r sus "\"I want to help them, if I can. But I can't really do that if they're scared of me.\""
 
     "Dylan was looking at me with an unreadable expression."
@@ -2728,11 +2738,13 @@ label kid_escape:
 
     d surprise "\"From your home situation?\""
 
+    show dylan fr
+
     r fr "\"Yeah.\""
     r "\"My mom was a junkie. I got out of the house as much as I could.\""
     r sus "\"The local librarians became my second family. I guess they sort of knew what was happening... there were probably a lot of kids like me around.\""
 
-    show dylan fr
+    show dylan sus
 
     "I looked down at the table, afraid to see Dylan's expression. Was that too much information?"
 
@@ -2740,6 +2752,8 @@ label kid_escape:
     r fr "\"A lot of kids come to the library. After a while, you learn how to tell which ones have healthy families and which ones don't.\""
     r sus "\"There isn't a whole lot we can do about it.\""
     r "\"Once my coworker called CPS for a kid who opened up to her, but most never do. All we can do is be supportive and kind. Show them that not all adults are bad.\""
+
+    show dylan fr
 
     "Dylan nodded."
     "I looked up, and my eyes met his."
@@ -2802,13 +2816,15 @@ label kid_escape:
 
     r "\"By the way, you've been coming by to my work a lot, but I never took you up on your offer to see you at work.\""
 
-    d sus "\"Hey, I come to the library all the time anyway.\""
+    d sus "\"Hey, I don't come to the library just for you. I'm here all the time anyway.\""
     d "\"...\""
     d fr "\"Well… you've already seen me presenting at a conference. You're welcome to come to my discussion if you want, but I don't see how it would be much different for you.\""
 
     r sm "\"I'll think about it. Friday afternoon, right?\""
 
     d surprise "\"Yeah.\""
+
+    show dylan fr
 
     "I nodded. Then I got up from my seat."
 
@@ -2837,13 +2853,15 @@ label kid_general:
 
     r surprise "\"By the way, you've been coming by to my work a lot, but I never took you up on your offer to see you at work.\""
 
-    d sus "\"Hey, I come to the library all the time anyway.\""
+    d sus "\"Hey, I don't come to the library just for you. I'm here all the time anyway.\""
     d fr "\"...\""
     d "\"Well… you've already seen me presenting at a conference. You're welcome to come to my discussion if you want, but I don't see how it would be much different for you.\""
 
     r sm "\"I'll think about it. Friday afternoon, right?\""
 
-    d "\"Yeah.\""
+    d surprise "\"Yeah.\""
+
+    show dylan fr
 
     "I nodded. Then I got up from my seat."
 
@@ -2863,9 +2881,9 @@ label post_kid:
 # REGULAR SCENE: Watch Dylan TA
 # #############################
 
+    play music "BGM_relaxed.ogg" fadein 1.0 fadeout 1.0 loop
     scene bg streetday with fade
     pause(0.5)
-    play music "BGM_relaxed.ogg" fadein 1.0 fadeout 1.0 loop
 
 
     "I felt silly with my beanie on my head and backpack on my shoulders — like I was imitating something I wasn't."
@@ -2947,8 +2965,13 @@ label post_kid:
 
     r fr "(Hmm… it feels a little awkward to sit here now. I guess I'll wait for him outside.)"
 
+    show dylan sm
+
     "I gathered my things and stood up. Dylan glanced over at me and met my eyes."
     "I smiled and gave him a little wave."
+
+    show dylan fr
+
     "Then I headed back outside."
 
 
@@ -2995,6 +3018,8 @@ label post_kid:
 
     "We sat in comfortable silence for a while, watching students pass us by."
 
+    show dylan fr
+
     r surprise "\"I think it was that same day — or the next time you came to talk to me at the library.\""
     r fr "\"You were insecure about your teaching and invited me to watch you TA, even though you were suspicious of me.\""
 
@@ -3016,7 +3041,13 @@ label post_kid:
     r surprise "\"I'm not.\""
     r "\"Not just being polite, I mean.\""
     r sm "\"All of your students respect you. The way they pay attention in your class proves it.\""
+
+    show dylan sus
+
     r "\"Not a single person was browsing Discord, or Facebook, or the news. Everyone was referencing your lecture slides or taking notes.\""
+
+    show dylan fr
+
     r smirk "\"The way they asked you questions was pretty comfortable, too. Everyone sitting in your class treats you like you're their smarter older brother.\""
 
     d surprise "\"Wow.\""
@@ -3075,7 +3106,7 @@ label bro_no:
     r frbl "\"...\""
     r surprisebl "(Focus on what he's saying, dammit.)"
 
-    "\"When the sun started setting and we bid each other farewell, I gathered my things and headed back to my car.\""
+    "When the sun started setting and we bid each other farewell, I gathered my things and headed back to my car."
 
     r frbl "\"...\""
 
@@ -3088,6 +3119,8 @@ label bro_no:
 #   ELSE IF "Sure. You seem like you'd be a chill sibling."
 
 label bro_sure:
+
+    show dylan fr
 
     r sm "\"Sure. You seem like you'd be a chill sibling.\""
     r smirk "\"Plus, you'd probably do my homework for me if I pestered you enough.\""
@@ -3146,10 +3179,9 @@ label bro_done:
 # REGULAR SCENE: Dylan brings Robin food during menstrual cramps
 # ##############################################################
 
+    play music "BGM_relaxed.ogg" fadein 1.0 fadeout 1.0 loop
     scene bg homeunlit with fade
     pause(0.5)
-    play music "BGM_relaxed.ogg" fadein 1.0 fadeout 1.0 loop
-
 
     "My Sunday began when I woke up to my abdomen screaming in pain."
     "I groaned and rolled over in bed, trying to ignore it. But a second later, I swung my legs over the side of the bed and climbed out."
@@ -3417,7 +3449,7 @@ label dylan_visit:
 
     d an "\"I mean, if he had a problem with her accepting knighthood, why not say something to her about it?\""
     d "\"I understand if he was shocked at the time, but seven chapters later, he's still stewing in silence.\""
-    d "\"At that point, he should have decided if he either wants to give up the relationship or work through his feelings with her.\""
+    d "\"At that point, he should decide if he either wants to give up the relationship or work through his feelings with her.\""
     d smirk "\"Instead, he's just moping around and taking it out on her passive-aggressively.\""
 
     show dylan fr
@@ -3440,7 +3472,7 @@ label dylan_visit:
     "As we talked, I continued eating the food Dylan had brought me."
     "It was delicious."
 
-    r grin "(Is it because he's a good cook, or is it because I know he made this for me?)"
+    r surprise "(Is it because he's a good cook, or is it because I know he made this for me?)"
 
     "Several times, I had to cover my mouth while talking, because I was still eating. I didn't want to stop. In a good way, for once."
     "The conversation eventually shifted to work."
@@ -3476,7 +3508,7 @@ label dylan_visit:
 
     show dylan surprisebl
 
-    "He sat down next to me, and I leaned over to see what was on his screen."
+    "Moving away from the desk, Dylan sat down next to me, and I leaned over to see what was on his screen."
     "Only then did I realize how close we were — in my apartment, on my bed."
 
     r surprisebl "\"...\""
@@ -3632,7 +3664,7 @@ label dylan_visit:
 
     d fr "\"I don't want to sound like I'm turning you down.\""
 
-    r surprise "Hm?"
+    r surprise "\"Hm?\""
 
     d frbl "\"I…\""
 
@@ -3689,7 +3721,7 @@ label dylan_visit:
 
     "A moment of silence passed between us. Dylan was biting his lip again."
 
-    d frbl "\"Uhm… Could you come here for a second?\""
+    d frbl "\"Um… Could you come here for a second?\""
 
     r smirk "(Oh, he decided to say it after all.)"
     r smbl "(I feel like I'm learning how to read his expressions, little by little.)"
@@ -3996,7 +4028,7 @@ label done_dylan_visit:
 
     if CASSIDY_ARRESTED == False:
 
-        d "Were you there to arrest Cassidy?"
+        d "\"Were you there to arrest Cassidy?\""
 
         show dylan sus
 
@@ -4020,8 +4052,8 @@ label done_dylan_visit:
 
         show dylan sus
 
-        r "\"She was willing to take action and stop. I saw you trying to convince her to do something better with her life…\""
-        r "\"It felt wrong to throw her behind bars.\""
+        r sus "\"She was willing to take action and stop. I saw you trying to convince her to do something better with her life…\""
+        r fr "\"It felt wrong to throw her behind bars.\""
         r sus "\"Maybe that wasn't right. She still made profit off of selling cocaine to addicts — she still should've been arrested.\""
         r "\"At least in the eyes of the law.\""
         r "\"I don't think I'd be a good policewoman. I'd let my feelings affect my decisions, just like that.\""
@@ -4383,7 +4415,7 @@ label done_dylan_visit:
     "I paused."
 
     r "\"I'm not sure if I really believed that. They could find another dealer if they were determined — it's hard to stop an addict that wants a fix. But the possibility kept me going.\""
-    r fr "I've been helping Anderson hunt down the city's drug dealers ever since.\""
+    r fr "\"I've been helping Anderson hunt down the city's drug dealers ever since.\""
 
     "I stopped talking as a jogger approached us."
     "Dylan was still holding my hand. We moved to the side, and she passed us in silence."
@@ -4492,7 +4524,7 @@ label done_dylan_visit:
 
     d "\"No.\""
     d smirk "\"Should I be?\""
-    d "\"You weren't murdering the drug dealers, were you?\""
+    d "\"You weren't secretly murdering the drug dealers, were you?\""
 
     r an "\"No! Of course not.\""
 
