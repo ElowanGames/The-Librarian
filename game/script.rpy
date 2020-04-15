@@ -4061,10 +4061,10 @@ label done_dylan_visit:
 
     "Dylan tugged at my hand insistently."
 
-    r "(There's no time…!)"
+    
 
 
-
+#    r "(There's no time…!)"
 
 #    CHOICE: 
 #    Try to evacuate everyone in the library.
@@ -4079,12 +4079,469 @@ label done_dylan_visit:
 # ENDING: Protect the library patrons from the fire
 # #################################################
 
+    show dylan sus
+
+    r sus "(No.)"
+    r "(I'm not letting the murderer escape — I'm protecting the people I'm responsible for. That's what I'm here for.)"
+
+    show dylan an
+
+    "I looked back at my phone, and the caller ID on the screen. Steeling my resolve, I pressed it to my ear."
+
+    r an "\"Anderson, I'm going to make sure everyone evacuates the library.\""
+
+    show dylan sus
+
+    r "\"It's your job to catch the murderer — not mine. I wish I could help, but the safety of everyone else here comes first.\""
+
+    "I hung up the call before he could respond. Then I turned to Dylan."
+
+    r sus "\"Sorry I made you wait!\""
+
+    show dylan an
+
+    "I had to yell to be heard over the fire alarm. Dylan shook his head and gestured again to the staircase."
+
+    r "\"No.\""
+
+    show dylan surprise
+
+    r an "\"I can't leave! I have to make sure everyone else has evacuated.\""
+    r sus "\"Go without me.\""
+
+    show dylan sus
+
+    "I let go of Dylan's hand and rounded the information desk, heading for the staircase."
+    "Dylan paused, then jogged to catch up to me."
+
+    d an "\"Do you need help?\""
+
+    show dylan sus
+
+    r surprise "\"...\""
+    r sus "\"Yes.\""
+    r "\"But I think you should get out of here. This isn't your responsibility.\""
+
+    d an "\"I'm coming with you.\""
+
+    r surprise "\"...\""
+
+    show dylan sus
+
+    "I wanted to hug him, but I was sprinting up the stairs to the third floor, and he was at my heels."
+
+    r sus "\"Thank you. Don't die!\""
+
+    show dylan smirk
+
+    "He snorted."
+
+    d "\"I should be the one saying that to you.\""
+
+    show dylan sus
+
+    r an "\"Take the third floor. Check the children's section!\""
+
+    "I was already on my way up to the fourth and highest floor, and Dylan was following me. He paused, then turned and leaped down several stairs to the third floor."
+
+    hide dylan
+
+    r "\"Get out when you're done!\""
+    r sus "\"...\""
+
+    "I pulled open the stairwell door to the fourth floor. It was eerily empty, save for a woman in a wheelchair struggling to balance on the escalator."
+    "And a teenager trying to press the elevator button to go down."
+
+    r an "(God dammit. The sign by the elevator literally says use the stairs in a fire!)"
+
+    "I ran to direct him down the stairs. Then I rushed over to the escalator."
+
+    r "\"Do you need help?\""
+
+    "Wheelchair-bound woman" "\"Yes!\""
+
+    "I held down her wheelchair's push handles to prevent her from tipping forward. The escalator seemed to move so slowly amongst the chaos."
+    "I glanced out into the center atrium of the library. The smoke was getting thicker now."
+
+    r sus "(I wonder if the criminal they were hunting is somewhere in here, lost in the panic.)"
+
+    r "\"...\""
+
+    r an "(I'm sorry, Anderson. In the end… I need to protect people my way. Not yours.)"
+
+
+    pause(0.5)
+
+    scene bg homeunlit with fade
+    pause(0.5)
+
+
+    "That day, everyone in the library was able to get out safely."
+    "Anderson's department had lost the criminal they were chasing in the chaos, but they seemed to have picked up a trail and were again actively pursuing him."
+    "The first floor of the library was almost completely ruined. The entire teen reading section was going to have to be replaced."
+    "But the rest of the building was mostly intact."
+    "I wasn't able to go back to work for several days, so I spent that time resting at home and finishing Oathbringer."
+
+    r fr "\"...\""
+    r sus "(Somehow it's not as exciting finishing this book now, as it had been before.)"
+
+    "After my initial panic over the fire and the library passed, I'd had too much free time to think."
+    "My thoughts turned to Dylan."
+    "His hurt tone when he'd asked me about Cassidy. The way he'd looked at me, his eyebrows knit together in confusion."
+    "And how he'd endangered himself to help me evacuate everyone anyway."
 
 
 
+    if DYLAN_KISS == True:
+        r fr "(I should've told him about the dealer hunting before he kissed me. He kissed someone he didn't really know…)"
+        r sus "(If he had known about the Cassidy situation — if he had known why I was there that day — would he still have done it?)"
+        "In the last week, I'd replayed that day over and over in my head."
+        "First, it had been out of affection and lust. But now, I was searching for how I'd messed up. What I should have said."
+
+
+    if DYLAN_KISS == False:
+        r sus "(If he had known about the Cassidy situation — if he had known why I was there that day — would he still have stuck around?)"
 
 
 
+    r an "\"...\""
+    r sus "(I need to tell him… If he still wants to hear it.)"
+
+
+
+    scene bg streetday with fade
+    pause(0.5)
+
+
+    "I glanced around the street edge of the park, chewing my bottom lip and twisting my bracelet anxiously."
+    "This early in the day, it was deserted, save for the occasional jogger passing by."
+
+    r surprise "\"...\""
+    r sus "(I wonder if he'll show up.)"
+
+    "It hadn't been until I'd tried to reach out to Dylan that I'd realized he had initiated most of our previous interactions."
+    "A week away from work meant a week not seeing him. We hadn't talked since then, except for short texts asking if the other person was safe."
+    "Without either of us reaching out, we would just continue this awkward silence, not knowing where we stood with each other."
+    "I'd stared at my screen for so long, trying to work up the nerve to hit Send."
+
+    r sus "(He put himself in danger to help me evacuate people, even though he was confused and hurt with me…)"
+    r fr "(He wouldn't ghost me after saying he'd come.)"
+    r sus "\"...\""
+    r "(Right?)"
+
+    "I checked my phone. 8:58 AM. I was still early. No need to panic."
+    "My heart didn't seem to be listening. It pounded in my chest so loud that I could hear it."
+
+    r "\"...\""
+    r surprise "(Oh!)"
+
+    
+    show dylan fr at centerpos with dissolve
+
+    "A flash of color in the corner of my eye caught my attention. Down the street, Dylan's blonde hair flopped in his face as he looked down and locked his car."
+    "Was I supposed to walk towards him? Should I wave? I panicked."
+
+    r surprise "\"Um—\""
+
+    show dylan sus
+
+    "Dylan turned, and I forgot how to speak."
+    "His hair was tousled, with a little tuft sticking out in the back. When he moved, it was with the slowness of someone exhausted."
+    "As he approached, I shifted my weight from foot to foot and twisted my bracelet again."
+
+    r fr "\"I'm sorry.\""
+    r "\"For not telling you everything earlier.\""
+    r sus "\"And thank you for helping me evacuate them... I should've said that earlier, too.\""
+
+    show dylan fr
+
+    "Dylan nodded."
+
+    d sus "\"Let's walk. You can tell me about it on the way.\""
+
+    r surprise "\"Walk? To where?\""
+
+    d fr "\"Nowhere.\""
+    d sus "\"I just need to move a bit. I don't want to fall asleep on you.\""
+
+    "I nodded and moved next to Dylan. Walking like this, we were looking ahead, instead of at each other."
+    "The back of my hand brushed against his."
+    "His fingers twitched."
+
+    r sus "\"...\""
+
+    "Not wanting to make him uncomfortable, I pulled my hand back."
+    "When I glanced up, Dylan was biting his lip."
+
+    d fr "\"Do you want to start? About helping the police.\""
+
+    r fr "\"Yeah…\""
+    r sus "\"This might sound weird, but it's related. I told you about how my mom was a junkie, right?\""
+
+    "He nodded."
+
+    r "\"When I was in high school, she died of an overdose. Heroin. Walked into the kitchen with her on the floor.\""
+
+    d sus "\"... I'm sorry.\""
+
+    r "\"Don't be.\""
+
+    show dylan fr 
+
+    r fr "\"I blamed everyone and everything. Mostly her, but also everyone who'd gotten her there.\""
+    r sus "\"Her friends who enabled her. Her shitty family. My nonexistent dad.\""
+    r an "\"... But especially everyone who profited off her addiction.\""
+
+    show dylan sus
+
+    r sus "\"All her heroin dealers knew what they were doing, digging her grave for her.\""
+    r an "\"They probably knew she was going to overdose one day, too. They didn't give a fuck. Just for an extra hundred bucks a week. Maybe more, I don't know.\""
+
+    show dylan fr
+
+    "I was starting to rush my words. I stopped and took a breath."
+    "Even though we were walking side by side, Dylan was looking at me now, his eyebrows furrowed together."
+    "He took my hand and tilted his head with a silent question."
+    "I nodded. It was okay. More than that — reassuring."
+
+    r fr "\"Thank you.\""
+    r sus "\"In any case, it's not that she was a very good mom. I spent most of my time at the library to avoid being at home.\""
+    r "\"I think I've told you that before.\""
+    r fr "\"But she did try.\""
+    r sus "\"Even though we didn't have a lot of money, she always made sure I had the latest haircuts and sharp clothes. She didn't want me to be discriminated against for being her kid.\""
+
+    "I touched my bangs. I'd dyed them and given them a fresh cut recently, even though she wasn't here to yell at me about it anymore."
+
+    r fr "\"When she was… sober, I guess, she would take me out to the park. We'd be a normal family, just for a little.\""
+    r sus "\"Anyways. Sorry.\""
+    r "\"Back in high school, I knew someone who was going into the police. His dad was a department head at our local station.\""
+    r "\"I hadn't really talked to him before, but when I found out, I dug through my mom's old phone and computer. Found enough information to get her last dealers arrested.\""
+    r an "\"When Anderson told me they'd been locked up, I felt so vindicated.\""
+    r "\"It wasn't going to bring my mom back, or give me back the years I spent hiding from her and her issues. But at least they were punished for it.\""
+    r sus "\"And maybe someone else out there wouldn't be pushed further into a heroin addiction.\""
+
+    "I paused."
+
+    r "\"I'm not sure if I really believed that. They could find another dealer if they were determined — it's hard to stop an addict that wants a fix. But the possibility kept me going.\""
+    r fr "I've been helping Anderson hunt down the city's drug dealers ever since.\""
+
+    "I stopped talking as a jogger approached us."
+    "Dylan was still holding my hand. We moved to the side, and she passed us in silence."
+    "Dylan cleared his throat."
+
+    d sus "\"When you were… pursuing… Cassidy. You were spending your free time planning her arrest?\""
+
+    r sus "\"Yeah…\""
+
+    d "\"I see.\""
+
+    r "\"...\""
+    r "\"That's the reason why I was so tired all the time, too. You commented on that a few times. I used to stay up late obsessively planning arrests — it wasn't healthy.\""
+    r "\"But after that, the seed of doubt was there. After I saw you trying to convince Cassidy by giving her options, a second chance at life.\""
+    r fr "\"And now… I've been thinking about it a lot. I guess Anderson noticed how I haven't been contacting him with new cases.\""
+    r "\"I don't think he ever really cared about drug dealers in particular — I just helped him gain clout within the police.\""
+    r sus "\"Which is fine. His help was convenient for me, too.\""
+
+    "I looked down uneasily. I would've fidgeted with my bracelet again, if one of my hands wasn't holding his."
+
+    r sus "\"I think… I want to work more to protect what I care about now, rather than spending my time pursuing dealers.\""
+    r fr "\"During that fire, the past me would've gone on the hunt for Anderson's criminal. Gotten him behind bars.\""
+
+    d fr "\"Instead of evacuating everyone?\""
+
+    r sus "\"Yeah.\""
+
+    d sus "\"That's not exactly a high bar if it's your responsibility to evacuate everyone.\""
+
+    r surprise "\"Oh, it actually isn't — but I was afraid because some of our regulars are kids or wheelchair-bound.\""
+
+    show dylan surprise
+
+    r fr "\"The official emergency plan for library staff is to evacuate ourselves immediately. We're supposed to let the fire marshals handle anyone left inside.\""
+
+    d "\"...\""
+    d smirk "\"I feel like I should've figured that out earlier.\""
+    d "\"... Oh well.\""
+
+    show dylan fr 
+
+    r sus "\"Sorry. I didn't think of it in the heat of the moment.\""
+
+    show dylan smirk
+
+    "I paused, then cracked a smile at my own pun. Dylan groaned."
+
+    d fr "\"I probably would still have gone with you, anyway.\""
+
+    "He... didn't sound angry. Or disappointed."
+
+
+    if DYLAN_KISS == True:
+        r sus "\"I should've said something about my obsessive dealer hunting before we… when… the day you came over.\""
+        r "\"I don't know if you still would've wanted to. Knowing what you know now. It would've been fairer to let you know.\""
+        r fr "\"I'm sorry.\""
+
+        d fr "\"Mm.\""
+        d "\"I understand. I got caught up in the moment, too.\""
+
+        "My stomach sank."
+        "Right. That made sense. He probably wouldn't have wanted to kiss me otherwise."
+
+
+    if DYLAN_KISS == False:
+        r sus "\"I should've said something about my obsessive dealer hunting earlier.\""
+        r "\"I don't know if you still would've wanted to stick around. Knowing what you know now. It would've been fairer to let you know.\""
+        r fr "\"I'm sorry.\""
+
+        d fr "\"Mm.\""
+        d "\"I understand. It's not an easy thing to bring up.\""
+
+
+
+    d "\"...\""
+    d sus "\"I can't say I'm thrilled to hear that you always looked exhausted because you were hunting down drug dealers.\""
+
+    r sus "\"I wouldn't be, either.\""
+
+    d fr "\"Mhm.\""
+    d sm "\"But… you're taking steps to change after considering other perspectives. That's a positive sign.\""
+
+    r surprise "\"Th...thanks.\""
+
+    show dylan fr
+
+    r sus "\"I… thought you'd be angrier. Or disappointed. Or something.\""
+
+    d sus "\"I do feel weird hearing how it was obsessive for you. That doesn't sound healthy.\""
+    d fr "\"But it seems like that's changing. And barring that, it's not unusual for people to pursue work in criminal justice because of their personal experiences.\""
+    d "\"It's similar to that, except you're volunteering your work instead of pursuing a career in it.\""
+    d sus "\"That is weird, by the way.\""
+    d "\"I think Anderson was taking advantage of your emotions and letting you overwork yourself as a civilian. You're not a policewoman and shouldn't be treated as one.\""
+
+    r surprise "\"I never thought of it that way.\""
+    r sus "\"I'm not too worried about that. If he took advantage of me for work, then I took advantage of him to get drug dealers locked up.\""
+
+    d smirk "\"...\""
+    d "\"I feel like those are pretty different.\""
+
+    show dylan fr
+
+    "I cleared my throat."
+
+    r surprise "\"You're not angry, though?\""
+
+    d "\"No.\""
+    d smirk "\"Should I be?\""
+    d "\"You weren't murdering the drug dealers, were you?\""
+
+    r an "\"No! Of course not.\""
+
+    show dylan fr 
+
+    r sus "\"I helped the police arrest them.\""
+    r "\"... Obsessively and unhealthily. But I wouldn't hurt them.\""
+
+    d sus "\"Then I don't see why I would be angry.\""
+    d fr "\"... I would have appreciated it if you'd told me this earlier, but I understand why you didn't.\""
+
+    "I stopped on the sidewalk. Dylan turned to look at me."
+
+    show dylan surprise 
+
+    "I let go of his hand and flung my arms around him."
+
+    show dylan surprisebl
+
+    "He froze for a second, but then I felt his arms around my back, pulling me closer."
+
+    d frbl "\"Robin…\""
+
+    "I buried my face in his sweater."
+
+    r frbl "\"Thank you. Thank you for understanding.\""
+
+    "He had been open-minded towards Cassidy, too. Even though he hadn't agreed with her."
+
+    r fr "(... I should take a page from his book.)"
+    r sm "(I guess I already have.)"
+    r smbl "(Many pages.)"
+
+    d surprisebl "\"Er… Robin…\""
+
+    r "\"Hm?\""
+
+    d frbl "\"We're blocking the sidewalk…\""
+
+    "I glanced up at him. His cheeks were flushed. But he was also right — a jogger was approaching us, and we were in the way."
+    "With my arms still around Dylan, I pulled him off the sidewalk and into the park."
+    "We stumbled together, a mess of limbs and four legs trying to navigate towards a bench."
+
+    d surprisebl "\"Hey!\""
+
+    hide dylan
+
+    "I laughed."
+    "It felt nice to laugh, the weight off my shoulders."
+    "I let go of him, and we settled onto a bench, talking about other things."
+
+    show dylan frbl at centerpos with dissolve
+
+    r sm "\"I want to start doing more good for the library.\""
+    r fr "\"That girl who was anxious about talking to people reminded me of myself — she deserves a safe space to read and feel comfortable around adults, too.\""
+    r sus "\"Some of my coworkers have been talking about drafting a proposal for a children's reading program. It's been months, and there hasn't been much progress.\""
+
+    show dylan surprise
+
+    r sm "\"I'm going to put one together and ask them to work with me on it."
+
+    d "\"Wow. That sounds amazing.\""
+    d grin "\"I'm cheering for you — I hope it goes through and succeeds.\""
+
+    r grin "\"Thanks.\""
+
+    "I moved closer to him, feeling the warmth of his sweater against my arm."
+
+    show dylan frbl
+
+    "Dylan met my eyes. When he looked at me with flushed cheeks, it was hard not to tease him."
+    "... He was biting his lip again."
+
+    r surprisebl "(Oh—)"
+
+    "He ducked down and kissed my forehead gently."
+    "Then he immediately pulled back, looking worried."
+
+    d smirk "\"Is that… okay?\""
+
+    "This man is so pure."
+
+    show dylan surprisebl 
+
+    r grin "\"More than okay.\""
+
+    show dylan frbl
+
+    "Leaning into his body, I put one hand behind his neck and pulled him down."
+    "He nudged his nose against mine, and then our lips came together, soft and gentle and warm."
+    "My fingers tangled in his hair. His breath caught in his throat."
+
+    d smirk "\"...\""
+    d frbl "\"That's unfair…\""
+
+    r smbl "\"In a good way?\""
+
+    d smirk "\"If I say yes, will you do it again?\""
+
+    show dylan smbl 
+
+    "I laughed and leaned into Dylan's shoulder. He put an arm around me, pulling me close."
+    "We stayed like that for a while, enjoying each other's company."
+
+    d fr "\"... I wonder if the library's programs need any more teachers.\""
+
+    "Despite everything that had happened today, hearing that made me break into the biggest smile of all."
+
+    r grin "(... I think things will be just fine.)"
 
 
 
@@ -4093,9 +4550,13 @@ label done_dylan_visit:
     scene bg black with fade
     pause(1.0)
 
-    "Thank you so much for playing Version 0.9 of Criminally Overdue."
-    "We are adding multiple endings into the game in our Version 1.0 patch, which will be out on April 16th, 2020."
-    "We apologize for the abrupt end to Robin and Dylan's story in this version, and we hope you'll be here for our Version 1.0 release!"
+    "[THE END]"
+
+    "Thank you so much for playing Version 0.91 of Criminally Overdue!"
+    "If you'd like the opportunity to lead Robin down a different path, we are adding multiple endings in our Version 1.0 patch, which will be out on April 16th, 2020."
+    "We hope you enjoyed our entry for NaNoRenO 2020!"
     "<3"
+
+    pause(1.0)
 
     return
