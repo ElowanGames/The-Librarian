@@ -40,7 +40,7 @@ image side anderson an = "anderson_s_angry.png"
 image anderson fr = "anderson_frown.png"
 image side anderson fr = "anderson_s_frown.png"
 image anderson sm = "anderson_smile.png"
-image side anderson sm = "anderson_smile.png"
+image side anderson sm = "anderson_s_smile.png"
 image anderson smirk = "anderson_smirk.png"
 image side anderson smirk = "anderson_s_smirk.png"
 image anderson surprise = "anderson_surprise.png"
@@ -1818,7 +1818,7 @@ label raid_protect:
 
     r an "(He's only going to get worse in that four to six minutes…!)"
 
-    r sus "\"Hey, I'm 99% certain what he overdosed on was heroin spiked with fentanyl. His lips are turning blue, too.\""
+    r sus "\"Hey, I'm 99 percent certain what he overdosed on was heroin spiked with fentanyl. His lips are turning blue, too.\""
     r "\"This police car carries Narcan. Should I administer it?\""
 
     "Emergency Services" "\"Yes, but only if you can approach the patient safely.\""
@@ -2953,8 +2953,8 @@ label post_kid:
 
     "Dylan cleared his throat."
 
-    d sus "..."
-    d fr "Well… I guess."
+    d sus "\"...\""
+    d fr "\"Well… I guess.\""
 
     "I cracked a smile at the grimace on his face."
 
@@ -3276,6 +3276,9 @@ label dylan_visit:
     "He answered the call just as I opened my front door."
 
     
+    scene bg streetday with fade
+    pause(0.5)
+
     show dylan fr at centerpos with dissolve
 
     d fr "\"Hello.\""
@@ -3300,7 +3303,7 @@ label dylan_visit:
 
     "Dylan chuckled."
 
-    d smirk "Say that after you've eaten it."
+    d smirk "\"Say that after you've eaten it.\""
 
     "I nodded."
 
@@ -3609,7 +3612,7 @@ label dylan_visit:
     "I clicked the Submit button. It took several seconds for the screen to refresh."
 
     r fr "\"\'1) Menstrual cramps. 2) Food poisoning. 3) Kidney stone.\'\""
-    r surprise "Wow. It was right."
+    r surprise "\"Wow. It was right.\""
 
     d grin "\"Nice!\""
     d smirk "\"I don't know how I feel about kidney stones being up there. Maybe I need to tweak the weights again.\""
@@ -3728,6 +3731,363 @@ label dylan_no_visit:
 
 
 label done_dylan_visit:
+
+
+
+# ###########################################################
+# REGULAR SCENE: Anderson visits the library. A fire happens.
+# ###########################################################
+
+    scene bg library with fade
+    pause(0.5)
+
+    
+    if DYLAN_KISS == True:
+
+        show dylan frbl at centerpos with dissolve
+
+        "I groaned and tried to hide my face in my hands."
+        "Sitting at my desk in the library, I replayed the weekend's events over and over in my head."
+
+        r frbl "\"Why was I so embarrassing…\""
+
+        d "\"It wasn't that bad. Don't think about it too hard.\""
+
+        "It was Wednesday already. Dylan had come by once earlier in the week, and had dropped by to say hi again today."
+
+        "Not much was different in our daily interactions. We still talked about books, work, life, current events."
+        "But the change was there in the way Dylan blushed more often. It was in our body language, twitching, wanting to reach out to each other, but unable to."
+
+        r frbl "\"...\""
+        r surprise "(I wonder if it's weird for a guy I'm seeing to come see me at work? If we are seeing each other?)"
+        r "(I feel like normally it would be, but he often came to the library before anyway…)"
+        r fr "(It's not like that has changed from before.)"
+
+
+    if DYLAN_KISS == False:
+
+        show dylan fr at centerpos with dissolve
+
+        "It was Wednesday already. Dylan had come by once earlier in the week, and had dropped by to say hi again today."
+
+        d sm "\"How's your progress on Oathbringer coming along?\""
+
+        "Like usual, we chatted a little more about the book, and about work."
+
+
+    hide dylan
+    show dylan fr at rightpos with dissolve
+    show anderson fr at leftpos with dissolve
+
+    a "\"Hey.\""
+
+    "I glanced up to find Anderson standing next to Dylan. That snapped me out of my thoughts."
+    "Dylan looked over and started to move away, the way he usually did when library visitors approached me for help."
+    "He didn't like to interfere with my work, which I appreciated. But this time it was just Anderson."
+    "I frowned — I'd never seen him here before."
+
+    r sus "\"Hey. Are you wearing a jacket over your police uniform? It looks weird.\""
+    r fr "\"Kind of lumpy.\""
+
+    show anderson sus
+
+    "Anderson grimaced and pulled his jacket closer self-consciously."
+
+    a "\"Yeah… I didn't want to draw any attention to myself here.\""
+
+    "Dylan paused, then shrugged and stayed."
+
+    d surprise "\"A friend?\""
+
+    show dylan fr
+
+    r sus "\"Yeah. This is Anderson. He's a policeman. Anderson, meet Dylan.\""
+
+    "Dylan offered his hand. Anderson shook it, his expression distracted."
+
+    r surprise "\"If you're not on duty, why not just change into normal clothes?\""
+
+    a fr "\"I'm on my lunch break. I have to go back in five minutes or so.\""
+
+    r "\"I see.\""
+    r fr "(Oh, that's right. He's doing the planned arrest next door today.)"
+    r sus "\"Did something happen? Why are you here?\""
+
+    show anderson sus
+
+    "Anderson frowned."
+
+    a "\"I dropped in because I happened to be nearby.\""
+
+    r fr "\"Oh.\""
+    r sus "\"I see. That's unusual.\""
+
+    "Silence. I cleared my throat."
+
+    r "(Why is this so awkward?)"
+
+    show anderson fr
+
+    "Anderson glanced at Dylan, then seemed to decide he wasn't a threat to our conversation."
+
+    a "\"That's not entirely true. I came to see what you like so much about your workplace.\""
+    a sus "\"I see you're just sitting here, like you're library customer service.\""
+
+    show dylan sus 
+
+    a "\"And not even customer service downstairs. Just relegated to a corner up on this floor.\""
+    a an "\"Your employers are completely wasting your skills.\""
+
+    "He glanced around at the library in disdain."
+
+    a sus "\"It's disappointing. If I'd known earlier, I would've said something.\""
+    a an "\"You haven't been contributing as much as before, but I understand we weren't compensating you properly.\""
+
+    show dylan surprise
+
+    a "\"My boss agreed to give you a letter of recommendation into the investigations department, if you want—\""
+
+    r an "\"Shh!\""
+
+    show anderson sus
+
+    "I hissed under my breath."
+    "Dylan was still there! As were the library patrons milling between the bookshelves less than a hundred feet away!"
+
+    show dylan sus
+    show anderson an
+
+    r "\"Are you trying to poach me from my workplace while I'm at work? Why couldn't you have called me about this?\""
+
+    "I should've just said no to him last weekend."
+
+    r an "\"Besides, I like being a librarian — and I chose to, because I wanted to.\""
+    r sus "\"This really isn't the time or place. I am not going to talk about this while we're in the library. You should go back to work.\""
+
+    show anderson sus
+
+    "Anderson studied my face. He didn't seem to like what he saw."
+
+    a an "\"Fine.\""
+    a "\"Keep an eye out. We're—\""
+    
+    show anderson sus
+
+    "Anderson glanced at Dylan, who was watching us shrewdly, his expression unreadable."
+
+    a an "\"We're working nearby. Soon. Stay safe.\""
+
+    "I nodded. With that, Anderson turned and left."
+
+    
+    hide anderson
+    show dylan sus at centerpos with dissolve
+
+    r sus "\"...\""
+    d "\"...\""
+
+    "Silence. I met Dylan's eyes."
+
+    d an "\"What was that about? Why did he single you out?\""
+    d sus "\"Were you part of the police before?\""
+
+    r sus "\"No.\""
+    r an "\"I… help out his department sometimes. As a civilian.\""
+
+    d an "\"How?\""
+
+    r sus "\"I provide them with information they need, if I have it.\""
+
+    d fr "\"...\""
+    d sus "\"I suppose librarians do work in information science, but I have a hard time seeing why the police would need to contact the library for help.\""
+
+    r fr "\"They weren't contacting the library — just me. My involvement was of a personal nature.\""
+    r "\"Recently, I haven't been in touch with them much. That's probably why he came to offer me a job with them.\""
+
+    d "\"...\""
+    d an "\"That first time you were at the university…\""
+
+
+    if CASSIDY_ARRESTED == True:
+
+        d "\"Were you the one behind Cassidy's arrest?\""
+
+        show dylan sus
+
+        r sus "\"...\""
+        r "(I could say no. But… it feels wrong to lie to Dylan's face.)"
+
+        r an "\"Yeah. I was.\""
+
+        show dylan an 
+
+        r fr "\"After I heard her conversation with you, part of me wanted to let her go.\""
+        r sus "\"But… she'd still sold cocaine to addicts. She'd still broken the law.\""
+        r "\"I didn't think it'd be right to lie about that to the police.\""
+
+        d sus "\"You're not one of the police, though.\""
+        d an "\"If I'm understanding this correctly… you're a civilian doing their dirty work for them.\""
+        d sus "\"Why?\""
+
+        "Dylan's expression was perplexed. Suspicious. It hurt to see him looking at me like that."
+
+        r fr "\"...\""
+        r sus "\"Personal reasons.\""
+        r "\"If you still want to hear me out, I'll tell you, but… not while I'm at work. Later this evening?\""
+
+        d "\"...\""
+
+
+    if CASSIDY_ARRESTED == False:
+
+        d "Were you there to arrest Cassidy?"
+
+        show dylan sus
+
+        r sus "\"...\""
+        r "(I ended up telling Anderson not to arrest her, so I could say no.)"
+        r fr "(But… it feels wrong to lie to Dylan's face.)"
+
+        show dylan an
+
+        r "\"Yeah. I was.\""
+        r sus "\"After I heard her conversation with you, I lied to the police, so she went free.\""
+
+        show dylan sus
+
+        "Dylan's expression was perplexed. Suspicious. It hurt to see him looking at me like that."
+
+        d "\"...\""
+        d an "\"Why?\""
+
+        r fr "\"Because…\""
+
+        show dylan sus
+
+        r "\"She was willing to take action and stop. I saw you trying to convince her to do something better with her life…\""
+        r "\"It felt wrong to throw her behind bars.\""
+        r sus "\"Maybe that wasn't right. She still made profit off of selling cocaine to addicts — she still should've been arrested.\""
+        r "\"At least in the eyes of the law.\""
+        r "\"I don't think I'd be a good policewoman. I'd let my feelings affect my decisions, just like that.\""
+
+        "Dylan furrowed his eyebrows, his expression conflicted."
+
+
+
+    "We stood there for what felt like an eternity, gauging each other."
+    "It hurt to feel him looking at me with those confused eyes. I wanted to say something, to diffuse the situation, but I didn't know what I could say."
+
+
+#    <sfx fire alarm siren>
+
+    show dylan surprise
+
+    "The moment was broken by a fire alarm blaring from every direction."
+
+    r surprise "\"Wh—\""
+
+    d "\"Holy—\""
+
+    "We both jumped, startled at the noise. Lights started flashing, warning us to evacuate."
+
+    show dylan sus 
+
+    "My phone started vibrating. I pulled it out without thinking, then stared at it."
+    "Caller ID: Anderson."
+
+    r an "\"Fuck.\""
+
+    "He probably wouldn't call unless it was important. I punched the ACCEPT CALL button and pressed my phone to my ear."
+
+
+    r "\"What's going on?!\""
+
+    a an "\"He's getting away — he tripped the fire alarms in both our building and yours!\""
+
+    r an "\"Is there actually a fire?\""
+
+    a sus "\"We think so. You need to get out of there now.\""
+    a an "\"Last we saw, he headed in the direction of your library. Please — once you get out, help us track him.\""
+
+    show dylan surprise
+
+    r "\"What? I helped you with investigations, Anderson — not chasing down criminals.\""
+
+    if ADDICT_SAVED == False:
+        r sus "\"The car chase was a one-time thing!\""
+
+    show dylan sus
+
+    "I glanced around the library frantically."
+    "I could see people on our floor looking around, confused. Some were crowding around the escalators, trying to get downstairs."
+
+    show dylan an
+
+    "Dylan waved his hands, catching my attention and pointing. Someone was trying to press the elevator button. I cursed."
+
+    r an "\"Look, I have to go. Wasn't this guy being pursued for homicide charges? Is he going to hurt our library patrons if you don't catch him?\""
+
+    a sus "\"He's probably just trying to escape today.\""
+    a an "\"But he's dangerous, Robin — he's probably going to create more victims. If not today, then tomorrow.\""
+    a sus "\"Please, Robin. None of us are stationed over at the library.\""
+
+    show dylan surprise
+
+    "It was then that I spotted smoke curling up the central atrium of the building."
+    "Dylan saw it, too. His eyes widened."
+
+    r surprise "(There's actually a fire—)"
+
+    d an "\"We need to evacuate!\""
+
+    "Inexplicably, Dylan hadn't joined the crowd of people pushing to get down the escalators and out of the library."
+    "Instead, he'd stayed by my side. He grabbed my hand and gestured towards the emergency stairwell."
+
+    r surprise "(What...)"
+
+    show dylan sus
+
+    "I glanced around."
+
+    r sus "(Some of our library regulars are kids or wheelchair-bound...)"
+    r an "(If any of them are upstairs, I have to help them evacuate.)"
+
+    "I hesitated."
+
+    r sus "(But… am I just thinking this way because this criminal isn't a drug dealer?)"
+    r an "(Am I trying to apply my ideals selectively again? Letting a murderer escape just because I don't have a personal vendetta against him…?)"
+
+    show dylan an
+
+    "Dylan tugged at my hand insistently."
+
+    r "(There's no time…!)"
+
+
+
+
+#    CHOICE: 
+#    Try to evacuate everyone in the library.
+#    Try to capture the murderer.
+
+#    IF "Try to evacuate everyone in the library."
+#    jump to Ending 1
+
+
+
+# #################################################
+# ENDING: Protect the library patrons from the fire
+# #################################################
+
+
+
+
+
+
+
+
+
+
 
 
     scene bg black with fade
