@@ -183,7 +183,7 @@ label start:
 
     r fr "\"I trust you can do it.\""
 
-    a sus "\"What a slave driver.\""
+    a sus "\"What a slave driver.\"" (what_size=16)
 
     r sus "\"What was that?\""
 
@@ -3321,7 +3321,8 @@ label dylan_visit:
     a "<the bosses think it'll go fine but i'm sus because arson is in his list of charges. don't want him to endanger any civilians before he gets arrested…>"
     a an "<anyway, this isn't public knowledge so you can't tell your coworkers to be on alert, but you should know at least>"
     a "<took us a while to find out enough info to smoke him out, he put some effort into hiding>"
-    a fr "<i still think you'd be able to do good if you joined our force and helped with the info team, you find stuff faster than any two of em combined>"
+    a fr "<if you're not gonna send me cases anymore... i think you should at least join our force and help the info team>"
+    a "<you find stuff faster than any two of em combined>"
 
     "I glanced over his messages one more time before responding."
 
@@ -3799,7 +3800,8 @@ label dylan_no_visit:
     a "<the bosses think it'll go fine but i'm sus because arson is in his list of charges. don't want him to endanger any civilians before he gets arrested…>"
     a an "<anyway, this isn't public knowledge so you can't tell your coworkers to be on alert, but you should know at least>"
     a "<took us a while to find out enough info to smoke him out, he put some effort into hiding>"
-    a fr "<i still think you'd be able to do good if you joined our force and helped with the info team, you find stuff faster than any two of em combined>"
+    a fr "<if you're not gonna send me cases anymore... i think you should at least join our force and help the info team>"
+    a "<you find stuff faster than any two of em combined>"
 
     "I glanced over his messages one more time before responding."
 
@@ -4144,30 +4146,40 @@ label done_dylan_visit:
 
     "I hesitated."
 
-    r sus "(But… am I just thinking this way because this criminal isn't a drug dealer?)"
-    r an "(Am I trying to apply my ideals selectively again? Letting a murderer escape just because I don't have a personal vendetta against him…?)"
+    r sus "(But… this man has shown he's willing to set fire to two buildings. What would stop him from starting more?)"
+    r an "(The local university is close by. There aren't many people in the library on a weekday morning, but at the university…)"
+
 
     show dylan an
 
     "Dylan tugged at my hand insistently."
 
-    
-
-
-#    r "(There's no time…!)"
-
-#    CHOICE: 
-#    Try to evacuate everyone in the library.
-#    Try to capture the murderer.
-
-#    IF "Try to evacuate everyone in the library."
-#    jump to Ending 1
+    r sus "(There's no time…!)"
 
 
 
-# #################################################
-# ENDING: Protect the library patrons from the fire
-# #################################################
+
+#   #############
+#   ENDING CHOICE
+#   #############
+
+    menu:
+        "Try to evacuate everyone in the library.":
+            jump dylan_end_librarian
+
+        "Try to find the murderer.":
+            jump dylan_end_police
+
+
+
+
+
+
+# ###########################################################
+# LIBRARIAN ENDING: Protect the library patrons from the fire
+# ###########################################################
+
+label dylan_end_librarian:
 
     show dylan sus
 
@@ -4643,17 +4655,226 @@ label done_dylan_visit:
 
 
 
-
+    pause(0.5)
     scene bg black with fade
     pause(1.0)
 
-    "[THE END]"
+    "THE END."
+    "Dylan — \"Librarian\" Ending."
 
-    "Thank you so much for playing Version 0.91 of Criminally Overdue!"
-    "If you'd like the opportunity to lead Robin down a different path, we are adding multiple endings in our Version 1.0 patch, which will be out on April 16th, 2020."
-    "We hope you enjoyed our entry for NaNoRenO 2020!"
-    "<3"
+    "Thank you for playing Version 1.10 of Criminally Overdue. We hope you enjoyed our entry for NaNoRenO 2020!"
 
     pause(1.0)
 
     return
+
+
+
+
+
+#   ###################################################
+#   POLICE ENDING: Try to find the murderer in the fire
+#   ###################################################
+
+label dylan_end_police:
+
+    r "(... No. I can't hesitate just because this criminal isn't a drug dealer.)"
+    r "(I can't apply my ideals selectively.)"
+    r fr "(Letting a murderer escape just because I don't have a personal vendetta against him?)"
+
+    "If I was going to involve myself in the ideals of justice, I wouldn't be that kind of hypocrite — the worst kind of all."
+    "Dylan was still holding my hand. I gestured towards the stairwell, and let go of his hand."
+
+    show dylan surprise
+
+    r an "\"Go! Get out of here.\""
+
+    d an "\"What about you?\""
+
+    show dylan sus
+
+    r "\"I'll be right behind you.\""
+    r fr "\"I have an arsonist to track.\""
+
+    d an "\"What?!\""
+    d "\"Let the police handle that. We need to evacuate!\""
+
+    "I shook my head."
+
+    r surprise "\"Please, Dylan. Get out. Be safe.\""
+    r sus "\"I need to go.\""
+
+    hide dylan
+
+    "I didn't wait for a response."
+    "I turned my back on him, already running towards the fire in the central atrium."
+    "Pressing my phone to my ear, I prayed Anderson hadn't hung up yet."
+
+    r an "\"Hello? You still there?\""
+
+    a sus "\"Yes! We're on our way.\""
+
+    r "\"Okay. I'm going to try and find him. Give me his description!\""
+
+    a an "\"He's abnormally tall! Blue baseball hat, blonde hair, really pale. Wearing a red shirt and baggy blue jeans.\""
+
+    "I slammed against the glass wall and looked down at the crowd moving in the central atrium."
+    "No one came close to matching that description."
+    "Cursing, I ran to the nearest emergency stairwell and leaped down the stairs to the ground floor."
+
+    scene bg streetday with fade
+    pause(0.5)
+
+    r surprise "\"Oh!\""
+
+    "When I exited behind the library, I spotted someone tall in a red shirt hurrying away from the commotion."
+
+    r "(A blue hat and blonde hair…!)"
+
+    "I glanced around. This was a back alley. No one else was around."
+
+    r an "\"Anderson?\""
+
+    "I whispered quietly."
+
+    a surprise "\"Yeah?\""
+
+    "I couldn't believe he was still on our call mid-chase. Did he expect that much out of me?"
+
+    r sus "\"I see someone matching your description.\""
+    r an "\"He's behind the library, moving towards the university.\""
+
+    "I heard a gasp on his end."
+
+    a smirk "\"Bless your god damn soul, Robin. We'll be right there!\""
+    a surprise "\"Can you keep an eye on him somehow?\""
+    a "\"Get up high on the second floor and watch him.\""
+
+    "I grimaced."
+
+    r sus "\"I'd lose sight of him if I went back inside.\""
+    r "\"You want me to tail him?\""
+
+    "Anderson hesitated."
+
+    a an "\"I…\""
+    a sus "\"I do. But we have enough information to catch him.\""
+    a "\"It… wouldn't be right to ask more of you when you're not one of us.\""
+
+    "I narrowed my eyes."
+    "{i}Now{/i} he felt guilty?"
+    "... Were they really going to be able to catch him?"
+    "My train of thought was interrupted by a motion in the corner of my eye. The man had taken off his hat and tossed it into a trash can."
+    "Then in one smooth motion, he pulled his red shirt off over his head, revealing a tight white undershirt."
+    "He stuffed his t-shirt into his jeans pocket and kept walking as if nothing had happened."
+
+    r surprise "(What the—)"
+    r "(Men's pockets are so big!)"
+
+    "The simple change of clothes made his silhouette look entirely different. If I hadn't already seen the culprit, I wouldn't have realized this was him at all."
+
+    r sus "\"Anderson… he took off his shirt and hat. He looks completely different now.\""
+    r an "\"Look for someone wearing a tight white shirt.\""
+    r sus "\"He just turned onto the main street, towards the university.\""
+
+    a surprise "\"Wha—\""
+    a sus "\"Okay! Thanks!\""
+
+    "Beep."
+
+    "I stared at my phone, where Anderson had hung up on me."
+
+    r sus "\"...\""
+
+    "I guess he didn't need my help anymore."
+    "I turned and looked back at the library. From out here, no one would've known there was a fire inside, if not for the sirens and lights on the main street."
+
+    r "\"...\""
+    r fr "(I hope Dylan got out safely.)"
+    r sus "(And… everyone else.)"
+
+    "I wasn't sure why I felt a little guilty."
+
+    r "(The fire policy for employees is to evacuate and let the fire marshals evacuate everyone else…)"
+    r "(I didn't do anything wrong.)"
+    r fr "\"...\""
+    r sus "(But, still, it was my first thought to try to track the culprit…)"
+
+    "I rounded the outside of the library and turned to the front, where panicked library patrons were getting in the way of the fire department."
+    "Inexplicably, I felt irritation welling up in me."
+
+    r surprise "\"...!\""
+    r fr "(Maybe… Anderson was right.)"
+    r "(If these are my thoughts in a situation like this… I belong behind the desk in a police station more than in a library.)"
+    r sus "\"...\""
+
+
+    "Looking back, that was the moment something changed in me."
+    "My thoughts were already racing. The library and people in front of me seemed so far from my mind."
+    "Anderson had offered me a job with his investigations department, but I needed something more concrete. Someone — something — I could trust."
+    "A contract from his supervisor, perhaps. I would make sure to ask Anderson for his contact information."
+
+    r "\"...\""
+
+    "I hesitated one last time."
+
+    r fr "(I put myself in school for six extra years to become a librarian. Behind that sweat and tears was the real desire to do something good for my community.)"
+    r sus "(Am I going to regret letting that go today?)"
+
+    "I looked at the street, where three fire trucks were lined up and swarmed with staff."
+    "Several police cruisers and motorcycles flanked them, blocking off the crime scene and redirecting civilians."
+
+    r fr "\"...\""
+    r sus "(I think… there are other ways to do good for my community.)"
+    r fr "(As long as I'm not misguided… protecting civilians isn't bad, either. Someone has to do it.)"
+    r "(Besides, it's not like my degree vanishes… I could probably come back if I wanted to.)"
+
+    "I looked back at the library one more time."
+
+    r fr "(I have to file my resignation — it's polite to give Heather two weeks notice, I suppose.)"
+    r sus "(First, I'll get an offer in hand from Anderson's boss.)"
+
+
+    
+    scene bg black with fade
+    pause(0.5)
+    play music "BGM_sad_hopeful.ogg" fadein 1.0 fadeout 1.0 loop
+
+
+    "That day, several people were injured in the library fire, but no one died. There were no fires at the local university."
+    "In the end, the library shut down for more than two weeks after the fire."
+    "I never went back for work again."
+    "Anderson's boss was extremely pleased to hear I would be joining the force. Over the next few months, I garnered more favor from the brass than Anderson ever had."
+    "So much work was tied up behind internal politics. So many times, I was stopped mid-case by bureaucratic intervention."
+    "But they gave me the resources I needed. Over time, they promoted me. Then they promoted me again. It was incomprehensible."
+    "I wasn't going to turn it down. The more influence I had, the better."
+    "As for the people I'd met from my old job…"
+    "Several days after the fire, Dylan had called me, and we'd spent a long time talking."
+
+    d an "\"You neglected yourself and the library patrons during a fire… to pursue a criminal the police asked you to chase?\""
+    d smirk "\"...\""
+    d "\"I feel like what I knew about you was a lie.\""
+    d "\"If that supersedes your own safety, and your love for the library and the safe space it's supposed to be...\""
+    d "\"I don't think I knew you at all.\""
+
+    "... We parted ways."
+    "I'd set myself down a different path. That day had changed my life."
+    "Or had it? Perhaps this was the path I would've taken all along."
+    "And since I'd chosen it, I'd better make the most of it."
+
+
+    pause(0.5)
+    scene bg black with fade
+    pause(1.0)
+
+    "THE END."
+    "Dylan — \"Police\" Ending."
+
+    "Thank you for playing Version 1.10 of Criminally Overdue. We hope you enjoyed our entry for NaNoRenO 2020!"
+
+    pause(1.0)
+
+    return
+
+
+
